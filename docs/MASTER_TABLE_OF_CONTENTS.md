@@ -191,6 +191,7 @@ graph TD
 | `CHANGELOG.md` | Version history of the documentation suite |
 | `REVIEW_CHECKLIST.md` | Checklist for reviewing the suite before downstream use |
 | `BUSINESS_GLOSSARY.md` | Standalone canonical glossary |
+| `visual_template/index.html` | **[Interactive Visual Walkthrough](file:///home/hackycoder/mca_labs/packetpulse/visual_template/index.html)** — End-user cases and operational simulation dashboard |
 
 ---
 
@@ -217,4 +218,4 @@ flowchart LR
 
 ---
 
-**Total Documents in Suite:** 40 core documents + 6 reference documents = **46 documents**
+**Total Documents in Suite:** 40 core documents + 6 reference documents + 1 interactive dashboard = **47 documents**

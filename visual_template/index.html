@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Talent Platform — Visual Walkthrough</title>
+    <!-- Google Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="url(#paint0_linear)" stroke-width="3"/>
+                    <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20C28 24.4183 24.4183 28 20 28" stroke="url(#paint1_linear)" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="20" cy="20" r="4" fill="#00E5FF"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="2" y1="2" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#8A2387"/>
+                            <stop offset="0.5" stop-color="#E94057"/>
+                            <stop offset="1" stop-color="#F27121"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear" x1="12" y1="12" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00E5FF"/>
+                            <stop offset="1" stop-color="#7B1FA2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="brand">
+                    <h1>Ecosystem Platform</h1>
+                    <span>Interactive Business Walkthrough</span>
+                </div>
+            </div>
+            <div class="meta-links">
+                <a href="../README.md" class="btn btn-secondary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    Back to Docs
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Tab Bar -->
+        <nav class="tab-bar">
+            <button class="tab-btn active" data-tab="tab-personas">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                User Personas
+            </button>
+            <button class="tab-btn" data-tab="tab-blueprint">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+                Service Blueprints
+            </button>
+            <button class="tab-btn" data-tab="tab-capabilities">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                Capability Map
+            </button>
+            <button class="tab-btn" data-tab="tab-strategy">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                GTM & Pricing
+            </button>
+        </nav>
+
+        <!-- Main Display Content -->
+        <main class="content-area">
+            
+            <!-- TAB 1: USER PERSONAS -->
+            <section id="tab-personas" class="tab-content active animate-fade-in">
+                <div class="section-header">
+                    <h2>Ecosystem Persona Journeys</h2>
+                    <p>Select an archetype to follow their path through the learning, verification, and employment cycles.</p>
+                </div>
+                
+                <!-- Avatar Row -->
+                <div class="avatar-grid">
+                    <div class="avatar-card active" data-persona="aarav">
+                        <div class="avatar-image patel-img">AP</div>
+                        <h3>Aarav Patel</h3>
+                        <span>Early Learner (Student)</span>
+                    </div>
+                    <div class="avatar-card" data-persona="zara">
+                        <div class="avatar-image chen-img">ZC</div>
+                        <h3>Zara Chen</h3>
+                        <span>Early Career (Fresher)</span>
+                    </div>
+                    <div class="avatar-card" data-persona="marcus">
+                        <div class="avatar-image vance-img">MV</div>
+                        <h3>Marcus Vance</h3>
+                        <span>Domain Specialist (SRE)</span>
+                    </div>
+                    <div class="avatar-card" data-persona="elena">
+                        <div class="avatar-image rostova-img">ER</div>
+                        <h3>Elena Rostova</h3>
+                        <span>Ecosystem Guide (Mentor)</span>
+                    </div>
+                </div>
+
+                <!-- Persona Info Panel -->
+                <div class="persona-detail-panel glass-panel">
+                    <div class="panel-left">
+                        <div class="detail-badge" id="persona-tag">STUDENT</div>
+                        <h3 id="persona-name">Aarav Patel</h3>
+                        <p class="demographics" id="persona-demo">21 years old · Final Year CS Student · Mumbai, India</p>
+                        
+                        <div class="info-block">
+                            <h4>Core Goals</h4>
+                            <ul id="persona-goals">
+                                <li>Secure a first internship or junior infrastructure engineer role.</li>
+                                <li>Bridge the gap between university theory and real-world infrastructure operations.</li>
+                            </ul>
+                        </div>
+                        <div class="info-block">
+                            <h4>Core Pain Points</h4>
+                            <ul id="persona-pain">
+                                <li>No commercial experience to put on a resume.</li>
+                                <li>Traditional certifications are expensive and don't prove practical ability.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel-right">
+                        <div class="empathy-card">
+                            <h4>Empathy Map ("Thinking & Feeling")</h4>
+                            <blockquote id="persona-empathy">
+                                "I'm falling behind my peers who have internships. Will I pass an interview?"
+                            </blockquote>
+                        </div>
+                        <div class="journey-flow-block">
+                            <h4>High-Level Platform Journey</h4>
+                            <div class="interactive-steps" id="persona-steps">
+                                <!-- Populated dynamically by app.js -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: SERVICE BLUEPRINT -->
+            <section id="tab-blueprint" class="tab-content animate-fade-in">
+                <div class="section-header">
+                    <h2>Service Blueprint Simulator</h2>
+                    <p>Simulate operational service flows to understand frontstage interactions, backstage operations, and SLAs.</p>
+                </div>
+                
+                <!-- Toggle Mode -->
+                <div class="toggle-bar">
+                    <button class="toggle-btn active" data-flow="verification">Skill Verification Flow</button>
+                    <button class="toggle-btn" data-flow="placement">Hiring Placement Flow</button>
+                </div>
+
+                <!-- Simulator Layout -->
+                <div class="simulator-layout">
+                    <!-- Progress Timeline (Left/Top) -->
+                    <div class="flow-timeline glass-panel" id="flow-steps-container">
+                        <!-- Populated by app.js -->
+                    </div>
+
+                    <!-- Selected Step Details (Right/Bottom) -->
+                    <div class="step-detail-card glass-panel" id="flow-step-detail">
+                        <div class="step-header">
+                            <span class="step-number" id="detail-step-num">Step 1</span>
+                            <h3 id="detail-step-title">Select a step to simulate</h3>
+                        </div>
+                        <div class="detail-grid">
+                            <div class="detail-col">
+                                <span class="col-title">Frontstage (User Action)</span>
+                                <p class="col-desc" id="detail-frontstage">Member logs into the portal and selects a practice lab.</p>
+                            </div>
+                            <div class="detail-col">
+                                <span class="col-title">Backstage (Operations / System)</span>
+                                <p class="col-desc" id="detail-backstage">Sandbox reservation systems provision resources automatically.</p>
+                            </div>
+                            <div class="detail-col">
+                                <span class="col-title">Target SLA</span>
+                                <p class="col-desc highlight" id="detail-sla">Real-time allocation</p>
+                            </div>
+                            <div class="detail-col">
+                                <span class="col-title">Triggered Business Rules</span>
+                                <p class="col-desc rules" id="detail-rules">BR-LR-001 (Lab hour quota limit check)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: CAPABILITY MAP -->
+            <section id="tab-capabilities" class="tab-content animate-fade-in">
+                <div class="section-header">
+                    <h2>Business Capability Explorer</h2>
+                    <p>Browse the platform's core capability models, maturity assessments, and mapping to product backlog features.</p>
+                </div>
+
+                <div class="capability-layout">
+                    <!-- L1 Capabilities (Grid) -->
+                    <div class="capability-l1-grid">
+                        <div class="capability-card active" data-cap="cap-ops">
+                            <div class="maturity-dial">3.5</div>
+                            <h3>Community Operations</h3>
+                            <p>Governs chapters, event scheduling, and volunteer programs.</p>
+                        </div>
+                        <div class="capability-card" data-cap="cap-learn">
+                            <div class="maturity-dial">4.0</div>
+                            <h3>Learning & Verification</h3>
+                            <p>Manages syllabus development, practice labs, and peer-to-mentor reviews.</p>
+                        </div>
+                        <div class="capability-card" data-cap="cap-hiring">
+                            <div class="maturity-dial">3.0</div>
+                            <h3>Enterprise Talent Sourcing</h3>
+                            <p>Enables company subscriptions, blind talent search, and placement tracking.</p>
+                        </div>
+                    </div>
+
+                    <!-- Capability Details Panel -->
+                    <div class="cap-detail-panel glass-panel" id="cap-detail-container">
+                        <!-- Populated by app.js -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: GTM & PRICING -->
+            <section id="tab-strategy" class="tab-content animate-fade-in">
+                <div class="section-header">
+                    <h2>Go-To-Market & Pricing Loops</h2>
+                    <p>Explore the economic engines, partner pricing strategy, and competitive advantages of the platform.</p>
+                </div>
+
+                <div class="strategy-layout">
+                    <!-- GTM Loops Card -->
+                    <div class="strategy-card glass-panel">
+                        <h3>Double-Sided Growth Loop</h3>
+                        <div class="loop-diagram">
+                            <div class="loop-node">
+                                <strong>1. Free Sandbox Labs</strong>
+                                <span>Attracts student & fresher talent (Aarav, Zara)</span>
+                            </div>
+                            <div class="loop-arrow">⬇️</div>
+                            <div class="loop-node">
+                                <strong>2. Peer & Mentor Audit</strong>
+                                <span>Creates highly trusted verification signals</span>
+                            </div>
+                            <div class="loop-arrow">⬇️</div>
+                            <div class="loop-node">
+                                <strong>3. Recruiters Join</strong>
+                                <span>Companies pay subscriptions to search pre-vetted candidates</span>
+                            </div>
+                            <div class="loop-arrow">⬇️</div>
+                            <div class="loop-node">
+                                <strong>4. Re-Investment</strong>
+                                <span>Sponsor funding and fees re-invested into sandbox budgets</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Cards -->
+                    <div class="pricing-grid">
+                        <div class="pricing-card glass-panel">
+                            <span class="plan-tag">MEMBERS</span>
+                            <h4>Core Plan</h4>
+                            <div class="price">Free <span>forever</span></div>
+                            <ul>
+                                <li>Access to all standard learning paths</li>
+                                <li>20 practice sandbox hours per month</li>
+                                <li>Peer & Mentor skill verification</li>
+                                <li>Anonymized portfolio visibility</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card glass-panel premium">
+                            <span class="plan-tag highlight">ENTERPRISE</span>
+                            <h4>Growth Partner</h4>
+                            <div class="price">$5,000 <span>/ Year</span></div>
+                            <ul>
+                                <li>Search regional chapter talent pools</li>
+                                <li>Anonymized candidate dashboards</li>
+                                <li>Up to 3 active search requisitions</li>
+                                <li>10% placement salary fee</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card glass-panel">
+                            <span class="plan-tag">SPONSOR</span>
+                            <h4>Global Sponsor</h4>
+                            <div class="price">$25,000 <span>/ Year</span></div>
+                            <ul>
+                                <li>Branded Learning Path logo placement</li>
+                                <li>Direct funding of 100+ member scholarships</li>
+                                <li>Chapter meetup presentation slots</li>
+                                <li>Strict non-influence clause compliance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Competitor Comparison -->
+                <div class="competitor-panel glass-panel">
+                    <h3>How We Differentiate</h3>
+                    <table class="diff-table">
+                        <thead>
+                            <tr>
+                                <th>Feature Pillar</th>
+                                <th>LinkedIn</th>
+                                <th>LeetCode</th>
+                                <th>CNCF / LF</th>
+                                <th>This Platform</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Skill Verification</strong></td>
+                                <td>Self-declared (Low trust)</td>
+                                <td>Algorithmic (Partial trust)</td>
+                                <td>Standard Exam (High trust)</td>
+                                <td class="highlight-cell">Continuous Peer Audit (High trust)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Continuous Portfolio</strong></td>
+                                <td>No (Static Resume)</td>
+                                <td>No (Coding profile only)</td>
+                                <td>No (One-off Cert)</td>
+                                <td class="highlight-cell">Yes (Live Running Logs)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mentorship Ecosystem</strong></td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td>No</td>
+                                <td class="highlight-cell">Yes (Built-in Mentor Council)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Recruiter Screening Bias</strong></td>
+                                <td>High (Pedigree focused)</td>
+                                <td>High (Test gating)</td>
+                                <td>Medium</td>
+                                <td class="highlight-cell">None (Strict Blind Sourcing)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Community Talent Ecosystem Platform. All Rights Reserved. Strictly Business-Grade Documentation Suite.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

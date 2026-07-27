@@ -21,6 +21,9 @@ Full detail: `01_PROJECT_VISION.md`
 
 ## How This Suite Is Organized
 
+An interactive visual template is available to walk through key end-user cases, service blueprints, and business capabilities:
+- **[Interactive Visual Walkthrough](file:///home/hackycoder/mca_labs/packetpulse/visual_template/index.html)** — Open this file in your browser to interactively explore user journeys, verification service simulators, capability maturity indexes, and pricing loops.
+
 ```mermaid
 graph TD
     A[README] --> B[Foundation: 01-03]
