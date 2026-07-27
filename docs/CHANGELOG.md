@@ -4,6 +4,40 @@
 
 ---
 
+## [v1.1] — Phase 2 Extended Release
+
+### Added
+- `19_PERSONAS.md` — Detailed profiles for student, fresher, experienced engineer, mentor, and secondary corporate personas.
+- `20_STAKEHOLDER_ANALYSIS.md` — Registers, Power/Interest matrices, communication templates, and authority channels.
+- `21_BUSINESS_RULES.md` — Centralized catalogue of constraints and parameters governing all business capability areas.
+- `22_USER_STORIES.md` — User stories with priorities and binary acceptance criteria for all platform roles.
+- `23_BUSINESS_CAPABILITY_MAP.md` — Three-level business capability hierarchy, maturity assessments, and dependencies.
+- `24_INFORMATION_ARCHITECTURE.md` — Portal navigation maps, taxonomies, tags, and business object definitions.
+- `25_SERVICE_BLUEPRINT.md` — Verification and hiring placement service pathways, frontstage/backstage flows, and SLAs.
+- `26_PROCESS_CATALOG.md` — Detailed business process registry mapping trigger, inputs, outputs, owner roles, and KPIs.
+- `27_RACI_MATRIX.md` — Matrix mapping all cataloged processes against operational and community roles.
+- `28_CHAPTER_PLAYBOOK.md` — Chapter launch, operation, growth, review, merger, and closure playbooks.
+- `29_MENTOR_HANDBOOK.md` — Mentor lifecycle, code of conduct, review guidelines, and plagiarism/cheating escalation paths.
+- `30_MODERATOR_HANDBOOK.md` — Moderation protocols, incident response flows, warnings, timeouts, suspensions, and bans.
+- `31_VOLUNTEER_HANDBOOK.md` — Volunteer paths, point award ledgers, letters of reference, and rotation schedules.
+- `32_COMMUNITY_CONSTITUTION.md` — Foundational rights (Bill of Member Rights), voting systems, and amendment rules.
+- `33_GO_TO_MARKET_STRATEGY.md` — Market entry, launch phases, GTM loops, corporate partner sales, and developer advocacy.
+- `34_COMPETITOR_ANALYSIS.md` — Positioning, SWOT, and feature comparison against 15 industry alternatives.
+- `35_PRICING_STRATEGY.md` — Partner subscriptions, sponsorships, training royalties, meetup ticketing, and scholarships.
+- `36_FINANCIAL_MODEL.md` — Operational/capital budgets, cash flows, unit economics (MAC, CAC, LTV), and 5-year projections.
+- `37_POLICY_MANUAL.md` — Consolidated operational policies (data privacy, ethics, appeals, complaints, event rules).
+- `38_FEATURE_CATALOG.md` — Backlog of high-level features with goals, actors, rules, and priorities.
+- `39_RELEASE_PLANNING.md` — Phase 1, 2, and 3 release plans, milestones, dependencies, and timelines.
+- `40_TRACEABILITY_MATRIX.md` — Traceability mapping linking Project Vision objectives to rules, capabilities, processes, stories, and features.
+
+### Modified
+- `MASTER_TABLE_OF_CONTENTS.md` — Updated with Section A–F additions, structural diagrams, and read orders.
+- `DOCUMENT_INDEX.md` — Updated keywords, stakeholder tables, and downstream use cases.
+- `README.md` — Updated organizational diagrams and document counts.
+- `BUSINESS_GLOSSARY.md` — Updated with terms introduced in the new business documents.
+
+---
+
 ## [v1.0] — Initial Release
 
 ### Added
@@ -42,6 +76,4 @@
 
 - [ ] Finalize and propagate official project name across all documents
 - [ ] Incorporate founding chapter pilot learnings once available
-- [ ] Expand `BUSINESS_GLOSSARY.md` as new terms are introduced
-- [ ] Add investor-deck-ready executive summary document
 - [ ] Revisit Year 1 roadmap milestones against actual metrics (post-launch)

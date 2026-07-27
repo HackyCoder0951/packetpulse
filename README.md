@@ -22,12 +22,19 @@ Full detail: `01_PROJECT_VISION.md`
 ## How This Suite Is Organized
 
 ```mermaid
-graph LR
-    A[Foundation: 01-03] --> B[Operations and People: 04-07]
-    A --> C[Learning and Trust: 08-11]
-    B --> D[Community Life: 12-13]
-    C --> D
-    D --> E[Strategy: 14-18]
+graph TD
+    A[README] --> B[Foundation: 01-03]
+    B --> C[Operations and People: 04-07]
+    B --> D[Learning and Trust: 08-11]
+    C --> E[Community Life: 12-13]
+    D --> E
+    E --> F[Strategy & Reference: 14-18]
+    F --> G[Business Analysis: 19-27]
+    G --> H[Business Operations: 28-32]
+    H --> I[Business Strategy: 33-35]
+    I --> J[Financial: 36]
+    J --> K[Governance: 37]
+    K --> L[Product Discovery: 38-40]
 ```
 
 See `MASTER_TABLE_OF_CONTENTS.md` for the full structural map and `DOCUMENT_INDEX.md` for a keyword/stakeholder lookup index.
@@ -61,13 +68,13 @@ See `MASTER_TABLE_OF_CONTENTS.md` for the full structural map and `DOCUMENT_INDE
 Technology stack · Database design · APIs · Programming/code · Cloud provider specifics · Containers/orchestration · System design · Technical architecture diagrams · UI design · Backend design · Microservices design
 
 **This suite intentionally DOES contain:**
-Vision & strategy · Business model & economics · Member and stakeholder journeys · Operational workflows · Governance and policy · Learning, practice, and verification philosophy · Reputation and trust mechanics (business logic only) · Roadmap, risk, and success metrics
+Vision & strategy · Business model & economics · Member and stakeholder journeys · Operational workflows · Governance and policy · Learning, practice, and verification philosophy · Reputation and trust mechanics (business logic only) · Roadmap, risk, and success metrics · Business analysis & capabilities · Playbooks & manuals · Market strategy & pricing · Product discovery (features, releases, traceability)
 
 ---
 
 ## Suite Contents
 
-18 core numbered documents (`01`–`18`) plus 6 reference documents:
+40 core numbered documents (`01`–`40`) plus 6 reference documents:
 
 - `MASTER_TABLE_OF_CONTENTS.md`
 - `DOCUMENT_INDEX.md`
@@ -80,7 +87,7 @@ Vision & strategy · Business model & economics · Member and stakeholder journe
 
 ## Status
 
-This is **Draft v1.0** of the complete business documentation suite. See `REVIEW_CHECKLIST.md` for outstanding review items before this suite is used as a foundation for technical or investor-facing work.
+This is **Draft v1.1** of the complete business documentation suite, representing the completion of the extended business analysis, operational handbook, business strategy, and product discovery phases. See `REVIEW_CHECKLIST.md` for outstanding review items.
 
 ---
 

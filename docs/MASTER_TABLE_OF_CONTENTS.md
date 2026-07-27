@@ -8,39 +8,80 @@
 
 ```mermaid
 graph TD
-    subgraph Foundation
+    subgraph Foundation [1. Foundation]
         D01[01 Project Vision]
         D02[02 Community Business Model]
         D03[03 Member Lifecycle]
     end
-    subgraph Operations and People
+    subgraph Operations [2. Operations and People]
         D04[04 Community Operations]
         D05[05 HR Operations]
         D06[06 Company Partnership Model]
         D07[07 Sponsorship Model]
     end
-    subgraph Learning and Trust
+    subgraph Trust [3. Learning and Trust]
         D08[08 Learning Ecosystem]
         D09[09 Lab and Practice Model]
         D10[10 Verification Model]
         D11[11 Community Reputation System]
     end
-    subgraph Community Life
+    subgraph Life [4. Community Life & Governance]
         D12[12 Community Events Model]
         D13[13 Community Governance]
     end
-    subgraph Strategy
+    subgraph Strategy [5. Strategy & Appendix]
         D14[14 Business Workflows]
         D15[15 Roadmap]
         D16[16 Risk Analysis]
         D17[17 Success Metrics]
         D18[18 Appendix]
     end
-    Foundation --> "Operations and People"
-    Foundation --> "Learning and Trust"
-    "Operations and People" --> "Community Life"
-    "Learning and Trust" --> "Community Life"
-    "Community Life" --> Strategy
+    subgraph Analysis [6. Section A: Business Analysis]
+        D19[19 Personas]
+        D20[20 Stakeholder Analysis]
+        D21[21 Business Rules]
+        D22[22 User Stories]
+        D23[23 Business Capability Map]
+        D24[24 Information Architecture]
+        D25[25 Service Blueprint]
+        D26[26 Process Catalog]
+        D27[27 RACI Matrix]
+    end
+    subgraph BizOps [7. Section B: Business Operations]
+        D28[28 Chapter Playbook]
+        D29[29 Mentor Handbook]
+        D30[30 Moderator Handbook]
+        D31[31 Volunteer Handbook]
+        D32[32 Community Constitution]
+    end
+    subgraph BizStrategy [8. Section C: Business Strategy]
+        D33[33 Go To Market Strategy]
+        D34[34 Competitor Analysis]
+        D35[35 Pricing Strategy]
+    end
+    subgraph Financial [9. Section D: Financial]
+        D36[36 Financial Model]
+    end
+    subgraph PolicyGov [10. Section E: Governance]
+        D37[37 Policy Manual]
+    end
+    subgraph Discovery [11. Section F: Product Discovery]
+        D38[38 Feature Catalog]
+        D39[39 Release Planning]
+        D40[40 Traceability Matrix]
+    end
+    
+    Foundation --> Operations
+    Foundation --> Trust
+    Operations --> Life
+    Trust --> Life
+    Life --> Strategy
+    Strategy --> Analysis
+    Analysis --> BizOps
+    BizOps --> BizStrategy
+    BizStrategy --> Financial
+    Financial --> PolicyGov
+    PolicyGov --> Discovery
 ```
 
 ---
@@ -88,7 +129,59 @@ graph TD
 | 17 | `17_SUCCESS_METRICS.md` | KPIs across community, growth, placement, engagement, learning, sponsor, revenue |
 | 18 | `18_APPENDIX.md` | Glossary, terms, definitions, assumptions, abbreviations |
 
-## 6. Suite-Level Reference Documents
+## 6. Section A: Business Analysis Documents
+
+| # | Document | Summary |
+|---|----------|---------|
+| 19 | `19_PERSONAS.md` | Executive summary, user archetypes, primary & secondary detailed profiles, empathy maps, and relationships |
+| 20 | `20_STAKEHOLDER_ANALYSIS.md` | Stakeholder Register, Power/Interest Matrix, Communication Matrix, Influence and Authority mappings |
+| 21 | `21_BUSINESS_RULES.md` | Rules Catalogue for verification, mentorship, HR, communities, governance, chapters, learning, badges, and sponsors |
+| 22 | `22_USER_STORIES.md` | Functional user stories for members, mentors, sponsors, companies, and admins, with priorities and acceptance criteria |
+| 23 | `23_BUSINESS_CAPABILITY_MAP.md` | Level 1, 2, and 3 capabilities, maturity map, capability dependency and heat mappings |
+| 24 | `24_INFORMATION_ARCHITECTURE.md` | Portals navigation, content taxonomies, search parameters, and core business object models |
+| 25 | `25_SERVICE_BLUEPRINT.md` | Mapped pathways for verification and hiring placement, backstage/frontstage actions, SLAs, and failure mitigations |
+| 26 | `26_PROCESS_CATALOG.md` | Registry of all business processes, detailing trigger, inputs, outputs, owners, frequencies, and KPIs |
+| 27 | `27_RACI_MATRIX.md` | Responsibility assignment matrix mapping all cataloged processes against community and enterprise roles |
+
+## 7. Section B: Business Operations Documents
+
+| # | Document | Summary |
+|---|----------|---------|
+| 28 | `28_CHAPTER_PLAYBOOK.md` | Chapter launch guidelines, tiers, operational structures, audits, merging, and closure workflows |
+| 29 | `29_MENTOR_HANDBOOK.md` | Mentor lifecycle, grading criteria, standards of conduct, and plagiarism/cheating escalation paths |
+| 30 | `30_MODERATOR_HANDBOOK.md` | Community moderation guidelines, incident response flows, warnings, timeouts, suspensions, and bans |
+| 31 | `31_VOLUNTEER_HANDBOOK.md` | Volunteer lifecycle, role catalog, point distributions, references, and task rotation schedules |
+| 32 | `32_COMMUNITY_CONSTITUTION.md` | Supreme charter detailing core values, Bill of Member Rights, responsibilities, voting systems, and amendments |
+
+## 8. Section C: Business Strategy Documents
+
+| # | Document | Summary |
+|---|----------|---------|
+| 33 | `33_GO_TO_MARKET_STRATEGY.md` | Market entry, chapter expansion models, B2B partner/employer acquisition, and developer relations positioning |
+| 34 | `34_COMPETITOR_ANALYSIS.md` | Comparative analysis, SWOT, and feature matrices against 15 key industry alternatives |
+| 35 | `35_PRICING_STRATEGY.md` | Partner subscriptions, sponsor packages, training royalties, meetup ticketing rules, and scholarship plans |
+
+## 9. Section D: Financial Documents
+
+| # | Document | Summary |
+|---|----------|---------|
+| 36 | `36_FINANCIAL_MODEL.md` | Budgets, operational expenses, capital expenditures, unit economics (CAC, LTV, MAC), and 5-year illustrative projections |
+
+## 10. Section E: Governance Documents
+
+| # | Document | Summary |
+|---|----------|---------|
+| 37 | `37_POLICY_MANUAL.md` | Policies governing conduct, verification ethics, GDPR/CCPA privacy, appeals, and event organization rules |
+
+## 11. Section F: Product Discovery Documents
+
+| # | Document | Summary |
+|---|----------|---------|
+| 38 | `38_FEATURE_CATALOG.md` | Functional backlog categorized into product domains, detailing goals, actors, rules, and priorities |
+| 39 | `39_RELEASE_PLANNING.md` | Phase 1, 2, and 3 roadmap milestones, release dependencies, and deliverables schedules |
+| 40 | `40_TRACEABILITY_MATRIX.md` | Verification map linking Vision Objectives to business rules, capabilities, processes, stories, and backlog features |
+
+## 12. Suite-Level Reference Documents
 
 | Document | Purpose |
 |----------|---------|
@@ -114,8 +207,14 @@ flowchart LR
     G --> H[14 Workflows]
     H --> I[15-17 Roadmap-Risk-Metrics]
     I --> J[18 Appendix]
+    J --> K[19-27 Business Analysis]
+    K --> L[28-32 Operations Manuals]
+    L --> M[33-35 Strategy & Pricing]
+    M --> N[36 Financial Model]
+    N --> O[37 Policies]
+    O --> P[38-40 Product Discovery]
 ```
 
 ---
 
-**Total Documents in Suite:** 18 core documents + 6 reference documents = **24 documents**
+**Total Documents in Suite:** 40 core documents + 6 reference documents = **46 documents**
