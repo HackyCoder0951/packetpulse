@@ -86,6 +86,16 @@ graph TD
 
 ---
 
+## 0. Audit & Requirements Documents
+
+| # | Document | Summary |
+|---|----------|---------|
+| 00 | `00_DISCOVERY_AUDIT.md` | Suite audit reconciling the documented model against the shipped Phase 1 build; Decision Log |
+| 41 | `41_BUSINESS_REQUIREMENTS_DOCUMENT.md` | Consolidated BRD synthesizing Vision, Business Rules, and Workflows, tagged by Phase 1/Phase 2 maturity |
+| 42 | `42_PRODUCT_REQUIREMENTS_DOCUMENT.md` | Consolidated PRD: feature list by stage/actor/priority, MVP preview, user-story coverage gaps |
+| 43 | `43_NON_FUNCTIONAL_REQUIREMENTS.md` | Business-level performance, availability, accessibility, data retention, security posture |
+| 44 | `44_MVP_DEFINITION.md` | Ratified MVP scope decision — includes/excludes/conditions per shipped Phase 1 feature |
+
 ## 1. Foundation Documents
 
 | # | Document | Summary |
@@ -218,4 +228,6 @@ flowchart LR
 
 ---
 
-**Total Documents in Suite:** 40 core documents + 6 reference documents + 1 interactive dashboard = **47 documents**
+**Total Documents in Suite:** 40 core documents + 5 audit/BRD/PRD/NFR/MVP documents (`00`, `41`, `42`, `43`, `44`) + 6 reference documents + 1 interactive dashboard = **52 documents**
+
+**Discovery Roadmap Status (as of 2026-08-03):** Phases 0–12 all have at least one deliverable. See `00_DISCOVERY_AUDIT.md` §6 (Decision Log) for the full session history and `41_BUSINESS_REQUIREMENTS_DOCUMENT.md` §6 / `44_MVP_DEFINITION.md` §7 for the two items still requiring human ratification (BR-VR-003, BR-HR-003/individual-recruiter model) before they should be treated as final.

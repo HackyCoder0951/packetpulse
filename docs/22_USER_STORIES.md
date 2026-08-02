@@ -3,7 +3,7 @@
 > **Document Type:** User Story Catalogue (Business View)
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Product Owner & Business Analysis
-> **Status:** Draft v1.0
+> **Status:** Draft v1.1 — Epic layer + Phase 1 shipped-feature stories added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §6, `42_PRODUCT_REQUIREMENTS_DOCUMENT.md` §6)
 
 ---
 
@@ -44,6 +44,23 @@ flowchart TD
 
 ---
 
+## 4A. Epic Layer
+
+> **Callout — Closing a Roadmap Gap**
+> `00_DISCOVERY_AUDIT.md` §2 (Phase 10 row) noted "no explicit Epic layer above Feature ID." This section adds it — each Epic groups the Feature IDs (`38_FEATURE_CATALOG.md`) and User Stories (§5 below) that jointly deliver one strategic outcome.
+
+| Epic ID | Epic | Vision Objective | Feature IDs | User Story IDs |
+|---|---|---|---|---|
+| E-01 | Build a Trusted Professional Identity | O2 | F-COM-001 | US-FRE-001 |
+| E-02 | Establish a Community-Verified Skill Economy (Phase 1: Endorsement) | O1 | F-VER-003 | US-MBR-002 |
+| E-03 | Establish a Community-Verified Skill Economy (Phase 2: Lab/Rubric) | O1 | F-VER-001, F-VER-002 | US-MBR-001 |
+| E-04 | Enable Community-Led Hiring | O4 | F-HR-001 | US-CHR-001, US-COM-001 |
+| E-05 | Build a Mentorship-Driven Growth Pipeline | O3 | F-LRN-001 (Phase 2) | US-ENG-001, US-MNT-001 |
+| E-06 | Drive Engagement via Community Feed | — (not yet mapped to a Vision Objective; see §6 Decision Note below) | F-COM-004 | US-MBR-003 |
+| E-07 | Independent Recruiter Monetization | O5 (partial — not yet ratified) | F-HR-002 | **Intentionally unspecified — see §6 Decision Note** |
+
+---
+
 ## 5. User Story Catalogue
 
 ### 5.1 Member Stories (General)
@@ -57,6 +74,28 @@ flowchart TD
   - The member is notified of approval/rejection with constructive feedback.
 * **Priority**: High (Must Have).
 * **Dependencies**: Peer pre-screening workflow, Mentor assignment capability.
+* **Stage**: Phase 2 (target-state) — see US-MBR-002 for the Phase 1 shipped equivalent.
+
+#### Story ID: US-MBR-002 — Peer Endorsement Request (Phase 1)
+* **Story**: **As a** registered community member, **I want to** request peer endorsements for a skill I claim, **so that** my skill can advance to "Community Verified" without waiting for lab infrastructure to exist.
+* **Acceptance Criteria**:
+  - Member can add a skill claim and select a peer to request endorsement from, with an optional message.
+  - Once the endorsement threshold (BR-VR-003, `21_BUSINESS_RULES.md`) is met, the claim routes to the Admin Review Queue.
+  - Admin/Reviewer approves or rejects with a required reason; approval advances the label to "Community Verified," rejection returns the claim with the reason shown to the member.
+  - Member can resubmit or request more evidence after a rejection.
+* **Priority**: High (Must Have) — this is the actual live verification path.
+* **Dependencies**: Endorsement Inbox (`frontend/member/inbox.html`), Admin Review Queue (`frontend/admin/review-queue.html`).
+* **Stage**: Phase 1 (shipped). Governing rule BR-VR-003 is not yet ratified by Governance Committee — this story should not be marked "Approved" in Review Notes (§11) until that ratification happens.
+
+#### Story ID: US-MBR-003 — Community Feed Engagement (Phase 1, Beta)
+* **Story**: **As a** community member, **I want to** post updates and see a feed of activity from people I follow, **so that** I stay engaged with the community between formal learning/verification milestones.
+* **Acceptance Criteria**:
+  - Member can create a post, like, and comment.
+  - Member can follow/unfollow other members and see a connections list.
+  - Feed content must be subject to the same moderation escalation path as other community content (BR-CR-001) once moderation rules for feed content exist — **this criterion is currently unmet**, see `44_MVP_DEFINITION.md` §3.
+* **Priority**: **Unclassified** — matches `38_FEATURE_CATALOG.md` F-COM-004 classification. Per `44_MVP_DEFINITION.md`, this feature ships to beta/limited audience only until moderation rules are ratified.
+* **Dependencies**: `frontend/member/home.html`, `connections.html`.
+* **Stage**: Phase 1 (shipped, conditional).
 
 ---
 
@@ -228,6 +267,9 @@ flowchart TD
 ---
 
 ## 6. Decision Notes
+
+> **Decision Note — Why F-HR-002 Has No User Story**
+> `44_MVP_DEFINITION.md` §3 excludes the Individual Recruiter & Commission Billing feature (`F-HR-002`) from MVP scope pending persona, pricing, and compliance work (`00_DISCOVERY_AUDIT.md` §4.3). Writing a user story for it now — "As an individual recruiter, I want to..." — would imply the actor, business rule, and acceptance criteria are settled when they are not. This document intentionally leaves E-07 (§4A) without a story rather than fabricate acceptance criteria for an unratified feature. A story should be written as part of the Phase 11 closure work, not before it.
 
 > **Decision Note — Anonymity in Sourcing**
 > To combat structural bias, search filters for Community HR (US-CHR-001) must anonymize candidates (removing names, pictures, gender, and school names) until a formal interview invitation is extended by the hiring partner.

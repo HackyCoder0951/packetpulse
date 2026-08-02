@@ -44,6 +44,7 @@ Includes all human and organizational entities involved in the community, operat
 | **Training Partners** | Content Providers | High engagement with curricula, validation of content quality, lead generation. | Medium | Medium | Strategic alignment meetings, path licensing support. |
 | **Moderators / Volunteers** | Operations Backbone | Clear operational guidelines, recognition of effort, rotation/burnout protection. | Medium | High | Weekly syncs, appreciation programs, escalation paths. |
 | **Governance Committee** | Policy Makers | Consistency of platform operations with core principles, ethical compliance. | High | High | Monthly formal reviews, constitutional voting. |
+| **Individual Recruiters** *(added 2026-08-03, see `19_PERSONAS.md` §6.9)* | Independent Talent Agents | Clear commission terms, dispute process, trust in candidate pool quality. | Low | High | **Undefined — no engagement strategy exists yet; flagged as an open item, not resolved by this entry alone.** |
 
 ---
 

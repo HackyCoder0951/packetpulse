@@ -3,12 +3,20 @@
 > **Document Type:** Metrics & KPI Document
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Cross-Reference:** `02_COMMUNITY_BUSINESS_MODEL.md`, `15_ROADMAP.md`, `16_RISK_ANALYSIS.md`
+> **Status:** Draft v1.1 — Phase 1 verification KPI baseline gap flagged 2026-08-03
 
 ---
 
 ## 1. Purpose
 
 This document defines how success is measured across the ecosystem — community health, growth, placement outcomes, engagement, learning, sponsorship, and revenue.
+
+---
+
+## 1A. Baseline Gap — Phase 1 Verification KPIs
+
+> **Callout — No Data Collected Pre-Launch**
+> `26_PROCESS_CATALOG.md` `P-MBR-002A` (the Phase 1 endorsement/review process that is actually running) targets a <5 business day review cycle and >95% accuracy rate, both **carried over from the Phase 2 targets by analogy, not measured**. Per `41_BUSINESS_REQUIREMENTS_DOCUMENT.md` §12, this gap should be closed with a real baseline measurement as soon as P-MBR-002A has enough completed reviews to sample, and BR-VR-003 should not be considered validated until it has one.
 
 ---
 

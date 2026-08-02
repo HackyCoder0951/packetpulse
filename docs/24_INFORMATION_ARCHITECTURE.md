@@ -73,9 +73,10 @@ graph TD
   - Shared Public Portfolios (Anonymized or explicit share links)
 * **Member Portal (Private)**:
   - Personal Dashboard (Progress, stats)
-  - Learning Center (My paths, active courseware)
-  - Lab Sandbox (Active tasks, queue submissions)
-  - Reputation Ledger (My badges, points log)
+  - Learning Center (My paths, active courseware) — *Phase 2 scope; not in Phase 1 build, see `10_VERIFICATION_MODEL.md` §1A*
+  - Lab Sandbox (Active tasks, queue submissions) — *Phase 2 scope*
+  - Reputation Ledger (My badges, points log) — *Phase 2 scope*
+  - Skills & Endorsements, Endorsement Inbox — *Phase 1 shipped equivalent of the trust-building surface above; see `10_VERIFICATION_MODEL.md` §1A for the reconciliation between the two*
 * **Mentor Portal**:
   - Verification Queue (Labs assigned to me)
   - Mentee Dashboard (My assigned students)

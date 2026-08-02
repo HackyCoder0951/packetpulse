@@ -3,7 +3,7 @@
 > **Document Type:** Business Process Catalog
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Operations & Process Excellence
-> **Status:** Draft v1.0
+> **Status:** Draft v1.1 — Phase 1 verification process (P-MBR-002A) added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §4.1, `10_VERIFICATION_MODEL.md` §1A)
 
 ---
 
@@ -71,7 +71,7 @@ graph TD
 * **KPIs**: Registration-to-profile completeness rate (>90%), Time-to-onboard (<24 hours).
 * **Linked Documents**: `03_MEMBER_LIFECYCLE.md`, `18_APPENDIX.md`.
 
-#### Process ID: P-MBR-002 — Skill Verification
+#### Process ID: P-MBR-002 — Skill Verification (Phase 2 — Lab/Rubric Model)
 * **Owner**: Mentor Council Lead
 * **Trigger**: A member submits a completed practice lab.
 * **Inputs**: Lab files, system logs, evaluation grading rubrics.
@@ -79,7 +79,19 @@ graph TD
 * **Frequency**: As submitted.
 * **Dependencies**: Peer pre-screening approval.
 * **KPIs**: Review cycle time (<7 days), Verification accuracy rate (>95%).
-* **Linked Documents**: `10_VERIFICATION_MODEL.md`, `11_COMMUNITY_REPUTATION_SYSTEM.md`.
+* **Linked Documents**: `10_VERIFICATION_MODEL.md` §1A–§11, `11_COMMUNITY_REPUTATION_SYSTEM.md`.
+* **Status Note**: Not yet built. See P-MBR-002A for the process actually running today.
+
+#### Process ID: P-MBR-002A — Skill Verification (Phase 1 — Endorsement Model, Shipped)
+* **Owner**: Chapter Admin / Reviewer
+* **Trigger**: A member's skill claim crosses the peer-endorsement threshold.
+* **Inputs**: Skill claim, list of endorsers and their messages, member's linked work/project history.
+* **Outputs**: Skill label advanced to "Community Verified" (approve) or returned with a required rejection reason (reject).
+* **Frequency**: As endorsement threshold is crossed.
+* **Dependencies**: At least one peer endorsement recorded via the Endorsement Inbox.
+* **KPIs**: Review cycle time (target <5 business days, aligned to the Phase 2 Mentor Review SLA per `25_SERVICE_BLUEPRINT.md` §4A.2 — not yet formally adopted), Verification accuracy rate (target >95%, not yet measured — no data collected pre-launch).
+* **Linked Documents**: `10_VERIFICATION_MODEL.md` §1A, `25_SERVICE_BLUEPRINT.md` §4A, `docs/packetpulse_Page_Inventory.md` §3.2–3.3, `21_BUSINESS_RULES.md` BR-VR-003.
+* **Governing Rule**: BR-VR-003 (Peer Endorsement Threshold) — added 2026-08-03, not yet formally ratified by Governance Committee.
 
 #### Process ID: P-MBR-003 — Mentorship Pairing
 * **Owner**: Mentor Council Head

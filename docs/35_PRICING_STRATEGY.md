@@ -3,7 +3,7 @@
 > **Document Type:** Business Pricing & Revenue Strategy
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Finance & Business Strategy
-> **Status:** Draft v1.0
+> **Status:** Draft v1.1 — Individual Recruiter commission tier added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §4.3, `19_PERSONAS.md` §6.9)
 
 ---
 
@@ -71,6 +71,16 @@ graph TD
 * **Tier 2: Global Path Sponsor ($25,000 / Year per Domain Path)**:
   - Logo placement on specific learning path (e.g., Cloud Fundamentals).
   - Funding goes directly to member lab sandboxes and scholarship blocks.
+
+### 5.2A Individual Recruiter Plan (Proposed — Not Yet Ratified)
+
+> **Callout — Proposal, Not Policy**
+> This tier is a proposed closure of the gap in `00_DISCOVERY_AUDIT.md` §4.3, not an approved pricing decision. `44_MVP_DEFINITION.md` §3 holds `F-HR-002` out of production scope until this (or an alternative) model is formally ratified by Finance and Governance.
+
+* **Commission-Only Model**: No subscription fee. Individual Recruiters earn a **15% referral commission** on the standard placement fee paid by the hiring company (i.e., a share of the fee already defined in §5.1, not an additional charge to the company or candidate).
+* **Payout Terms (proposed)**: Commission released 30 days after the candidate's start date, aligned with the 90-day performance rebate window in `BR-HR-002` — if a rebate/replacement is triggered, the recruiter's commission is clawed back pro-rata.
+* **Eligibility (proposed)**: Individual Recruiters must pass a KYC/identity verification step before commission payout is enabled — no such step exists in the current `frontend/recruiting/` build and must be added before this tier goes live.
+* **Non-Influence Clause applies identically**: An individual recruiter, like any sponsor or company, may never influence verification, endorsement, or ranking outcomes (extends §8 below).
 
 ### 5.3 Training Partner Plans
 * **Rev-Share Model**: Training partners list premium courses. The platform retains 30% of sales, while 70% goes to the content creator.

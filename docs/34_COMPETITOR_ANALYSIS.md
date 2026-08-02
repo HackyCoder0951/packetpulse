@@ -3,7 +3,7 @@
 > **Document Type:** Strategic Competitive Intelligence
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Product Strategy & Competitor Intelligence
-> **Status:** Draft v1.0
+> **Status:** Draft v1.1 — PESTLE & Porter's Five Forces added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §2, Phase 2 row)
 
 ---
 
@@ -109,6 +109,36 @@ quadrantChart
 | **Community Governance** | No | No | No | No | No | **Yes** |
 | **Anonymized HR Search** | No | No | No | No | No | **Yes** |
 | **Reputation Decay check**| No | No | No | No | No | **Yes** |
+
+> **Note on this matrix vs. shipped Phase 1 scope:** "Real Operations Labs" is marked Yes/differentiating here based on the fully-documented model (`09_LAB_AND_PRACTICE_MODEL.md`, `10_VERIFICATION_MODEL.md`). The actual Phase 1 build (`packetpulse_Page_Inventory.md`) defers labs to a later release and ships lightweight peer endorsement instead — see `10_VERIFICATION_MODEL.md` §Phase 1/Phase 2 Trust Framework (added under this audit's Phase 3 work) for the reconciled position. Until labs ship, this specific differentiator is aspirational, not currently live.
+
+---
+
+## 6A. PESTLE Analysis
+
+> **Callout — Closing a Roadmap Gap**
+> This section was absent from the original suite; added per `00_DISCOVERY_AUDIT.md` §2 (Phase 2 row). PESTLE is scoped to macro factors affecting the *market this platform operates in* (technical talent/hiring/community), not the business's own internal operations (those are covered in `16_RISK_ANALYSIS.md`).
+
+| Factor | Observation | Implication for This Platform |
+|---|---|---|
+| **Political** | Data localization and labor-classification regulation is tightening in several target markets (EU, India, US state-level). Cross-border hiring facilitation can trigger employment-law exposure. | Placement/recommendation flows must stay advisory (introduce, don't employ) to avoid co-employer liability; legal review needed before the individual-recruiter commission model (flagged in `00_DISCOVERY_AUDIT.md` §4.3) goes live in any jurisdiction. |
+| **Economic** | Tech hiring is cyclical; infra/DevOps/SRE hiring slows during downturns even as the skills gap persists structurally. Enterprise training/sourcing budgets are typically the first cut in a downturn. | Revenue model (`35_PRICING_STRATEGY.md`) is concentrated in enterprise subscriptions + placement fees — both cyclical. Free-tier community value must be strong enough to retain members through hiring-market downturns, or member growth (the trust supply side) stalls exactly when it's most valuable to recruiters. |
+| **Social** | Growing distrust of self-reported credentials; simultaneously, growing skepticism of AI-generated content (resumes, cover letters, even code) makes *human peer* verification more valuable, not less. | Reinforces the "Trust Before Resume" pillar (`01_PROJECT_VISION.md` §7) as timely rather than aspirational — but also means the platform must be able to demonstrate its endorsements/verifications aren't themselves gameable or AI-assisted without disclosure. |
+| **Technological** | AI coding assistants are compressing the gap between "can produce working code" and "understands the system," particularly relevant to labs-based verification (if/when shipped). | Verification design (`10_VERIFICATION_MODEL.md`) must account for AI-assisted submissions from day one — rubrics need an explicit stance on AI tool use, not a retrofit after the first dispute. |
+| **Legal** | GDPR/CCPA-class privacy obligations apply to member profile, endorsement, and reputation data; recruiter access to candidate data is a specific compliance surface. | Already partially covered in `37_POLICY_MANUAL.md`; needs explicit extension once the individual-recruiter actor (§4.3 of the audit) is formally scoped, since that adds a new category of party accessing member PII. |
+| **Environmental** | Low direct relevance (digital platform, no physical supply chain) — noted for completeness per the PESTLE framework, not because it materially changes strategy. | No action required at this stage. |
+
+---
+
+## 6B. Porter's Five Forces
+
+| Force | Assessment | Strategic Implication |
+|---|---|---|
+| **Threat of New Entrants** | Medium. The individual components (community forum, verification, job matching) are each easy to clone; the hard-to-clone part is an engaged, trust-bearing community — which takes years, not code. | The moat is community + governance (already named in §8 "Our Defensible Moat"), not feature surface — reinforces the "Decision Note — No Code Hosting Competition" stance above: don't compete on features that are cheap to copy. |
+| **Bargaining Power of Suppliers** | Here, "suppliers" are the mentors/reviewers whose time produces the trust signal. Currently unpaid/reputation-compensated (`29_MENTOR_HANDBOOK.md`). | This is a real dependency risk: if mentor supply doesn't scale with member growth, verification throughput (whichever mechanism — see Phase 3 reconciliation) becomes the bottleneck on the entire value proposition. Should be tracked as a leading KPI in `17_SUCCESS_METRICS.md`, not just a lagging one. |
+| **Bargaining Power of Buyers** | High on the enterprise side — companies and sponsors have many alternative channels (LinkedIn Recruiter, staffing agencies, direct sourcing) and low switching cost early on, before the platform has scale. | Early enterprise pricing (`35_PRICING_STRATEGY.md` Tier 1 at $5,000/year) should be treated as a customer-acquisition/proof-of-value price, not a defensible long-term price point, until switching cost (talent-pool lock-in) is established. |
+| **Threat of Substitutes** | High. LinkedIn, referrals, and staffing agencies are all "good enough" substitutes for most roles today; this platform only wins where those substitutes are demonstrably worse (niche infra/SRE roles, per `01_PROJECT_VISION.md` §6). | GTM (`33_GO_TO_MARKET_STRATEGY.md`) should stay narrow to the niches where substitutes genuinely fail, rather than positioning as a general LinkedIn alternative — a broader claim invites a broader, better-resourced set of substitutes. |
+| **Competitive Rivalry** | Currently low-to-medium — no direct competitor combines community + verification + placement the way this platform intends (per §4 Competitive Positioning Map), but adjacent players (ADPList, CNCF, GDGs) could each extend into this space faster than a new entrant could build community from zero. | Monitor ADPList and CNCF specifically (already flagged in §9 Best Practices) as the most plausible fast-followers, not the more distant LinkedIn/GitHub. |
 
 ---
 

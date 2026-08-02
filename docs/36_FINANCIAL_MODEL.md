@@ -3,7 +3,7 @@
 > **Document Type:** Business Financial Model & Projections
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Chief Financial Officer / Finance Strategy
-> **Status:** Draft v1.0
+> **Status:** Draft v1.1 — Individual Recruiter commission revenue flagged 2026-08-03 (see `35_PRICING_STRATEGY.md` §5.2A)
 
 ---
 
@@ -85,6 +85,9 @@ To ensure profitability at scale, we track unit economics on a per-member and pe
 * **Annual Revenue per Active Member**: $400 (allocated from B2B hiring revenues divided by total member base).
 * **Corporate Customer Acquisition Cost (CAC)**: $1,500 (B2B sales and onboarding support costs).
 * **Corporate Lifetime Value (LTV)**: $45,000 (assumes 3-year retention, $10k annual sub, and 2 placements per year at $15k total fee).
+
+> **Note — Individual Recruiter Commission Not Yet Modeled**
+> The 5-Year Forecast (§6) and unit economics above do not include revenue impact from `35_PRICING_STRATEGY.md` §5.2A's proposed 15% recruiter commission split, because that tier is unratified (`BR-HR-003`, `21_BUSINESS_RULES.md`). Per the "Predictable Cash Flow" principle (§3), a commission-split model that reduces net placement fee capture per deal should be modeled explicitly before ratification — do not assume it is additive to Placement Fees in §6 without first checking whether it is a *split of* or *addition to* that line.
 
 ---
 

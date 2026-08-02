@@ -8,6 +8,16 @@
 
 | Keyword / Topic | Primary Document | Related Documents |
 |----------------------|----------------------|------------------------|
+| Discovery Audit, Decision Log | `00_DISCOVERY_AUDIT.md` | `41_BUSINESS_REQUIREMENTS_DOCUMENT.md` |
+| BRD | `41_BUSINESS_REQUIREMENTS_DOCUMENT.md` | `01_PROJECT_VISION.md`, `21_BUSINESS_RULES.md`, `14_BUSINESS_WORKFLOWS.md` |
+| PRD | `42_PRODUCT_REQUIREMENTS_DOCUMENT.md` | `38_FEATURE_CATALOG.md`, `39_RELEASE_PLANNING.md`, `22_USER_STORIES.md` |
+| NFRs (Performance, Accessibility, Security, Data Retention) | `43_NON_FUNCTIONAL_REQUIREMENTS.md` | `25_SERVICE_BLUEPRINT.md`, `24_INFORMATION_ARCHITECTURE.md` |
+| MVP Definition | `44_MVP_DEFINITION.md` | `42_PRODUCT_REQUIREMENTS_DOCUMENT.md`, `38_FEATURE_CATALOG.md` |
+| Individual Recruiter (persona, pricing, rules) | `19_PERSONAS.md` (§6.9) | `35_PRICING_STRATEGY.md` §5.2A, `21_BUSINESS_RULES.md` BR-HR-003, `20_STAKEHOLDER_ANALYSIS.md` |
+| Epics | `22_USER_STORIES.md` (§4A) | `38_FEATURE_CATALOG.md` |
+| JTBD | `19_PERSONAS.md` (§6A) | `01_PROJECT_VISION.md` |
+| PESTLE, Porter's Five Forces | `34_COMPETITOR_ANALYSIS.md` (§6A–6B) | `16_RISK_ANALYSIS.md` |
+| Phase 1 vs Phase 2 Trust Model | `10_VERIFICATION_MODEL.md` (§1A) | `25_SERVICE_BLUEPRINT.md`, `26_PROCESS_CATALOG.md` |
 | Vision, Mission, Philosophy | `01_PROJECT_VISION.md` | `18_APPENDIX.md`, `32_COMMUNITY_CONSTITUTION.md` |
 | Business Model, Revenue | `02_COMMUNITY_BUSINESS_MODEL.md` | `07_SPONSORSHIP_MODEL.md`, `35_PRICING_STRATEGY.md`, `36_FINANCIAL_MODEL.md` |
 | Chapters | `02_COMMUNITY_BUSINESS_MODEL.md` | `13_COMMUNITY_GOVERNANCE.md`, `28_CHAPTER_PLAYBOOK.md` |

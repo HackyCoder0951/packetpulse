@@ -3,7 +3,7 @@
 > **Document Type:** Business Rules Catalogue
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Product Management & Governance Committee
-> **Status:** Draft v1.0
+> **Status:** Draft v1.1 — BR-VR-003 (Phase 1 endorsement rule) added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §4.1, `26_PROCESS_CATALOG.md` P-MBR-002A)
 
 ---
 
@@ -64,6 +64,13 @@ stateDiagram-v2
 * **Exceptions**: Domain paths with fewer than three active mentors (requires special Governance exemption).
 * **Impact**: Ensures absolute trust in Expert-level credentials for employers.
 
+#### Rule ID: BR-VR-003 — Peer Endorsement Threshold (Phase 1)
+* **Description**: A skill claim advances from "Self-declared" to "Peer-endorsed" once endorsed by at least 3 distinct peers, and becomes eligible for Admin/Reviewer approval to "Community Verified" thereafter. This rule governs `P-MBR-002A` (`26_PROCESS_CATALOG.md`), the process actually shipped in Phase 1, distinct from the lab-based BR-VR-001/002 which govern the Phase 2 target-state process (`P-MBR-002`).
+* **Business Rationale**: Provides a functioning, human-gated trust signal before the lab/rubric infrastructure exists, without compromising the "no self-declaration alone" principle in `10_VERIFICATION_MODEL.md` §2.
+* **Dependencies**: Endorsement Inbox capability, Admin Review Queue.
+* **Exceptions**: None defined yet — Governance Committee review recommended before this rule is treated as final (currently a discovery-stage rule, not yet ratified).
+* **Impact**: Unblocks a working trust signal for Phase 1 launch; must be formally superseded or merged with BR-VR-001/002 once Phase 2 lab infrastructure ships (see `10_VERIFICATION_MODEL.md` §1A, "grandfathering" requirement).
+
 ---
 
 ### 5.2 Mentor Rules (MR)
@@ -99,6 +106,14 @@ stateDiagram-v2
 * **Dependencies**: Placement records, hiring contracts.
 * **Exceptions**: Restructuring or redundancies initiated by the company.
 * **Impact**: Lowers hiring risk for employer partners.
+
+#### Rule ID: BR-HR-003 — Individual Recruiter Commission Eligibility (Proposed, Not Ratified)
+* **Description**: An Individual Recruiter (`19_PERSONAS.md` §6.9) may only receive commission on a placement if they (a) completed KYC/identity verification, and (b) the placed candidate held at least one community-verified skill at time of introduction (mirrors BR-HR-001).
+* **Business Rationale**: Prevents commission fraud and keeps the individual-recruiter channel aligned with the same "Trust Before Resume" standard as company hiring.
+* **Dependencies**: KYC verification capability (not yet built), Verification status data.
+* **Exceptions**: None proposed.
+* **Impact**: Without this rule, `F-HR-002` has no eligibility gate at all — this rule is the minimum bar before that feature can be considered for MVP inclusion per `44_MVP_DEFINITION.md` §3.
+* **Status**: **Proposed by Product Discovery Team, 2026-08-03 — pending Governance Committee and Legal ratification.** Not yet enforceable.
 
 ---
 

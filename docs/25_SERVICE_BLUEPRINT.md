@@ -3,7 +3,7 @@
 > **Document Type:** Operational Service Blueprint
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Product Operations & Service Design
-> **Status:** Draft v1.0
+> **Status:** Draft v1.1 — Phase 1 (shipped) blueprint added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §4.1, `10_VERIFICATION_MODEL.md` §1A)
 
 ---
 
@@ -58,6 +58,56 @@ sequenceDiagram
     Front->>Supp: Awards Badge & updates Trust Score
     Supp-->>Member: Notifies member of new Verified Skill
 ```
+
+---
+
+## 4A. Service Blueprint Diagram: Phase 1 Endorsement Pathway (Shipped)
+
+> **Callout — This is the pathway actually live today**
+> Section 4 above describes the Phase 2 target-state lab/mentor pipeline. The pathway below is what `frontend/member/skills.html`, `inbox.html`, and `frontend/admin/review-queue.html` actually implement per `docs/packetpulse_Page_Inventory.md`. Per `10_VERIFICATION_MODEL.md` §1A, both are the same trust framework at different maturity stages — this is not a competing design, it is today's operational reality.
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Member as Community Member
+    participant Front as Frontstage (Portal)
+    participant Peer as Peer (Endorser)
+    participant Admin as Backstage (Chapter Admin/Reviewer)
+
+    Member->>Front: Adds skill claim to profile
+    Member->>Front: Requests endorsement from a peer (select peer + message)
+    Front->>Peer: Delivers request to Endorsement Inbox
+    Peer->>Front: Endorses, Declines, or asks for more context
+
+    Note over Front: Skill label auto-advances Self-declared -> Peer-endorsed once threshold met
+    Front->>Admin: Routes to Verification Review Queue once endorsement threshold is crossed
+    Admin->>Admin: Reviews evidence + endorser list (`review-detail.html`)
+    Admin->>Front: Approves or Rejects (with required reason)
+
+    alt Approved
+        Front-->>Member: Skill label advances to "Community Verified"
+    else Rejected
+        Front-->>Member: Rejection reason shown; member may resubmit / request more evidence
+    end
+```
+
+### 4A.1 Phase 1 Service Blueprint Matrix
+
+| Service Phase | Customer Actions (Member) | Frontstage (Visible Systems) | Backstage (Invisible Staff/Actors) | Support Processes |
+|---|---|---|---|---|
+| **Onboarding** | Member signs up, optionally imports GitHub/LinkedIn history. | Sign-up screen, Profile Editor. | Roster update checks. | Welcome automation. |
+| **Trust Building** | Member adds skills, requests peer endorsements. | Skills & Endorsements screen, Endorsement Inbox. | Peers responding to requests. | Notification delivery. |
+| **Verification** | Member monitors status; may appeal a rejection. | Verification Status screen. | Chapter Admin/Reviewer working the Review Queue. | SLA tracking (see 4A.2). |
+| **Sourcing & Match** | Recruiter searches verified talent, shortlists candidates. | Verified Talent Search, Candidate Detail. | Recruiter's own due diligence (no Community HR soft-skill intake step exists yet in this pathway). | Shortlist tracking, commission tracking (`recruiting/billing.html`). |
+
+### 4A.2 Phase 1 Operational SLAs (Proposed — not yet formally approved)
+
+- **Endorsement Threshold Wait**: No defined maximum; unlike the Phase 2 blueprint's 48-hour peer-review auto-escalation, Phase 1 has **no escalation path** if a member's endorsement requests go unanswered. This is a genuine service gap — flagged for `21_BUSINESS_RULES.md` and `26_PROCESS_CATALOG.md` follow-up.
+- **Admin Manual Review**: Recommend adopting the same 5-business-day target as the Phase 2 Mentor Final Review SLA (§7), since the human decision step is structurally equivalent.
+- **Rejection Appeal**: Recommend the same 10-business-day Verification Council pathway (§7) rather than inventing a separate Phase 1 appeal process — appeals should not depend on which trust mechanism produced the rejection.
+
+> **Decision Note — No Community HR Soft-Skill Intake in Phase 1**
+> The Phase 2 blueprint's Hiring row includes a mandatory Community HR soft-skills intake before a candidate is recommended (§6, "Hiring" failure mode mitigation). The Phase 1 Recruiting portal (`packetpulse_Page_Inventory.md` Portal 4) has no equivalent step — recruiters search and shortlist directly. This is a risk carried forward from `00_DISCOVERY_AUDIT.md` §4.3 (individual-recruiter gap) and should be resolved in the same follow-up work, not treated as a separate issue.
 
 ---
 

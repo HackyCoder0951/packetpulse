@@ -3,7 +3,7 @@
 > **Document Type:** Strategic Vision Document
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Product Strategy
-> **Status:** Draft v1.0
+> **Status:** Draft v1.1 — Problem Validation Addendum added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §2, Phase 0 row)
 
 ---
 
@@ -93,6 +93,28 @@ mindmap
 | Learning and hiring are disconnected systems | Learners complete courses that don't translate to opportunity | Learning platforms and hiring platforms operate independently |
 | Mentorship is informal and inconsistent | Uneven growth outcomes for members | No formal mentor lifecycle or recognition system |
 | Community operations are ad hoc | Inconsistent member experience, moderator burnout | No standard operating model for community-run functions |
+
+### 5.3 Problem Validation Status
+
+> **Callout — Honesty About Evidence**
+> The problem statements above were originally written as analyst narrative (industry pattern-matching against known SaaS/community/hiring dynamics), not primary research. This section names that gap explicitly rather than let it pass as validated. Per `00_DISCOVERY_AUDIT.md` §2 (Phase 0 row), this was the one substantive weakness identified in this document — everything below is the correction.
+
+| Problem | Validation Status | Evidence Type Today | Confidence | Required to Reach "Validated" |
+|---|---|---|---|---|
+| Resumes are unverifiable | Assumed | Industry-pattern reasoning; widely cited in HR-tech literature | Medium (well-documented industry problem, but not this platform's specific users) | 8–12 structured interviews with target Companies/Community HR personas confirming this is an active, budgeted pain point, not a background annoyance |
+| Community contribution is invisible to employers | Assumed | Anecdotal / founder intuition | Low | Interviews with 5+ "Marcus/Elena"-type senior contributors to confirm they perceive this as a real loss, not a non-issue |
+| Learning and hiring are disconnected systems | Assumed | Analyst narrative | Low-Medium | Review of learner drop-off/completion data from comparable learning platforms; interviews with Students/Freshers on what happens after course completion |
+| Mentorship is informal and inconsistent | Assumed | Anecdotal | Low | Interviews with 5+ mentors on current mentoring channels (Slack/Discord/ad hoc) and where those break down |
+| Community operations are ad hoc | Assumed | Anecdotal / founder intuition | Low | Structured interviews with 3+ community admins/moderators from comparable communities on current operational pain |
+
+**Validation Method (Design Thinking / Customer Development):**
+1. **Discovery interviews** — minimum 5–8 per primary persona (Student, Fresher, Experienced Engineer, Mentor, Community HR, Company) using open-ended JTBD-style prompts ("Walk me through the last time you tried to prove a skill / hire for a niche infra role / find a mentor"), not solution-pitching.
+2. **Signal triangulation** — cross-check interview findings against secondary data already available (job board time-to-fill data for infra/DevOps/SRE roles, attrition/dropout data from comparable learning platforms, if accessible).
+3. **Validation gate** — a problem statement graduates from "Assumed" to "Validated" only when at least 3 independent interview sources describe the same pain **unprompted**, in their own words, without the interviewer naming the platform's proposed solution first.
+4. **Re-run cadence** — re-validate annually or upon any major pivot (see `19_PERSONAS.md` §10 "Validate Annually" best practice, which this section operationalizes for problem statements specifically).
+
+> **Decision Note — Proceeding Without Full Validation**
+> The Product Discovery Team is proceeding with Phase 1+ documentation despite these problem statements being formally "Assumed" rather than "Validated." This is a conscious lean-startup tradeoff: the cost of blocking all downstream discovery work on primary research is higher than the cost of carrying a clearly labeled assumption forward. This decision is logged in `00_DISCOVERY_AUDIT.md` §6 and must be revisited before capital allocation or full-scale build decisions — assumptions are acceptable for a discovery document; they are not acceptable as the basis for a funding ask or GA launch without at least the "Medium" confidence bar reached above.
 
 ---
 
@@ -317,7 +339,8 @@ graph TD
 | Product Strategy | Vision-Mission alignment | Pending Review |
 | Community Leadership | Community Principles validation | Pending Review |
 | Business Sponsor | Business Outcomes feasibility | Pending Review |
+| Product Discovery Team | Problem Validation Status (§5.3) added | Draft — Pending Review |
 
 ---
 
-**Cross-References:** `02_COMMUNITY_BUSINESS_MODEL.md` · `03_MEMBER_LIFECYCLE.md` · `10_VERIFICATION_MODEL.md` · `17_SUCCESS_METRICS.md`
+**Cross-References:** `00_DISCOVERY_AUDIT.md` · `02_COMMUNITY_BUSINESS_MODEL.md` · `03_MEMBER_LIFECYCLE.md` · `10_VERIFICATION_MODEL.md` · `17_SUCCESS_METRICS.md`

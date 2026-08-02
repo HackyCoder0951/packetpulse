@@ -3,6 +3,7 @@
 > **Document Type:** Risk Analysis Document
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Cross-Reference:** `02_COMMUNITY_BUSINESS_MODEL.md`, `13_COMMUNITY_GOVERNANCE.md`
+> **Status:** Draft v1.1 — Compliance/governance risks from the 2026-08-03 discovery audit added (see `00_DISCOVERY_AUDIT.md`)
 
 ---
 
@@ -44,6 +45,9 @@ mindmap
 | Revenue Concentration | Over-reliance on a small number of hiring partners or sponsors | Medium | High |
 | Slow Monetization | Revenue lags community growth, straining sustainability | Medium | High |
 | Misaligned Incentives | Commercial pressure erodes "Community First" philosophy | Low-Medium | High |
+| **Unregulated Individual Recruiter Commissions** *(added 2026-08-03)* | `F-HR-002` (`frontend/recruiting/billing.html`) processes commission-style billing with no ratified pricing tier, KYC step, or legal/compliance review (`BR-HR-003`, unratified). Real financial and legal exposure if live in production. | **Unknown — must be confirmed urgently** | High |
+| **Unratified Rules Governing Live Processes** *(added 2026-08-03)* | `BR-VR-003` (Phase 1 verification) and `BR-HR-003` (recruiter commission) both govern processes that may already be running, but neither has Governance Committee sign-off. | Medium | Medium-High |
+| **Unscoped Social Feed Moderation** *(added 2026-08-03)* | `F-COM-004` ships without content/moderation business rules; `30_MODERATOR_HANDBOOK.md` and `37_POLICY_MANUAL.md` predate this feature. | Medium | Medium |
 
 ---
 

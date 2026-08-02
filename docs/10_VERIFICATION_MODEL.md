@@ -3,6 +3,34 @@
 > **Document Type:** Trust & Verification Model Document
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Cross-Reference:** `09_LAB_AND_PRACTICE_MODEL.md`, `11_COMMUNITY_REPUTATION_SYSTEM.md`, `05_HR_OPERATIONS.md`
+> **Status:** Draft v1.1 — Phase 1/Phase 2 Trust Framework reconciliation added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §4.1, §6)
+
+---
+
+## 1A. Phase 1 / Phase 2 Trust Framework (Reconciliation)
+
+> **Callout — Resolving a Documented Contradiction**
+> `00_DISCOVERY_AUDIT.md` §4.1 found that this document's fully-built-out lab/rubric/mentor-review model does not match what was actually designed and built for Phase 1 (`docs/packetpulse_Page_Inventory.md`, implemented in `frontend/member/skills.html`, `verification.html`, `frontend/admin/review-queue.html`). Rather than pick a winner, this section formally establishes **both as the same model at two different maturity stages**, so neither document is "wrong" — they describe sequential states of one evolving trust framework.
+
+**Decision:** This document (§2 onward) describes the **Phase 2 target-state** trust framework — the full peer-review → mentor-review → lab-evidence pipeline, Trust Score, badges, and Professional Levels. **Phase 1**, as actually shipped, is a deliberately reduced subset:
+
+| Dimension | Phase 1 (Shipped) | Phase 2 (This Document, §2–§9) |
+|---|---|---|
+| Evidence basis | Self-reported skill + peer endorsement (no structured lab submission) | Practical lab/exercise evidence (§5, §6) |
+| Trust labels | Three flat states: Self-declared → Peer-endorsed → Community Verified | Full Verification States lifecycle (§3.2): Claimed → Submitted → InReview → Verified → UnderPeriodicReview → Revoked |
+| Reviewer path | Endorsement count crosses a threshold, then one manual Admin/Reviewer approve-or-reject step (`frontend/admin/review-queue.html`) | Two-stage Peer Review → Mentor Review pipeline (§4), with Verification Council escalation (§11) |
+| Trust Score | Not present — no composite score, no decay mechanic | Composite Trust Score across verified skills, contributions, peer feedback (§7) |
+| Badges / Levels | Not present | Skill/Contribution/Milestone/Leadership badges (§8), five-tier Professional Levels (§9) |
+| Reputation System link | Not present | Feeds `11_COMMUNITY_REPUTATION_SYSTEM.md` (§10) |
+
+**Why this sequencing is sound (not a compromise):** the Phase 1 endorsement model still upholds the non-negotiable philosophy in §2 below — no skill is "Community Verified" purely by self-declaration, and a human reviewer gates the top trust label. It just uses peer endorsement volume + one manual review as the evidence type, instead of a structured lab rubric. This satisfies the JTBD statements in `19_PERSONAS.md` §6A ("a trustworthy, low-effort way to evaluate people") without requiring the lab infrastructure to exist first — consistent with the lean-startup sequencing already implicit in `packetpulse_Page_Inventory.md`'s "Suggested mockup order."
+
+**What must NOT drift silently between phases:**
+1. The **three-state Phase 1 label set must map cleanly onto the Phase 2 lifecycle** — "Community Verified" (Phase 1) is the same trust claim as "Verified" (Phase 2, §3.2), not a separate, lesser tier. When Phase 2 ships, existing Phase 1 "Community Verified" members should be grandfathered as "Verified," not forced to resubmit.
+2. **Non-Influence principle applies identically in both phases** — sponsorship/commercial relationships must not shortcut either the endorsement-threshold path or the lab-review path (extends §12 Best Practices, and the Non-Influence Clause in `35_PRICING_STRATEGY.md` §8).
+3. Trust Score, badges, and Professional Levels (§7–§9) are **explicitly Phase 2 scope** — they should not be partially bolted onto the Phase 1 UI (e.g., no fake "points" without the reputation system behind them) since a half-implemented reputation mechanic is worse for trust than none.
+
+**Traceability update:** `40_TRACEABILITY_MATRIX.md` O1 row (BR-VR-001, BR-VR-002 → F-VER-001, F-VER-002) should be read as tracing to the Phase 2 lab/rubric pipeline specifically; a Phase 1 business rule and feature ID pair covering the endorsement-threshold mechanism does not yet exist in `21_BUSINESS_RULES.md` / `38_FEATURE_CATALOG.md` and is a follow-up gap (see `00_DISCOVERY_AUDIT.md` §7, Recommendation #2 area).
 
 ---
 

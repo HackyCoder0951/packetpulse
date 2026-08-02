@@ -3,7 +3,7 @@
 > **Document Type:** Strategic Go-To-Market (GTM) Document
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Product Strategy & Marketing
-> **Status:** Draft v1.0
+> **Status:** Draft v1.1 — Reconciled against actual Phase 1 launch scope 2026-08-03
 
 ---
 
@@ -29,6 +29,13 @@ Covers launch strategy, growth loops, B2B partner acquisition, marketing messagi
 2. **Quality-Driven Growth**: We measure success by placement and verification rates, not simple register counts.
 3. **Double-Sided Balance**: Local chapter expansion must align with local employer partner acquisition.
 4. **Authenticity in Marketing**: Developer-focused marketing must remain technical, transparent, and direct, avoiding corporate buzzwords.
+
+---
+
+## 3A. Reconciliation Note — GTM Assumes the Track A Sequence
+
+> **Callout — Check This Before Launch Messaging Ships**
+> `39_RELEASE_PLANNING.md` §3A documents that the platform actually shipped an endorsement-based, labs-deferred Phase 1 (Release Track B), not the labs-first sequence this GTM document's "Quality-Driven Growth" principle (§3) may assume. Marketing messaging built around "verified through hands-on labs" would overstate what a new member actually experiences at launch — messaging should describe the real Phase 1 trust mechanism (`10_VERIFICATION_MODEL.md` §1A) accurately, not the Phase 2 target-state, until labs actually ship. This is a launch-messaging risk, not just a documentation one — recommend GTM/Marketing sign-off before public launch copy is finalized.
 
 ---
 
