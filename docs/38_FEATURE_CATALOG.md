@@ -3,7 +3,7 @@
 > **Document Type:** Product Feature Catalogue
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Product Management
-> **Status:** Draft v1.1 — Phase 1 (shipped) features added, all features tagged by stage, 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §4, `10_VERIFICATION_MODEL.md` §1A)
+> **Status:** Draft v1.1 — Phase 1 (prototyped) features added, all features tagged by stage, 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §4, `10_VERIFICATION_MODEL.md` §1A)
 
 ---
 
@@ -72,7 +72,7 @@ mindmap
 * **Business Rules**: Self-declared elements must be visually separated from verified badges.
 * **Dependencies**: Verification Database.
 * **Priority**: High (Must Have).
-* **Stage**: Phase 1 (shipped) — implemented as Profile Editor + Public Profile Preview (`frontend/member/profile-editor.html`, `profile-preview.html`); badge visuals are Phase 2 (see F-VER-004).
+* **Stage**: Phase 1 (prototyped) — implemented as Profile Editor + Public Profile Preview (`frontend/member/profile-editor.html`, `profile-preview.html`); badge visuals are Phase 2 (see F-VER-004).
 * **Future Scope**: Direct PDF/Resume export capability.
 
 #### Feature ID: F-COM-002 — Reputation Ledger
@@ -140,7 +140,7 @@ mindmap
 * **Business Rules**: BR-VR-003 (`21_BUSINESS_RULES.md`) — not yet ratified by Governance Committee.
 * **Dependencies**: Endorsement Inbox, Admin Review Queue (`frontend/member/skills.html`, `inbox.html`, `frontend/admin/review-queue.html`, `review-detail.html`).
 * **Priority**: High (Must Have) — this is the actual Phase 1 launch-blocking feature, filling the role F-VER-001 plays in the Phase 2 target-state.
-* **Stage**: Phase 1 (shipped).
+* **Stage**: Phase 1 (prototyped).
 * **Future Scope**: Migrate members to the Phase 2 lab/rubric pipeline (F-VER-001) once available; grandfather existing "Community Verified" labels per `10_VERIFICATION_MODEL.md` §1A.
 
 ---
@@ -154,7 +154,7 @@ mindmap
 * **Business Rules**: Anonymize names, gender, school names, and pictures in search views.
 * **Dependencies**: Verification databases.
 * **Priority**: High (Must Have).
-* **Stage**: Phase 1 (shipped) — implemented as Verified Talent Search (`frontend/recruiting/search.html`, `candidate.html`).
+* **Stage**: Phase 1 (prototyped) — implemented as Verified Talent Search (`frontend/recruiting/search.html`, `candidate.html`).
 * **Future Scope**: Auto-suggest shortlists to recruiters.
 
 #### Feature ID: F-HR-002 — Individual Recruiter Portal & Commission Billing
@@ -164,7 +164,7 @@ mindmap
 * **Business Rules**: **None exist.** No governing rule, pricing tier, or compliance requirement is defined anywhere in the suite.
 * **Dependencies**: Shortlist/Requisition Tracker, Commission/Billing Summary (`frontend/recruiting/shortlist.html`, `billing.html`).
 * **Priority**: **Unclassified** — implemented in code without a business-side priority decision ever being made.
-* **Stage**: Phase 1 (shipped, unreviewed).
+* **Stage**: Phase 1 (prototyped, unreviewed).
 * **Future Scope**: Formalize persona, pricing tier, and KYC/compliance posture — see `41_BUSINESS_REQUIREMENTS_DOCUMENT.md` §5.2 (BR-HR-05), §5.4 (BR-MZ-03), and `00_DISCOVERY_AUDIT.md` §4.3. **This is the single highest-priority open item across the entire suite as of 2026-08-03.**
 
 #### Feature ID: F-COM-004 — Social Feed & Connections (Phase 1)
@@ -174,7 +174,7 @@ mindmap
 * **Business Rules**: **None exist** — `21_BUSINESS_RULES.md` has no post/content rules, and `30_MODERATOR_HANDBOOK.md`/`37_POLICY_MANUAL.md` were written before this feature existed.
 * **Dependencies**: `frontend/member/home.html`, `connections.html`.
 * **Priority**: **Unclassified.**
-* **Stage**: Phase 1 (shipped, unreviewed).
+* **Stage**: Phase 1 (prototyped, unreviewed).
 * **Future Scope**: Either retroactively scope moderation rules for feed content (spam, harassment) or deliberately scope the feed back out — see Open Question in `00_DISCOVERY_AUDIT.md` §9.
 
 ---

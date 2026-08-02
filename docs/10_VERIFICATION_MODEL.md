@@ -12,9 +12,9 @@
 > **Callout — Resolving a Documented Contradiction**
 > `00_DISCOVERY_AUDIT.md` §4.1 found that this document's fully-built-out lab/rubric/mentor-review model does not match what was actually designed and built for Phase 1 (`docs/packetpulse_Page_Inventory.md`, implemented in `frontend/member/skills.html`, `verification.html`, `frontend/admin/review-queue.html`). Rather than pick a winner, this section formally establishes **both as the same model at two different maturity stages**, so neither document is "wrong" — they describe sequential states of one evolving trust framework.
 
-**Decision:** This document (§2 onward) describes the **Phase 2 target-state** trust framework — the full peer-review → mentor-review → lab-evidence pipeline, Trust Score, badges, and Professional Levels. **Phase 1**, as actually shipped, is a deliberately reduced subset:
+**Decision:** This document (§2 onward) describes the **Phase 2 target-state** trust framework — the full peer-review → mentor-review → lab-evidence pipeline, Trust Score, badges, and Professional Levels. **Phase 1**, as actually prototyped, is a deliberately reduced subset:
 
-| Dimension | Phase 1 (Shipped) | Phase 2 (This Document, §2–§9) |
+| Dimension | Phase 1 (Prototyped) | Phase 2 (This Document, §2–§9) |
 |---|---|---|
 | Evidence basis | Self-reported skill + peer endorsement (no structured lab submission) | Practical lab/exercise evidence (§5, §6) |
 | Trust labels | Three flat states: Self-declared → Peer-endorsed → Community Verified | Full Verification States lifecycle (§3.2): Claimed → Submitted → InReview → Verified → UnderPeriodicReview → Revoked |

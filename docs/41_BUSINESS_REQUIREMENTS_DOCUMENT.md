@@ -36,7 +36,7 @@ Summary: resumes are unverifiable, community contribution is invisible to employ
 
 ## 5. Business Requirements
 
-Requirements are grouped by domain and tagged with maturity stage (**Phase 1** = shipped/in-build now; **Phase 2** = target-state, not yet built) per the reconciliation in `10_VERIFICATION_MODEL.md` §1A.
+Requirements are grouped by domain and tagged with maturity stage (**Phase 1** = prototyped/in-build now; **Phase 2** = target-state, not yet built) per the reconciliation in `10_VERIFICATION_MODEL.md` §1A.
 
 ### 5.1 Member Identity & Trust (BR-ID)
 

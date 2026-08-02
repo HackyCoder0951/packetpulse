@@ -65,7 +65,7 @@ stateDiagram-v2
 * **Impact**: Ensures absolute trust in Expert-level credentials for employers.
 
 #### Rule ID: BR-VR-003 — Peer Endorsement Threshold (Phase 1)
-* **Description**: A skill claim advances from "Self-declared" to "Peer-endorsed" once endorsed by at least 3 distinct peers, and becomes eligible for Admin/Reviewer approval to "Community Verified" thereafter. This rule governs `P-MBR-002A` (`26_PROCESS_CATALOG.md`), the process actually shipped in Phase 1, distinct from the lab-based BR-VR-001/002 which govern the Phase 2 target-state process (`P-MBR-002`).
+* **Description**: A skill claim advances from "Self-declared" to "Peer-endorsed" once endorsed by at least 3 distinct peers, and becomes eligible for Admin/Reviewer approval to "Community Verified" thereafter. This rule governs `P-MBR-002A` (`26_PROCESS_CATALOG.md`), the process actually prototyped in Phase 1, distinct from the lab-based BR-VR-001/002 which govern the Phase 2 target-state process (`P-MBR-002`).
 * **Business Rationale**: Provides a functioning, human-gated trust signal before the lab/rubric infrastructure exists, without compromising the "no self-declaration alone" principle in `10_VERIFICATION_MODEL.md` §2.
 * **Dependencies**: Endorsement Inbox capability, Admin Review Queue.
 * **Exceptions**: None defined yet — Governance Committee review recommended before this rule is treated as final (currently a discovery-stage rule, not yet ratified).

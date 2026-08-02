@@ -45,9 +45,9 @@ mindmap
 | Revenue Concentration | Over-reliance on a small number of hiring partners or sponsors | Medium | High |
 | Slow Monetization | Revenue lags community growth, straining sustainability | Medium | High |
 | Misaligned Incentives | Commercial pressure erodes "Community First" philosophy | Low-Medium | High |
-| **Unregulated Individual Recruiter Commissions** *(added 2026-08-03)* | `F-HR-002` (`frontend/recruiting/billing.html`) processes commission-style billing with no ratified pricing tier, KYC step, or legal/compliance review (`BR-HR-003`, unratified). Real financial and legal exposure if live in production. | **Unknown — must be confirmed urgently** | High |
-| **Unratified Rules Governing Live Processes** *(added 2026-08-03)* | `BR-VR-003` (Phase 1 verification) and `BR-HR-003` (recruiter commission) both govern processes that may already be running, but neither has Governance Committee sign-off. | Medium | Medium-High |
-| **Unscoped Social Feed Moderation** *(added 2026-08-03)* | `F-COM-004` ships without content/moderation business rules; `30_MODERATOR_HANDBOOK.md` and `37_POLICY_MANUAL.md` predate this feature. | Medium | Medium |
+| **Unregulated Individual Recruiter Commissions** *(added 2026-08-03)* | `F-HR-002` (mocked up in `frontend/recruiting/billing.html` — a design mockup, not built) depicts commission-style billing with no ratified pricing tier, KYC step, or legal/compliance review (`BR-HR-003`, unratified). This is a pre-development risk to close before this mockup is scheduled for engineering, not a live exposure — see `44_MVP_DEFINITION.md`. | Medium (avoidable if closed before development starts) | Medium |
+| **Unratified Rules Drafted Ahead of Governance** *(added 2026-08-03)* | `BR-VR-003` (Phase 1 verification) and `BR-HR-003` (recruiter commission) were drafted by the Product Discovery Team to keep the suite internally consistent, but neither has Governance Committee sign-off. Low urgency since nothing is built yet — should be ratified before F-VER-003/F-HR-002 enter development. | Low | Medium |
+| **Unscoped Social Feed Moderation** *(added 2026-08-03)* | The `F-COM-004` mockup has no content/moderation business rules behind it; `30_MODERATOR_HANDBOOK.md` and `37_POLICY_MANUAL.md` predate this design idea. Should close before development per `44_MVP_DEFINITION.md`. | Low | Medium |
 
 ---
 

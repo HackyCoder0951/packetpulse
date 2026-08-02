@@ -90,11 +90,11 @@ graph TD
 
 | # | Document | Summary |
 |---|----------|---------|
-| 00 | `00_DISCOVERY_AUDIT.md` | Suite audit reconciling the documented model against the shipped Phase 1 build; Decision Log |
+| 00 | `00_DISCOVERY_AUDIT.md` | Suite audit reconciling the documented model against the prototyped Phase 1 build; Decision Log |
 | 41 | `41_BUSINESS_REQUIREMENTS_DOCUMENT.md` | Consolidated BRD synthesizing Vision, Business Rules, and Workflows, tagged by Phase 1/Phase 2 maturity |
 | 42 | `42_PRODUCT_REQUIREMENTS_DOCUMENT.md` | Consolidated PRD: feature list by stage/actor/priority, MVP preview, user-story coverage gaps |
 | 43 | `43_NON_FUNCTIONAL_REQUIREMENTS.md` | Business-level performance, availability, accessibility, data retention, security posture |
-| 44 | `44_MVP_DEFINITION.md` | Ratified MVP scope decision — includes/excludes/conditions per shipped Phase 1 feature |
+| 44 | `44_MVP_DEFINITION.md` | Ratified MVP scope decision — includes/excludes/conditions per prototyped Phase 1 feature |
 
 ## 1. Foundation Documents
 

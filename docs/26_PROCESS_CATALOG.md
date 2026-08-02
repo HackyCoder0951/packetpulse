@@ -82,7 +82,7 @@ graph TD
 * **Linked Documents**: `10_VERIFICATION_MODEL.md` §1A–§11, `11_COMMUNITY_REPUTATION_SYSTEM.md`.
 * **Status Note**: Not yet built. See P-MBR-002A for the process actually running today.
 
-#### Process ID: P-MBR-002A — Skill Verification (Phase 1 — Endorsement Model, Shipped)
+#### Process ID: P-MBR-002A — Skill Verification (Phase 1 — Endorsement Model, Prototyped)
 * **Owner**: Chapter Admin / Reviewer
 * **Trigger**: A member's skill claim crosses the peer-endorsement threshold.
 * **Inputs**: Skill claim, list of endorsers and their messages, member's linked work/project history.

@@ -20,7 +20,7 @@ This is the Phase 8 deliverable, closing the gap confirmed in `00_DISCOVERY_AUDI
 To state the quality bars the business requires of the product, independent of *how* engineering meets them — so downstream technical architecture has a business-approved target to design against.
 
 ### 2.2 Scope
-Applies across both Phase 1 (shipped) and Phase 2 (target-state) feature sets defined in `42_PRODUCT_REQUIREMENTS_DOCUMENT.md`.
+Applies across both Phase 1 (prototyped) and Phase 2 (target-state) feature sets defined in `42_PRODUCT_REQUIREMENTS_DOCUMENT.md`.
 
 ---
 
@@ -90,7 +90,7 @@ Applies across both Phase 1 (shipped) and Phase 2 (target-state) feature sets de
 
 ## 10. Risks
 
-- No NFRs existed prior to this document, meaning the entire shipped Phase 1 build (`frontend/`) was built without an approved accessibility, performance, or data-retention bar. A retroactive audit of the shipped code against §5–§6 above is recommended before further Phase 1 features are added.
+- No NFRs existed prior to this document, meaning the entire prototyped Phase 1 build (`frontend/`) was built without an approved accessibility, performance, or data-retention bar. A retroactive audit of the prototyped code against §5–§6 above is recommended before further Phase 1 features are added.
 
 ## 11. Assumptions
 
@@ -98,7 +98,7 @@ Applies across both Phase 1 (shipped) and Phase 2 (target-state) feature sets de
 
 ## 12. Recommendations
 
-1. Commission a retroactive accessibility and data-handling review of the shipped `frontend/` build against §5–§6.
+1. Commission a retroactive accessibility and data-handling review of the prototyped `frontend/` build against §5–§6.
 2. Feed this document's thresholds into the eventual technical architecture document (out of scope here) as a business-approved input.
 
 ## 13. Open Questions

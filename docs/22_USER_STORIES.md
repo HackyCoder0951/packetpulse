@@ -3,7 +3,7 @@
 > **Document Type:** User Story Catalogue (Business View)
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Product Owner & Business Analysis
-> **Status:** Draft v1.1 — Epic layer + Phase 1 shipped-feature stories added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §6, `42_PRODUCT_REQUIREMENTS_DOCUMENT.md` §6)
+> **Status:** Draft v1.1 — Epic layer + Phase 1 prototyped-feature stories added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §6, `42_PRODUCT_REQUIREMENTS_DOCUMENT.md` §6)
 
 ---
 
@@ -74,7 +74,7 @@ flowchart TD
   - The member is notified of approval/rejection with constructive feedback.
 * **Priority**: High (Must Have).
 * **Dependencies**: Peer pre-screening workflow, Mentor assignment capability.
-* **Stage**: Phase 2 (target-state) — see US-MBR-002 for the Phase 1 shipped equivalent.
+* **Stage**: Phase 2 (target-state) — see US-MBR-002 for the Phase 1 prototyped equivalent.
 
 #### Story ID: US-MBR-002 — Peer Endorsement Request (Phase 1)
 * **Story**: **As a** registered community member, **I want to** request peer endorsements for a skill I claim, **so that** my skill can advance to "Community Verified" without waiting for lab infrastructure to exist.
@@ -83,9 +83,9 @@ flowchart TD
   - Once the endorsement threshold (BR-VR-003, `21_BUSINESS_RULES.md`) is met, the claim routes to the Admin Review Queue.
   - Admin/Reviewer approves or rejects with a required reason; approval advances the label to "Community Verified," rejection returns the claim with the reason shown to the member.
   - Member can resubmit or request more evidence after a rejection.
-* **Priority**: High (Must Have) — this is the actual live verification path.
+* **Priority**: High (Must Have) — this is the verification path depicted in the Phase 1 UI mockups (not yet built).
 * **Dependencies**: Endorsement Inbox (`frontend/member/inbox.html`), Admin Review Queue (`frontend/admin/review-queue.html`).
-* **Stage**: Phase 1 (shipped). Governing rule BR-VR-003 is not yet ratified by Governance Committee — this story should not be marked "Approved" in Review Notes (§11) until that ratification happens.
+* **Stage**: Phase 1 (prototyped). Governing rule BR-VR-003 is not yet ratified by Governance Committee — this story should not be marked "Approved" in Review Notes (§11) until that ratification happens.
 
 #### Story ID: US-MBR-003 — Community Feed Engagement (Phase 1, Beta)
 * **Story**: **As a** community member, **I want to** post updates and see a feed of activity from people I follow, **so that** I stay engaged with the community between formal learning/verification milestones.
@@ -95,7 +95,7 @@ flowchart TD
   - Feed content must be subject to the same moderation escalation path as other community content (BR-CR-001) once moderation rules for feed content exist — **this criterion is currently unmet**, see `44_MVP_DEFINITION.md` §3.
 * **Priority**: **Unclassified** — matches `38_FEATURE_CATALOG.md` F-COM-004 classification. Per `44_MVP_DEFINITION.md`, this feature ships to beta/limited audience only until moderation rules are ratified.
 * **Dependencies**: `frontend/member/home.html`, `connections.html`.
-* **Stage**: Phase 1 (shipped, conditional).
+* **Stage**: Phase 1 (prototyped, conditional).
 
 ---
 

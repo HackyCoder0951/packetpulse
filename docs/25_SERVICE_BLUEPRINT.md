@@ -3,7 +3,7 @@
 > **Document Type:** Operational Service Blueprint
 > **Series:** Community Talent Ecosystem Platform — Business Documentation Suite
 > **Document Owner:** Product Operations & Service Design
-> **Status:** Draft v1.1 — Phase 1 (shipped) blueprint added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §4.1, `10_VERIFICATION_MODEL.md` §1A)
+> **Status:** Draft v1.1 — Phase 1 (prototyped) blueprint added 2026-08-03 (see `00_DISCOVERY_AUDIT.md` §4.1, `10_VERIFICATION_MODEL.md` §1A)
 
 ---
 
@@ -61,10 +61,10 @@ sequenceDiagram
 
 ---
 
-## 4A. Service Blueprint Diagram: Phase 1 Endorsement Pathway (Shipped)
+## 4A. Service Blueprint Diagram: Phase 1 Endorsement Pathway (Prototyped)
 
-> **Callout — This is the pathway actually live today**
-> Section 4 above describes the Phase 2 target-state lab/mentor pipeline. The pathway below is what `frontend/member/skills.html`, `inbox.html`, and `frontend/admin/review-queue.html` actually implement per `docs/packetpulse_Page_Inventory.md`. Per `10_VERIFICATION_MODEL.md` §1A, both are the same trust framework at different maturity stages — this is not a competing design, it is today's operational reality.
+> **Callout — This is the pathway the Phase 1 mockups depict**
+> Section 4 above describes the Phase 2 target-state lab/mentor pipeline. The pathway below is what `frontend/member/skills.html`, `inbox.html`, and `frontend/admin/review-queue.html` depict per `docs/packetpulse_Page_Inventory.md` — these are UI mockups converted from design files to communicate the product idea to the team; no development has started. Per `10_VERIFICATION_MODEL.md` §1A, both are the same trust framework at different maturity stages — this is not a competing design, it is the intended near-term build sequence.
 
 ```mermaid
 sequenceDiagram

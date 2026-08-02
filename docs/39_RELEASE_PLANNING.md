@@ -35,22 +35,22 @@ Maps product releases from early launch prep through 24 months of operations, co
 ## 3A. Reconciliation: Planned "Phase 1" vs. Actual Build Sequence
 
 > **Callout — A Naming Collision, Confirmed**
-> `00_DISCOVERY_AUDIT.md` §9 flagged as an open question whether this document's "Phase 1/2/3" release phases were the same scale as `packetpulse_Page_Inventory.md`'s "Phase 1/Phase 2" build sequence. They are **not** — and worse, they actively point in different directions. This document's Phase 1 (below, §5.1) is defined around **Core Learning & Labs + the lab-based Verification Pipeline (F-VER-001, F-LRN-002)**. What was actually built and shipped first is the **endorsement-based trust model with no labs at all** (F-VER-003 in `38_FEATURE_CATALOG.md`) — the exact inverse of this document's stated sequencing principle ("Verification-First Delivery," §3, which assumed verification meant the lab pipeline).
+> `00_DISCOVERY_AUDIT.md` §9 flagged as an open question whether this document's "Phase 1/2/3" release phases were the same scale as `packetpulse_Page_Inventory.md`'s "Phase 1/Phase 2" build sequence. They are **not** — and worse, they actively point in different directions. This document's Phase 1 (below, §5.1) is defined around **Core Learning & Labs + the lab-based Verification Pipeline (F-VER-001, F-LRN-002)**. What was actually built and prototyped first is the **endorsement-based trust model with no labs at all** (F-VER-003 in `38_FEATURE_CATALOG.md`) — the exact inverse of this document's stated sequencing principle ("Verification-First Delivery," §3, which assumed verification meant the lab pipeline).
 
-**Resolution:** This document's numbered phases (§5.1–§5.3) are relabeled **Release Track A (Originally Planned)** and describe the Phase 2 target-state feature set on the maturity scale established in `10_VERIFICATION_MODEL.md` §1A. A new **Release Track B (Actual)** below reflects what was really built first. Both tracks are kept — Track A is not deleted — because it still represents a real strategic intent (labs-first, verification-first) that the team may return to; it was simply not what shipped.
+**Resolution:** This document's numbered phases (§5.1–§5.3) are relabeled **Release Track A (Originally Planned)** and describe the Phase 2 target-state feature set on the maturity scale established in `10_VERIFICATION_MODEL.md` §1A. A new **Release Track B (Actual)** below reflects what was really built first. Both tracks are kept — Track A is not deleted — because it still represents a real strategic intent (labs-first, verification-first) that the team may return to; it was simply not what prototyped.
 
 ### 3A.1 Release Track B — Actual Build Sequence (as of 2026-08-03)
 
 | Actual Release Step | Core Deliverables | Feature IDs | Maturity Tag |
 |---|---|---|---|
-| Step 1 (Shipped) | Portfolio, Skills & Endorsements, Endorsement Review Queue, Talent Search, Social Feed, Individual Recruiter/Billing | F-COM-001, F-VER-003, F-HR-001, F-COM-004, F-HR-002 | Phase 1 per `10_VERIFICATION_MODEL.md` §1A |
+| Step 1 (Prototyped) | Portfolio, Skills & Endorsements, Endorsement Review Queue, Talent Search, Social Feed, Individual Recruiter/Billing | F-COM-001, F-VER-003, F-HR-001, F-COM-004, F-HR-002 | Phase 1 per `10_VERIFICATION_MODEL.md` §1A |
 | Step 2 (Not started) | Learning Paths, Lab Sandbox, Lab-based Verification Pipeline, Trust Score, Reputation Ledger | F-LRN-001, F-LRN-002, F-VER-001, F-VER-002, F-COM-002 | Phase 2 |
 | Step 3 (Not started) | Governance/Voting, Chapter tooling at scale | F-GOV-001 | Phase 2 / Track A Phase 3 |
 
 **Consequence for the Release Dependencies Matrix (§6 below):** the stated dependency "F-VER-001 Review Worklist ← F-LRN-002 Lab Allocator" (Critical Path, "Postpones first verifications") never actually blocked anything, because Step 1 verification (F-VER-003) has **no lab dependency at all**. The Gold Standard Rule (§8) — gating Phase 2 launch on a 7-day lab review SLA — also cannot fire yet, since no lab reviews have happened. A new, honest gate is needed for the Track B → Step 2 transition; see Recommendation below.
 
 > **Decision Note — Do Not Silently Renumber the Gantt Chart**
-> The Gantt chart in §4 and the Phase 1/2/3 deliverable lists in §5 are left as originally written (Track A) rather than rewritten to match Track B, so that the discrepancy remains visible for Governance/Product Director review rather than quietly erased. Silently editing dates to match what shipped would hide the fact that the original sequencing plan was not followed, which is itself useful information for the next planning cycle.
+> The Gantt chart in §4 and the Phase 1/2/3 deliverable lists in §5 are left as originally written (Track A) rather than rewritten to match Track B, so that the discrepancy remains visible for Governance/Product Director review rather than quietly erased. Silently editing dates to match what prototyped would hide the fact that the original sequencing plan was not followed, which is itself useful information for the next planning cycle.
 
 ---
 
@@ -73,7 +73,7 @@ gantt
 
 ---
 
-## 5. Release Phases and Deliverables (Release Track A — Originally Planned; see §3A for what actually shipped first)
+## 5. Release Phases and Deliverables (Release Track A — Originally Planned; see §3A for what actually prototyped first)
 
 ### 5.1 Phase 1: MVP (Months 1 – 4)
 * **Strategic Goal**: Establish the core learning, practice, and verification loops in founding chapters.

@@ -35,7 +35,7 @@ graph TD
 ---
 
 > **Callout — Two Confirmed Policy Gaps (2026-08-03)**
-> (1) `F-COM-004` (Social Feed & Connections, shipped in `frontend/member/home.html`) has no content-moderation policy anywhere in this manual — post/comment abuse is not covered by §4 below, which predates the feature. (2) No policy exists for Individual Recruiters (`19_PERSONAS.md` §6.9) — data access boundaries, commission disputes, and conduct standards for this actor type are undefined. Both are required before `44_MVP_DEFINITION.md`'s conditions for those features can be met.
+> (1) `F-COM-004` (Social Feed & Connections, prototyped in `frontend/member/home.html`) has no content-moderation policy anywhere in this manual — post/comment abuse is not covered by §4 below, which predates the feature. (2) No policy exists for Individual Recruiters (`19_PERSONAS.md` §6.9) — data access boundaries, commission disputes, and conduct standards for this actor type are undefined. Both are required before `44_MVP_DEFINITION.md`'s conditions for those features can be met.
 
 ## 4. Community & Conduct Policies
 
