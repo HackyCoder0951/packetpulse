@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="_ds/nocturne-cb0be265-3938-49cf-b2e4-f74e505ea987/styles.css">
+<script src="_ds/nocturne-cb0be265-3938-49cf-b2e4-f74e505ea987/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<style>
+body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body)}
+a{color:var(--color-accent);text-decoration:none}a:hover{color:var(--color-accent-300)}
+i[class^=ph]{display:block;line-height:1}
+.dv-turn{padding:44px 48px 40px}
+.dv-thd{display:flex;align-items:baseline;gap:12px;margin:0 0 6px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:var(--color-accent-800);color:var(--color-accent-100);border-radius:4px}
+.dv-tname{font:500 13px/1.2 var(--font-heading);color:var(--color-text)}
+.dv-opts{display:flex;flex-direction:column;gap:52px;margin-top:26px}
+.dv-opt{scroll-margin-top:20px}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:var(--color-neutral-800);color:var(--color-text);border-radius:5px}
+.dv-olabel{display:flex;align-items:baseline;gap:10px;margin:0 0 11px;font:400 12px/1.4 var(--font-body);color:color-mix(in srgb,var(--color-text) 58%,transparent)}
+.dv-opt:target .dv-oid{background:var(--color-accent);color:var(--color-neutral-900)}
+.scr{width:1320px;background:var(--color-bg);border:1px solid var(--color-divider);border-radius:var(--radius-lg);overflow:hidden;display:flex;box-shadow:var(--shadow-lg)}
+.sb{width:214px;flex:none;padding:16px 12px;display:flex;flex-direction:column;gap:20px;border-right:1px solid var(--color-divider);background:color-mix(in srgb,var(--color-surface) 55%,var(--color-bg))}
+.sbi{display:flex;align-items:center;gap:9px;padding:7px 9px;border-radius:var(--radius-md);font-size:12.5px;color:color-mix(in srgb,var(--color-text) 62%,transparent);cursor:default}
+.sbi i{font-size:15px}
+.sbi:hover{background:color-mix(in srgb,var(--color-text) 6%,transparent)}
+.sbi.on{background:color-mix(in srgb,var(--color-accent) 14%,transparent);color:var(--color-text)}
+.sbi.on i{color:var(--color-accent)}
+.sbh{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-500);padding:0 9px;margin-bottom:5px}
+.mn{flex:1;min-width:0;display:flex;flex-direction:column}
+.tb{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 22px;border-bottom:1px solid var(--color-divider)}
+.rule{height:1px;background:linear-gradient(to right,transparent,var(--color-divider) 48px,var(--color-divider) calc(100% - 48px),transparent)}
+.k{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-500)}
+.mut{color:color-mix(in srgb,var(--color-text) 60%,transparent)}
+.bar{height:5px;border-radius:3px;background:var(--color-neutral-800);overflow:hidden}
+.bar>span{display:block;height:100%;border-radius:3px;background:var(--color-accent)}
+.tile{border:1px solid var(--color-divider);border-radius:var(--radius-md);background:var(--color-surface)}
+</style>
+</helmet>
+
+<section class="dv-turn" id="t2">
+<div class="dv-thd"><span class="dv-tid">2</span><span class="dv-tname">Public &amp; community surfaces — the front door and the four rooms behind it</span></div>
+<p style="margin:0;font-size:13px;line-height:1.6;max-width:88ch;color:color-mix(in srgb,var(--color-text) 62%,transparent)">Built on your answers: the live site is v1 and gets replaced, so these follow the documented ecosystem rather than its current visuals — but <strong>Networking is the founding chapter</strong>, so both layers are visible everywhere (networking content in the foreground, the other eight domains as chapters that open behind it). Your real wordmark is now in place across turns 1 and 2. What the live site does today — being the way in to community courses and software — becomes <a href="#2b">2b</a>, no longer the whole product.</p>
+
+<div class="dv-opts">
+
+<!-- ══════════════ 2a — PUBLIC LANDING ══════════════ -->
+<div class="dv-opt" id="2a">
+<div class="dv-olabel"><span class="dv-oid">2a</span><span><strong style="color:var(--color-text);font-weight:500">Public landing</strong> — the front door. Leads with proof, not jobs (Learning Before Hiring), and states the founding-chapter/multi-domain structure above the fold.</span></div>
+<div class="scr" style="display:block" data-screen-label="2a Landing">
+  <!-- nav -->
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 40px;border-bottom:1px solid var(--color-divider)">
+    <div style="display:flex;align-items:center;gap:32px">
+      <img src="assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto">
+      <div style="display:flex;gap:20px;font-size:12.5px">
+        <span class="mut">Learning</span><span class="mut">Resources</span><span class="mut">Events</span><span class="mut">Portfolios</span><span class="mut">Chapters</span>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button class="btn btn-ghost" style="font-size:12.5px">Sign in</button>
+      <button class="btn btn-primary" style="font-size:12.5px">Join the community</button>
+    </div>
+  </div>
+
+  <!-- hero -->
+  <div style="position:relative;padding:64px 40px 58px;background:radial-gradient(120% 90% at 12% -10%,color-mix(in srgb,var(--color-section) 62%,transparent),transparent 62%)">
+    <div style="display:grid;grid-template-columns:1fr 400px;gap:44px;align-items:center">
+      <div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:18px">
+          <span class="tag tag-accent">Founding chapter · Networking</span>
+          <span style="font-size:11.5px" class="mut">CCNA · CCNP · routing, switching, BGP, DNS</span>
+        </div>
+        <h1 style="font-size:52px;line-height:1.04;margin:0 0 18px;max-width:19ch">Prove it in public.</h1>
+        <p style="margin:0 0 12px;font-size:17px;line-height:1.5;max-width:52ch">A resume tells people what you claim. This community tells them what you have <em>proven</em> — every skill on your profile reviewed by peers and signed off by a mentor.</p>
+        <p style="margin:0 0 26px;font-size:13.5px;line-height:1.6;max-width:56ch" class="mut">Not a job board. Not a course platform. A community where you learn, practise on real infrastructure, contribute, and carry one portfolio that companies actually trust.</p>
+        <div style="display:flex;gap:10px;align-items:center">
+          <button class="btn btn-primary" style="font-size:13.5px;padding:9px 18px"><i class="ph ph-arrow-right" style="font-size:15px"></i>Start with a learning path</button>
+          <button class="btn btn-secondary" style="font-size:13.5px;padding:9px 18px">See a verified portfolio</button>
+        </div>
+        <p style="margin:20px 0 0;font-size:11.5px" class="mut">Free to join · no pay-to-rank, ever</p>
+      </div>
+      <div class="lighten" style="height:328px;border:1px dashed var(--color-divider);border-radius:var(--radius-lg);display:grid;place-items:center;text-align:center;padding:24px">
+        <div>
+          <i class="ph ph-image" style="font-size:26px;color:color-mix(in srgb,var(--color-text) 30%,transparent);margin:0 auto 10px"></i>
+          <p style="margin:0;font-size:12px;line-height:1.5" class="mut">Photograph placeholder — shot on a black or near-black background so it blends through <code style="font-size:11px">.lighten</code>.<br>Suggested: hands at a patch panel or console cable, low key. Send me the real asset.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- stat band -->
+  <div style="background:var(--color-section);padding:30px 40px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+    <div><div style="font-size:34px;line-height:1;letter-spacing:-.02em">4,082</div><div style="font-size:12px;margin-top:6px;opacity:.72">members across 14 chapters</div></div>
+    <div><div style="font-size:34px;line-height:1;letter-spacing:-.02em">11,940</div><div style="font-size:12px;margin-top:6px;opacity:.72">skills verified by mentors</div></div>
+    <div><div style="font-size:34px;line-height:1;letter-spacing:-.02em">318</div><div style="font-size:12px;margin-top:6px;opacity:.72">members hired through community referral</div></div>
+    <div><div style="font-size:34px;line-height:1;letter-spacing:-.02em">0</div><div style="font-size:12px;margin-top:6px;opacity:.72">rankings ever influenced by sponsorship</div></div>
+  </div>
+
+  <!-- the loop -->
+  <div style="padding:52px 40px 46px">
+    <span class="k">How it works</span>
+    <h2 style="font-size:30px;margin:10px 0 8px;max-width:24ch">One loop, and it comes back around</h2>
+    <p style="margin:0 0 30px;font-size:13.5px;max-width:60ch" class="mut">Everyone enters as a learner — regardless of seniority. The people verifying your work this year were verified themselves two years ago.</p>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:0;align-items:start">
+      <div style="padding-right:20px;border-right:1px solid var(--color-divider)">
+        <i class="ph ph-graduation-cap" style="font-size:22px;color:var(--color-accent);margin-bottom:12px"></i>
+        <div style="font-size:14.5px;font-weight:500;margin-bottom:5px">Learn</div>
+        <p style="margin:0;font-size:12px;line-height:1.55" class="mut">Structured paths per domain, built and owned by mentors — not bought in.</p>
+      </div>
+      <div style="padding:0 20px;border-right:1px solid var(--color-divider)">
+        <i class="ph ph-flask" style="font-size:22px;color:var(--color-accent);margin-bottom:12px"></i>
+        <div style="font-size:14.5px;font-weight:500;margin-bottom:5px">Practise</div>
+        <p style="margin:0;font-size:12px;line-height:1.55" class="mut">Guided exercises, then unguided tasks in a real sandbox. Challenges quarterly.</p>
+      </div>
+      <div style="padding:0 20px;border-right:1px solid var(--color-divider)">
+        <i class="ph ph-users-three" style="font-size:22px;color:var(--color-accent);margin-bottom:12px"></i>
+        <div style="font-size:14.5px;font-weight:500;margin-bottom:5px">Contribute</div>
+        <p style="margin:0;font-size:12px;line-height:1.55" class="mut">Answer questions, run sessions, volunteer at your chapter. All of it counts.</p>
+      </div>
+      <div style="padding:0 20px;border-right:1px solid var(--color-divider)">
+        <i class="ph ph-seal-check" style="font-size:22px;color:var(--color-accent);margin-bottom:12px"></i>
+        <div style="font-size:14.5px;font-weight:500;margin-bottom:5px">Get verified</div>
+        <p style="margin:0;font-size:12px;line-height:1.55" class="mut">Peers review first, a mentor decides. Never granted on course completion alone.</p>
+      </div>
+      <div style="padding-left:20px">
+        <i class="ph ph-arrows-clockwise" style="font-size:22px;color:var(--color-accent);margin-bottom:12px"></i>
+        <div style="font-size:14.5px;font-weight:500;margin-bottom:5px">Give it back</div>
+        <p style="margin:0;font-size:12px;line-height:1.55" class="mut">Mentor, speak, lead a chapter — or be referred into a role you didn't apply for.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="rule" style="margin:0 40px"></div>
+
+  <!-- domains: both layers -->
+  <div style="padding:46px 40px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:26px">
+      <div>
+        <span class="k">Domains</span>
+        <h2 style="font-size:30px;margin:10px 0 8px;max-width:26ch">Networking first. The rest of the stack follows.</h2>
+        <p style="margin:0;font-size:13.5px;max-width:60ch" class="mut">We start where the community already is. Each new domain opens as its own chapter only once there are mentors qualified to verify in it — trust standards travel, content does not get diluted.</p>
+      </div>
+      <a href="#2a" style="font-size:12.5px;flex:none">How a chapter opens →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:12px">
+      <div class="tile" style="padding:20px;grid-row:span 2;border-color:color-mix(in srgb,var(--color-accent) 48%,transparent);background:linear-gradient(150deg,color-mix(in srgb,var(--color-section) 48%,var(--color-surface)),var(--color-surface) 70%)">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start">
+          <i class="ph-fill ph-network" style="font-size:26px;color:var(--color-accent)"></i>
+          <span class="tag tag-accent">Founding chapter · live</span>
+        </div>
+        <h3 style="font-size:22px;margin:16px 0 8px">Networking</h3>
+        <p style="margin:0 0 16px;font-size:12.5px;line-height:1.55" class="mut">Routing &amp; switching, BGP, TCP/IP, DNS, wireless. CCNA and CCNP tracks mapped to verifiable practical skills rather than exam recall.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+          <span class="tag tag-outline">6 learning paths</span><span class="tag tag-outline">41 labs</span><span class="tag tag-outline">128 mentors</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:7px;font-size:12px">
+          <div style="display:flex;justify-content:space-between;padding-bottom:7px;border-bottom:1px solid var(--color-divider)"><span class="mut">Verified members</span><span>1,864</span></div>
+          <div style="display:flex;justify-content:space-between;padding-bottom:7px;border-bottom:1px solid var(--color-divider)"><span class="mut">Chapters running</span><span>14</span></div>
+          <div style="display:flex;justify-content:space-between"><span class="mut">Mentor levels active</span><span>All four</span></div>
+        </div>
+      </div>
+      <div class="tile" style="padding:15px"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:11px"><i class="ph ph-cloud" style="font-size:19px;color:var(--color-accent)"></i><span class="tag tag-neutral">Live</span></div><div style="font-size:14px;font-weight:500">Cloud</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">3 paths · 1,204 verified</p></div>
+      <div class="tile" style="padding:15px"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:11px"><i class="ph ph-infinity" style="font-size:19px;color:var(--color-accent)"></i><span class="tag tag-neutral">Live</span></div><div style="font-size:14px;font-weight:500">DevOps</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">4 paths · 862 verified</p></div>
+      <div class="tile" style="padding:15px"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:11px"><i class="ph ph-terminal" style="font-size:19px;color:var(--color-accent)"></i><span class="tag tag-neutral">Live</span></div><div style="font-size:14px;font-weight:500">Linux</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">2 paths · 977 verified</p></div>
+      <div class="tile" style="padding:15px"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:11px"><i class="ph ph-shield-check" style="font-size:19px;color:var(--color-accent)"></i><span class="tag tag-neutral">Live</span></div><div style="font-size:14px;font-weight:500">Security</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">3 paths · 574 verified</p></div>
+      <div class="tile" style="padding:15px;background:transparent;border-style:dashed"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:11px"><i class="ph ph-pulse" style="font-size:19px;color:color-mix(in srgb,var(--color-text) 42%,transparent)"></i><span class="tag tag-outline">Opening</span></div><div style="font-size:14px;font-weight:500" class="mut">SRE</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">Recruiting mentor reviewers</p></div>
+      <div class="tile" style="padding:15px;background:transparent;border-style:dashed"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:11px"><i class="ph ph-stack" style="font-size:19px;color:color-mix(in srgb,var(--color-text) 42%,transparent)"></i><span class="tag tag-outline">Opening</span></div><div style="font-size:14px;font-weight:500" class="mut">Platform Engineering</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">Rubrics in council review</p></div>
+      <div class="tile" style="padding:15px;background:transparent;border-style:dashed"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:11px"><i class="ph ph-hard-drives" style="font-size:19px;color:color-mix(in srgb,var(--color-text) 42%,transparent)"></i><span class="tag tag-outline">Proposed</span></div><div style="font-size:14px;font-weight:500" class="mut">Infrastructure</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">Awaiting governance vote</p></div>
+      <div class="tile" style="padding:15px;background:transparent;border-style:dashed"><div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:11px"><i class="ph ph-gear-six" style="font-size:19px;color:color-mix(in srgb,var(--color-text) 42%,transparent)"></i><span class="tag tag-outline">Proposed</span></div><div style="font-size:14px;font-weight:500" class="mut">Automation</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">Awaiting governance vote</p></div>
+    </div>
+  </div>
+
+  <div class="rule" style="margin:0 40px"></div>
+
+  <!-- resources: what v1 did, absorbed -->
+  <div style="padding:46px 40px">
+    <span class="k">Open to everyone</span>
+    <h2 style="font-size:30px;margin:10px 0 8px;max-width:28ch">The resources stay free and stay public</h2>
+    <p style="margin:0 0 26px;font-size:13.5px;max-width:62ch" class="mut">Courses, notes, lab files and tooling — the reason most people find us in the first place. You don't need an account to read them, and nothing here is gated behind a paid tier.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+      <div class="tile" style="padding:18px">
+        <i class="ph ph-books" style="font-size:22px;color:var(--color-accent);margin-bottom:14px"></i>
+        <div style="font-size:15px;font-weight:500;margin-bottom:6px">Courses &amp; study notes</div>
+        <p style="margin:0 0 14px;font-size:12.5px;line-height:1.55" class="mut">CCNA 200-301 and CCNP tracks, subnetting drills, protocol deep-dives. Community-maintained, mentor-reviewed.</p>
+        <div style="font-size:11.5px" class="mut">61 resources · updated weekly</div>
+      </div>
+      <div class="tile" style="padding:18px">
+        <i class="ph ph-hard-drive" style="font-size:22px;color:var(--color-accent);margin-bottom:14px"></i>
+        <div style="font-size:15px;font-weight:500;margin-bottom:6px">Software &amp; lab files</div>
+        <p style="margin:0 0 14px;font-size:12.5px;line-height:1.55" class="mut">Packet Tracer topologies, GNS3 images, containerlab configs, terminal tooling — with the setup notes that usually go missing.</p>
+        <div style="font-size:11.5px" class="mut">34 downloads · checksummed</div>
+      </div>
+      <div class="tile" style="padding:18px">
+        <i class="ph ph-chats-circle" style="font-size:22px;color:var(--color-accent);margin-bottom:14px"></i>
+        <div style="font-size:15px;font-weight:500;margin-bottom:6px">Peer support</div>
+        <p style="margin:0 0 14px;font-size:12.5px;line-height:1.55" class="mut">Ask about the lab that won't converge. Answers come from people whose skill in that domain is verified and visible.</p>
+        <div style="font-size:11.5px" class="mut">Median first reply · 3h 40m</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rule" style="margin:0 40px"></div>
+
+  <!-- events -->
+  <div style="padding:46px 40px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:24px">
+      <div><span class="k">Chapters</span><h2 style="font-size:30px;margin:10px 0 0">Next in your region</h2></div>
+      <a href="#2d" style="font-size:12.5px">All events →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+      <div class="tile" style="padding:16px;display:flex;gap:14px">
+        <div style="text-align:center;flex:none"><div style="font-size:22px;line-height:1">14</div><div class="k" style="margin-top:3px">Aug</div></div>
+        <div style="border-left:1px solid var(--color-divider);padding-left:14px">
+          <span class="tag tag-neutral">Meetup</span>
+          <div style="font-size:13.5px;font-weight:500;margin:8px 0 4px">BGP in the real world — three outages</div>
+          <p style="margin:0;font-size:11.5px" class="mut">Mumbai chapter · 42 going · 2 volunteers needed</p>
+        </div>
+      </div>
+      <div class="tile" style="padding:16px;display:flex;gap:14px">
+        <div style="text-align:center;flex:none"><div style="font-size:22px;line-height:1">22</div><div class="k" style="margin-top:3px">Aug</div></div>
+        <div style="border-left:1px solid var(--color-divider);padding-left:14px">
+          <span class="tag tag-neutral">Workshop</span>
+          <div style="font-size:13.5px;font-weight:500;margin:8px 0 4px">Verification clinic — bring a lab, get feedback</div>
+          <p style="margin:0;font-size:11.5px" class="mut">Online · 118 going · Senior Mentors hosting</p>
+        </div>
+      </div>
+      <div class="tile" style="padding:16px;display:flex;gap:14px">
+        <div style="text-align:center;flex:none"><div style="font-size:22px;line-height:1">06</div><div class="k" style="margin-top:3px">Sep</div></div>
+        <div style="border-left:1px solid var(--color-divider);padding-left:14px">
+          <span class="tag tag-accent">Hackathon</span>
+          <div style="font-size:13.5px;font-weight:500;margin:8px 0 4px">Quarterly challenge — multi-site failover</div>
+          <p style="margin:0;font-size:11.5px" class="mut">All chapters · placement counts as evidence</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- close -->
+  <div style="padding:52px 40px 46px;background:radial-gradient(90% 120% at 84% 110%,color-mix(in srgb,var(--color-section) 58%,transparent),transparent 60%);border-top:1px solid var(--color-divider)">
+    <div style="display:grid;grid-template-columns:1fr 380px;gap:44px;align-items:center">
+      <div>
+        <h2 style="font-size:34px;margin:0 0 12px;max-width:22ch">Start as a learner. Everyone does.</h2>
+        <p style="margin:0;font-size:14px;line-height:1.55;max-width:52ch" class="mut">Pick a path, do the labs, ask badly-worded questions in public. In eighteen months you could be the one signing off someone else's first verified skill.</p>
+      </div>
+      <div>
+        <div class="field" style="margin-bottom:10px">
+          <label style="font-size:11.5px">Work or personal email</label>
+          <div class="input" style="display:flex;align-items:center;color:color-mix(in srgb,var(--color-text) 45%,transparent)">you@example.com</div>
+        </div>
+        <button class="btn btn-primary btn-block" style="justify-content:center;font-size:13.5px">Join the community</button>
+        <p style="margin:10px 0 0;font-size:11px;line-height:1.5" class="mut">Free. Reputation and verification can never be purchased, sponsored, or fast-tracked.</p>
+      </div>
+    </div>
+  </div>
+  <div style="padding:20px 40px;border-top:1px solid var(--color-divider);display:flex;justify-content:space-between;align-items:center">
+    <img src="assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:22px;width:auto;opacity:.7">
+    <div style="display:flex;gap:18px;font-size:11.5px" class="mut"><span>Constitution</span><span>Governance</span><span>Code of conduct</span><span>For companies</span><span>For sponsors</span></div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════ 2b — RESOURCE LIBRARY ══════════════ -->
+<div class="dv-opt" id="2b">
+<div class="dv-olabel"><span class="dv-oid">2b</span><span><strong style="color:var(--color-text);font-weight:500">Resource library &amp; learning catalog</strong> — what the live site does today, absorbed into the paths model. Public and ungated; the difference is every resource now shows the path it feeds and the skill it can evidence.</span></div>
+<div class="scr" data-screen-label="2b Resource library">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Public catalog</div>
+      <div class="sbi on"><i class="ph-fill ph-books"></i>All resources</div>
+      <div class="sbi"><i class="ph ph-path"></i>Learning paths</div>
+      <div class="sbi"><i class="ph ph-flask"></i>Lab exercises</div>
+      <div class="sbi"><i class="ph ph-hard-drive"></i>Software &amp; images</div>
+      <div class="sbi"><i class="ph ph-ruler"></i>Rubrics &amp; syllabi</div>
+    </div>
+    <div>
+      <div class="sbh">Domain</div>
+      <div class="sbi on"><i class="ph-fill ph-network"></i>Networking<span style="margin-left:auto;font-size:10.5px">61</span></div>
+      <div class="sbi"><i class="ph ph-cloud"></i>Cloud<span style="margin-left:auto;font-size:10.5px" class="mut">38</span></div>
+      <div class="sbi"><i class="ph ph-infinity"></i>DevOps<span style="margin-left:auto;font-size:10.5px" class="mut">44</span></div>
+      <div class="sbi"><i class="ph ph-terminal"></i>Linux<span style="margin-left:auto;font-size:10.5px" class="mut">29</span></div>
+      <div class="sbi"><i class="ph ph-shield-check"></i>Security<span style="margin-left:auto;font-size:10.5px" class="mut">31</span></div>
+    </div>
+    <div style="margin-top:auto;padding:11px;border-radius:var(--radius-md);border:1px dashed var(--color-divider)">
+      <p style="margin:0;font-size:11px;line-height:1.5" class="mut">Everything here is free and readable without an account. Resource type, not paywall tier, is the only classification.</p>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:14px;font-weight:500">Networking resources</span>
+        <span style="font-size:12px" class="mut">61 items · mentor-reviewed</span>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <div class="input" style="width:210px;font-size:12px;color:color-mix(in srgb,var(--color-text) 45%,transparent);display:flex;align-items:center;gap:7px"><i class="ph ph-magnifying-glass" style="font-size:13px"></i>Search resources</div>
+        <button class="btn btn-secondary" style="font-size:12px">Newest</button>
+      </div>
+    </div>
+
+    <div style="padding:18px 22px 24px">
+      <!-- featured path -->
+      <div class="tile" style="padding:18px;background:linear-gradient(140deg,color-mix(in srgb,var(--color-section) 42%,var(--color-surface)),var(--color-surface) 66%);margin-bottom:18px">
+        <div style="display:flex;gap:22px;align-items:center">
+          <div style="flex:1">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px">
+              <span class="tag tag-accent">Learning path</span>
+              <span class="tag tag-outline">CCNA 200-301 aligned</span>
+              <span style="font-size:11.5px" class="mut">Owned by Marcus Vance · Senior Mentor</span>
+            </div>
+            <h2 style="font-size:22px;margin:0 0 7px">Routing &amp; Switching Foundations</h2>
+            <p style="margin:0 0 14px;font-size:13px;line-height:1.55;max-width:64ch" class="mut">Eight modules, each ending in a guided exercise, then two unguided tasks that satisfy the consistency criterion. Completing it does not verify you — it makes you eligible to submit.</p>
+            <div style="display:flex;gap:7px;flex-wrap:wrap">
+              <span class="tag tag-neutral">8 modules</span><span class="tag tag-neutral">11 labs</span><span class="tag tag-neutral">~40 h</span><span class="tag tag-neutral">Emerging → Practitioner</span>
+            </div>
+          </div>
+          <div style="width:196px;flex:none;border-left:1px solid var(--color-divider);padding-left:20px">
+            <div class="k" style="margin-bottom:8px">Evidences these skills</div>
+            <div style="display:flex;flex-direction:column;gap:7px;font-size:12px">
+              <div style="display:flex;gap:7px;align-items:center"><i class="ph-fill ph-seal-check" style="font-size:13px;color:var(--color-accent)"></i>VLAN &amp; trunking design</div>
+              <div style="display:flex;gap:7px;align-items:center"><i class="ph-fill ph-seal-check" style="font-size:13px;color:var(--color-accent)"></i>Static &amp; dynamic routing</div>
+              <div style="display:flex;gap:7px;align-items:center"><i class="ph-fill ph-seal-check" style="font-size:13px;color:var(--color-accent)"></i>IPv4/IPv6 addressing</div>
+            </div>
+            <button class="btn btn-primary btn-block" style="justify-content:center;font-size:12.5px;margin-top:14px">Open path</button>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:7px;margin-bottom:14px;align-items:center">
+        <span class="k" style="margin-right:4px">Type</span>
+        <span class="tag tag-accent">All</span><span class="tag tag-outline">Syllabus</span><span class="tag tag-outline">Guide</span><span class="tag tag-outline">Lab exercise</span><span class="tag tag-outline">Rubric</span><span class="tag tag-outline">Software</span>
+        <span class="k" style="margin:0 4px 0 16px">Level</span>
+        <span class="tag tag-outline">Emerging</span><span class="tag tag-outline">Practitioner</span><span class="tag tag-outline">Expert</span>
+      </div>
+
+      <table class="table" style="font-size:13px">
+        <thead><tr><th style="width:44%">Resource</th><th style="width:15%">Type</th><th style="width:16%">Feeds path</th><th style="width:13%">Level</th><th>Maintained by</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><div style="display:flex;gap:10px;align-items:flex-start"><i class="ph ph-file-text" style="font-size:16px;color:var(--color-accent);margin-top:2px"></i><div><div>Subnetting without a calculator — drill set</div><div style="font-size:11px;margin-top:2px" class="mut">120 problems, worked answers · updated 3 days ago</div></div></div></td>
+            <td><span class="tag tag-neutral">Guide</span></td>
+            <td class="mut">R&amp;S Foundations</td>
+            <td class="mut">Emerging</td>
+            <td class="mut">Chapter volunteers</td>
+          </tr>
+          <tr>
+            <td><div style="display:flex;gap:10px;align-items:flex-start"><i class="ph ph-flask" style="font-size:16px;color:var(--color-accent);margin-top:2px"></i><div><div>OSPF adjacency won't form — diagnose it</div><div style="font-size:11px;margin-top:2px" class="mut">Unguided task · counts toward the consistency criterion</div></div></div></td>
+            <td><span class="tag tag-accent">Lab exercise</span></td>
+            <td class="mut">R&amp;S Foundations</td>
+            <td class="mut">Practitioner</td>
+            <td class="mut">Marcus Vance</td>
+          </tr>
+          <tr>
+            <td><div style="display:flex;gap:10px;align-items:flex-start"><i class="ph ph-hard-drive" style="font-size:16px;color:var(--color-accent);margin-top:2px"></i><div><div>Multi-site topology — Packet Tracer + GNS3 pair</div><div style="font-size:11px;margin-top:2px" class="mut">Download 44 MB · checksum published · setup notes included</div></div></div></td>
+            <td><span class="tag tag-neutral">Software</span></td>
+            <td class="mut">Enterprise Routing</td>
+            <td class="mut">Practitioner</td>
+            <td class="mut">Community</td>
+          </tr>
+          <tr>
+            <td><div style="display:flex;gap:10px;align-items:flex-start"><i class="ph ph-ruler" style="font-size:16px;color:var(--color-accent);margin-top:2px"></i><div><div>Verification rubric — BGP route policy design</div><div style="font-size:11px;margin-top:2px" class="mut">Public by design: the standard you'll be judged against, before you submit</div></div></div></td>
+            <td><span class="tag tag-neutral">Rubric</span></td>
+            <td class="mut">Enterprise Routing</td>
+            <td class="mut">Expert</td>
+            <td class="mut">Mentor Council</td>
+          </tr>
+          <tr>
+            <td><div style="display:flex;gap:10px;align-items:flex-start"><i class="ph ph-file-text" style="font-size:16px;color:var(--color-accent);margin-top:2px"></i><div><div>DNS resolution failures — a triage order that works</div><div style="font-size:11px;margin-top:2px" class="mut">Written up from a chapter session · 41 members found it useful</div></div></div></td>
+            <td><span class="tag tag-neutral">Guide</span></td>
+            <td class="mut">Network Services</td>
+            <td class="mut">Emerging</td>
+            <td class="mut">Zara Chen</td>
+          </tr>
+          <tr>
+            <td><div style="display:flex;gap:10px;align-items:flex-start"><i class="ph ph-list-numbers" style="font-size:16px;color:var(--color-accent);margin-top:2px"></i><div><div>CCNP Enterprise — syllabus map to verifiable skills</div><div style="font-size:11px;margin-top:2px" class="mut">Which exam objectives map to practical evidence, and which don't</div></div></div></td>
+            <td><span class="tag tag-neutral">Syllabus</span></td>
+            <td class="mut">Enterprise Routing</td>
+            <td class="mut">Expert</td>
+            <td class="mut">Elena Rostova</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin:16px 0 0;font-size:11.5px" class="mut">Showing 6 of 61 · resources are contributed by members and reviewed by mentors before listing. Contribution here counts as Knowledge Contribution toward reputation.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════ 2c — FORUM ══════════════ -->
+<div class="dv-opt" id="2c">
+<div class="dv-olabel"><span class="dv-oid">2c</span><span><strong style="color:var(--color-text);font-weight:500">Community discussion</strong> — the answer-quality problem solved with verification: every responder's standing in <em>this specific domain</em> is on the post, so you know whose answer to weigh.</span></div>
+<div class="scr" data-screen-label="2c Forum">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Discussion</div>
+      <div class="sbi on"><i class="ph-fill ph-chats-circle"></i>All threads</div>
+      <div class="sbi"><i class="ph ph-question"></i>Unanswered<span style="margin-left:auto;font-size:10.5px;color:var(--color-accent-300)">28</span></div>
+      <div class="sbi"><i class="ph ph-seal-check"></i>Answered by mentors</div>
+      <div class="sbi"><i class="ph ph-bookmark-simple"></i>Saved</div>
+    </div>
+    <div>
+      <div class="sbh">Where you have standing</div>
+      <div class="sbi on"><i class="ph-fill ph-network"></i>Networking<span class="tag tag-accent" style="margin-left:auto;font-size:9.5px;padding:1px 6px">Practitioner</span></div>
+      <div class="sbi"><i class="ph ph-terminal"></i>Linux<span class="tag tag-neutral" style="margin-left:auto;font-size:9.5px;padding:1px 6px">Emerging</span></div>
+    </div>
+    <div>
+      <div class="sbh">Also active</div>
+      <div class="sbi"><i class="ph ph-cloud"></i>Cloud</div>
+      <div class="sbi"><i class="ph ph-infinity"></i>DevOps</div>
+      <div class="sbi"><i class="ph ph-shield-check"></i>Security</div>
+    </div>
+    <div style="margin-top:auto;padding:11px;border-radius:var(--radius-md);border:1px solid var(--color-divider)">
+      <div class="k" style="padding:0;margin-bottom:6px">Your answer record</div>
+      <div style="font-size:12px">14 accepted · 61 posted</div>
+      <div style="font-size:10.5px;margin-top:3px" class="mut">Accepted answers weigh medium-high in points</div>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:14px">
+        <span style="font-size:14px;font-weight:500">Networking</span>
+        <div class="seg" style="font-size:12px">
+          <span class="seg-opt" style="background:color-mix(in srgb,var(--color-accent) 16%,transparent);padding:5px 11px;font-size:12px">Needs an answer</span>
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px">Recent</span>
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px">Most useful</span>
+        </div>
+      </div>
+      <button class="btn btn-primary" style="font-size:12px"><i class="ph ph-plus" style="font-size:14px"></i>Ask the community</button>
+    </div>
+
+    <div style="padding:16px 22px 24px;display:grid;grid-template-columns:1fr 292px;gap:22px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:9px">
+
+        <div class="tile" style="padding:15px 17px;border-color:color-mix(in srgb,var(--color-accent) 40%,transparent)">
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:9px">
+            <span class="tag tag-accent">Needs an answer</span><span class="tag tag-outline">BGP</span><span class="tag tag-outline">route-policy</span>
+            <span style="font-size:11px;margin-left:auto" class="mut">asked 40m ago</span>
+          </div>
+          <div style="font-size:15px;font-weight:500;margin-bottom:6px">Prefix is in the table but never advertised to the peer — where do I even start?</div>
+          <p style="margin:0 0 12px;font-size:12.5px;line-height:1.55" class="mut">iBGP session is up, prefix shows in <code style="font-size:11.5px">show ip bgp</code> as valid but not best. I've checked next-hop reachability. Lab config attached.</p>
+          <div style="display:flex;align-items:center;gap:10px;padding-top:11px;border-top:1px solid var(--color-divider)">
+            <div style="width:24px;height:24px;border-radius:var(--radius-sm);background:var(--color-neutral-800);display:grid;place-items:center;font-size:10px;flex:none">AP</div>
+            <span style="font-size:12px">Aarav Patel</span>
+            <span class="tag tag-neutral" style="font-size:9.5px;padding:1px 6px">Emerging · Networking</span>
+            <span style="font-size:11.5px;margin-left:auto" class="mut">0 answers · 3 watching</span>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:15px 17px">
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:9px">
+            <span class="tag tag-accent"><i class="ph-fill ph-check" style="font-size:10px;margin-right:4px"></i>Answered by mentor</span><span class="tag tag-outline">OSPF</span><span class="tag tag-outline">MTU</span>
+            <span style="font-size:11px;margin-left:auto" class="mut">yesterday</span>
+          </div>
+          <div style="font-size:15px;font-weight:500;margin-bottom:6px">Adjacency stuck in EXSTART across a WAN link</div>
+          <div style="padding:11px 13px;border-radius:var(--radius-sm);background:color-mix(in srgb,var(--color-accent) 9%,transparent);margin-bottom:11px">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:7px">
+              <div style="width:22px;height:22px;border-radius:var(--radius-sm);background:var(--color-accent-800);color:var(--color-accent-100);display:grid;place-items:center;font-size:9.5px;flex:none">MV</div>
+              <span style="font-size:12px">Marcus Vance</span>
+              <span class="tag tag-accent" style="font-size:9.5px;padding:1px 6px"><i class="ph-fill ph-seal-check" style="font-size:9px;margin-right:3px"></i>Expert · Networking</span>
+              <span style="font-size:11px;margin-left:auto" class="mut">Senior Mentor · 4 verified skills in this domain</span>
+            </div>
+            <p style="margin:0;font-size:12.5px;line-height:1.55">MTU mismatch, almost always. EXSTART means they agreed to talk and then choked on DBD size — compare <code style="font-size:11.5px">ip mtu</code> on both ends before you touch anything else.</p>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="font-size:11.5px" class="mut">Asked by Candidate #PP-2938 · 4 answers · marked accepted</span>
+            <span style="font-size:11.5px;margin-left:auto;color:var(--color-accent-300)">+25 knowledge points awarded</span>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:15px 17px">
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:9px">
+            <span class="tag tag-neutral">Discussion</span><span class="tag tag-outline">career</span>
+            <span style="font-size:11px;margin-left:auto" class="mut">2 days ago</span>
+          </div>
+          <div style="font-size:15px;font-weight:500;margin-bottom:6px">Is CCNP worth it if my verified portfolio already shows the same skills?</div>
+          <p style="margin:0 0 12px;font-size:12.5px;line-height:1.55" class="mut">Genuine question, not bait. Three partner companies said the portfolio was what got me the call.</p>
+          <div style="display:flex;align-items:center;gap:10px;padding-top:11px;border-top:1px solid var(--color-divider)">
+            <div style="width:24px;height:24px;border-radius:var(--radius-sm);background:var(--color-accent-800);color:var(--color-accent-100);display:grid;place-items:center;font-size:10px;flex:none">ZC</div>
+            <span style="font-size:12px">Zara Chen</span>
+            <span class="tag tag-accent" style="font-size:9.5px;padding:1px 6px">Practitioner · Networking</span>
+            <span style="font-size:11.5px;margin-left:auto" class="mut">31 answers · 2 mentors replied</span>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:15px 17px;opacity:.62">
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:9px">
+            <span class="tag tag-outline"><i class="ph ph-flag" style="font-size:10px;margin-right:4px"></i>Under moderation</span>
+            <span style="font-size:11px;margin-left:auto" class="mut">2 reports</span>
+          </div>
+          <div style="font-size:15px;font-weight:500">Thread hidden pending moderator review</div>
+          <p style="margin:6px 0 0;font-size:12px" class="mut">Reported for dismissive conduct toward a first-time asker. Handled in <a href="#2e">2e</a>.</p>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="tile" style="padding:15px">
+          <div class="k" style="margin-bottom:10px">Why standing is shown</div>
+          <p style="margin:0;font-size:12px;line-height:1.55" class="mut">Every responder carries their verified level <em>in the domain of the thread</em> — not a global karma number. An Expert in Networking may be Emerging in Security, and the badge will say so.</p>
+        </div>
+        <div class="tile" style="padding:15px">
+          <div class="k" style="margin-bottom:11px">Unanswered in your standing</div>
+          <div style="display:flex;flex-direction:column;gap:9px;font-size:12px">
+            <div style="padding-bottom:9px;border-bottom:1px solid var(--color-divider)">Trunk drops tagged frames after switch replace<div style="font-size:11px;margin-top:3px" class="mut">2 h · VLAN</div></div>
+            <div style="padding-bottom:9px;border-bottom:1px solid var(--color-divider)">DHCP relay works for one VLAN, not the other<div style="font-size:11px;margin-top:3px" class="mut">5 h · DHCP</div></div>
+            <div>Asymmetric routing after adding a second uplink<div style="font-size:11px;margin-top:3px" class="mut">8 h · routing</div></div>
+          </div>
+          <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12px">Answer one</button>
+        </div>
+        <div class="tile" style="padding:15px">
+          <div class="k" style="margin-bottom:10px">Code of conduct</div>
+          <p style="margin:0 0 10px;font-size:12px;line-height:1.55" class="mut">First-time askers are protected. “Just read the docs” replies are removed, not debated.</p>
+          <a href="#2e" style="font-size:11.5px">How moderation works →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════ 2d — EVENTS ══════════════ -->
+<div class="dv-opt" id="2d">
+<div class="dv-olabel"><span class="dv-oid">2d</span><span><strong style="color:var(--color-text);font-weight:500">Events &amp; meetups</strong> — cumulative, not one-off: every event shows what it leaves behind (a write-up, a resource, evidence toward verification) and what the chapter still needs from volunteers.</span></div>
+<div class="scr" data-screen-label="2d Events">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Events</div>
+      <div class="sbi on"><i class="ph-fill ph-calendar-dots"></i>Upcoming</div>
+      <div class="sbi"><i class="ph ph-archive"></i>Past &amp; write-ups</div>
+      <div class="sbi"><i class="ph ph-ticket"></i>My registrations<span style="margin-left:auto;font-size:10.5px" class="mut">3</span></div>
+      <div class="sbi"><i class="ph ph-hand-heart"></i>Volunteer slots<span style="margin-left:auto;font-size:10.5px;color:var(--color-accent-300)">9 open</span></div>
+    </div>
+    <div>
+      <div class="sbh">Format</div>
+      <div class="sbi"><i class="ph ph-users-three"></i>Meetup</div>
+      <div class="sbi"><i class="ph ph-presentation"></i>Workshop</div>
+      <div class="sbi"><i class="ph ph-microphone-stage"></i>Panel</div>
+      <div class="sbi"><i class="ph ph-buildings"></i>Conference</div>
+      <div class="sbi"><i class="ph ph-trophy"></i>Hackathon</div>
+    </div>
+    <div>
+      <div class="sbh">Chapter</div>
+      <div class="sbi on"><i class="ph-fill ph-map-pin"></i>Mumbai</div>
+      <div class="sbi"><i class="ph ph-globe"></i>Online</div>
+      <div class="sbi"><i class="ph ph-dots-three"></i>All 14 chapters</div>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:14px;font-weight:500">Upcoming events</span>
+        <span style="font-size:12px" class="mut">Mumbai chapter · 6 scheduled · 9 volunteer slots open</span>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button class="btn btn-secondary" style="font-size:12px"><i class="ph ph-calendar-blank" style="font-size:14px"></i>Calendar view</button>
+        <button class="btn btn-primary" style="font-size:12px"><i class="ph ph-plus" style="font-size:14px"></i>Propose an event</button>
+      </div>
+    </div>
+
+    <div style="padding:18px 22px 24px;display:grid;grid-template-columns:1fr 300px;gap:22px;align-items:start">
+      <div>
+        <!-- featured -->
+        <div class="tile" style="padding:0;overflow:hidden;margin-bottom:14px">
+          <div class="lighten" style="height:150px;border-bottom:1px solid var(--color-divider);display:grid;place-items:center;background:linear-gradient(140deg,color-mix(in srgb,var(--color-section) 70%,var(--color-surface)),var(--color-surface))">
+            <p style="margin:0;font-size:11.5px;text-align:center;max-width:44ch" class="mut"><i class="ph ph-image" style="font-size:20px;margin:0 auto 6px"></i>Event header image placeholder — last quarter's meetup, shot dark</p>
+          </div>
+          <div style="padding:18px">
+            <div style="display:flex;gap:20px;align-items:flex-start">
+              <div style="text-align:center;flex:none;padding-right:18px;border-right:1px solid var(--color-divider)">
+                <div style="font-size:30px;line-height:1">14</div><div class="k" style="margin-top:4px">Aug</div>
+                <div style="font-size:11px;margin-top:8px" class="mut">18:30 IST</div>
+              </div>
+              <div style="flex:1">
+                <div style="display:flex;gap:8px;align-items:center;margin-bottom:9px">
+                  <span class="tag tag-accent">Meetup</span><span class="tag tag-outline">Networking</span><span class="tag tag-outline">Sponsored — logo only</span>
+                </div>
+                <h2 style="font-size:21px;margin:0 0 7px">BGP in the real world — three outages, told honestly</h2>
+                <p style="margin:0 0 14px;font-size:12.5px;line-height:1.55;max-width:60ch" class="mut">Two speakers walk through route leaks they caused. Followed by an open lab hour where mentors sit with anyone stuck on the Enterprise Routing path.</p>
+                <div style="display:flex;gap:24px;align-items:center">
+                  <div><div class="k">Attending</div><div style="font-size:13px;margin-top:3px">42 of 60</div></div>
+                  <div><div class="k">Speakers</div><div style="font-size:13px;margin-top:3px">Marcus Vance · 1 more</div></div>
+                  <div><div class="k">Leaves behind</div><div style="font-size:13px;margin-top:3px">Write-up + lab file</div></div>
+                  <button class="btn btn-primary" style="font-size:12.5px;margin-left:auto">Register</button>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top:16px;padding:11px 13px;border-radius:var(--radius-sm);background:color-mix(in srgb,var(--color-accent) 9%,transparent);display:flex;align-items:center;gap:10px">
+              <i class="ph ph-hand-heart" style="font-size:16px;color:var(--color-accent);flex:none"></i>
+              <span style="font-size:12px;flex:1">2 volunteer slots open — registration desk and session recording. Counts as Community Building contribution.</span>
+              <button class="btn btn-secondary" style="font-size:11.5px;flex:none">Take a slot</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div class="tile" style="padding:14px 16px;display:flex;gap:18px;align-items:center">
+            <div style="text-align:center;flex:none;width:40px"><div style="font-size:19px;line-height:1">22</div><div class="k" style="margin-top:3px">Aug</div></div>
+            <div style="flex:1;border-left:1px solid var(--color-divider);padding-left:18px">
+              <div style="display:flex;gap:7px;align-items:center;margin-bottom:6px"><span class="tag tag-neutral">Workshop</span><span class="tag tag-outline">Online · all chapters</span></div>
+              <div style="font-size:14px;font-weight:500">Verification clinic — bring a lab, get real feedback</div>
+              <p style="margin:4px 0 0;font-size:11.5px" class="mut">Senior Mentors review submissions live. Feedback here is not a verification decision.</p>
+            </div>
+            <div style="flex:none;text-align:right"><div style="font-size:12px">118 going</div><button class="btn btn-secondary" style="font-size:11.5px;margin-top:7px">Register</button></div>
+          </div>
+          <div class="tile" style="padding:14px 16px;display:flex;gap:18px;align-items:center">
+            <div style="text-align:center;flex:none;width:40px"><div style="font-size:19px;line-height:1">06</div><div class="k" style="margin-top:3px">Sep</div></div>
+            <div style="flex:1;border-left:1px solid var(--color-divider);padding-left:18px">
+              <div style="display:flex;gap:7px;align-items:center;margin-bottom:6px"><span class="tag tag-accent">Hackathon</span><span class="tag tag-outline">Evidence-bearing</span></div>
+              <div style="font-size:14px;font-weight:500">Quarterly challenge — multi-site failover under load</div>
+              <p style="margin:4px 0 0;font-size:11.5px" class="mut">Placement is high-weight evidence in a verification submission.</p>
+            </div>
+            <div style="flex:none;text-align:right"><div style="font-size:12px">312 entered</div><button class="btn btn-secondary" style="font-size:11.5px;margin-top:7px">Enter</button></div>
+          </div>
+          <div class="tile" style="padding:14px 16px;display:flex;gap:18px;align-items:center">
+            <div style="text-align:center;flex:none;width:40px"><div style="font-size:19px;line-height:1">28</div><div class="k" style="margin-top:3px">Sep</div></div>
+            <div style="flex:1;border-left:1px solid var(--color-divider);padding-left:18px">
+              <div style="display:flex;gap:7px;align-items:center;margin-bottom:6px"><span class="tag tag-neutral">Panel</span><span class="tag tag-outline">Governance</span></div>
+              <div style="font-size:14px;font-weight:500">Open governance hour — chapter charters up for vote</div>
+              <p style="margin:4px 0 0;font-size:11.5px" class="mut">Any member may attend and speak. Two new domain chapters on the agenda.</p>
+            </div>
+            <div style="flex:none;text-align:right"><div style="font-size:12px">Open</div><button class="btn btn-secondary" style="font-size:11.5px;margin-top:7px">Add to calendar</button></div>
+          </div>
+        </div>
+
+        <h3 style="font-size:14px;margin:22px 0 11px">What last quarter left behind</h3>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">
+          <div class="tile" style="padding:14px"><div class="k" style="margin-bottom:8px">Jun · Mumbai meetup</div><div style="font-size:13px;margin-bottom:6px">DNS triage order</div><p style="margin:0;font-size:11.5px" class="mut">Became a catalog guide · 41 found it useful</p></div>
+          <div class="tile" style="padding:14px"><div class="k" style="margin-bottom:8px">May · Online workshop</div><div style="font-size:13px;margin-bottom:6px">EVPN starter topology</div><p style="margin:0;font-size:11.5px" class="mut">Became a downloadable lab file</p></div>
+          <div class="tile" style="padding:14px"><div class="k" style="margin-bottom:8px">Apr · Quarterly challenge</div><div style="font-size:13px;margin-bottom:6px">88 placements</div><p style="margin:0;font-size:11.5px" class="mut">Cited as evidence in 61 verifications</p></div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="tile" style="padding:15px">
+          <div class="k" style="margin-bottom:11px">Mumbai chapter health</div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span>Event cadence</span><span class="mut">Monthly · on track</span></div><div class="bar"><span style="width:92%"></span></div></div>
+            <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span>Volunteer cover</span><span class="mut">Thin</span></div><div class="bar"><span style="width:41%"></span></div></div>
+            <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span>Mentor participation</span><span class="mut">Healthy</span></div><div class="bar"><span style="width:78%"></span></div></div>
+          </div>
+          <p style="margin:12px 0 0;font-size:11px;line-height:1.5" class="mut">Chapter health is reported upward to governance, not used to rank chapters against each other.</p>
+        </div>
+        <div class="tile" style="padding:15px">
+          <div class="k" style="margin-bottom:11px">Open volunteer slots</div>
+          <div style="display:flex;flex-direction:column;gap:9px;font-size:12px">
+            <div style="display:flex;justify-content:space-between;padding-bottom:9px;border-bottom:1px solid var(--color-divider)"><span>Registration desk · 14 Aug</span><span class="mut">2</span></div>
+            <div style="display:flex;justify-content:space-between;padding-bottom:9px;border-bottom:1px solid var(--color-divider)"><span>Session recording · 14 Aug</span><span class="mut">1</span></div>
+            <div style="display:flex;justify-content:space-between;padding-bottom:9px;border-bottom:1px solid var(--color-divider)"><span>Clinic moderator · 22 Aug</span><span class="mut">3</span></div>
+            <div style="display:flex;justify-content:space-between"><span>Write-up author · post-event</span><span class="mut">3</span></div>
+          </div>
+        </div>
+        <div class="tile" style="padding:15px">
+          <div class="k" style="margin-bottom:10px">Sponsorship boundary</div>
+          <p style="margin:0;font-size:11.5px;line-height:1.55" class="mut">Sponsors fund venues, food and scholarships. They do not choose speakers, see attendee lists, or gain any hiring or ranking advantage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════ 2e — MODERATION / GOVERNANCE ══════════════ -->
+<div class="dv-opt" id="2e">
+<div class="dv-olabel"><span class="dv-oid">2e</span><span><strong style="color:var(--color-text);font-weight:500">Moderation board</strong> — the admin &amp; governance portal. Designed around the documented failure mode: moderator burnout. Every case shows the policy clause, the escalation path, and who is accountable.</span></div>
+<div class="scr" data-screen-label="2e Moderation board">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Admin &amp; governance</div>
+      <div class="sbi on"><i class="ph-fill ph-shield-warning"></i>Moderation board<span style="margin-left:auto;font-size:10.5px;background:var(--color-accent-800);color:var(--color-accent-100);padding:1px 6px;border-radius:8px">7</span></div>
+      <div class="sbi"><i class="ph ph-map-pin-line"></i>Chapter management</div>
+      <div class="sbi"><i class="ph ph-gavel"></i>Resolution centre<span style="margin-left:auto;font-size:10.5px" class="mut">3</span></div>
+      <div class="sbi"><i class="ph ph-file-magnifying-glass"></i>Audits</div>
+      <div class="sbi"><i class="ph ph-users-four"></i>Committees &amp; votes</div>
+    </div>
+    <div>
+      <div class="sbh">Queues</div>
+      <div class="sbi on"><i class="ph-fill ph-flag"></i>Reported content<span style="margin-left:auto;font-size:10.5px">7</span></div>
+      <div class="sbi"><i class="ph ph-user-focus"></i>Member conduct<span style="margin-left:auto;font-size:10.5px" class="mut">2</span></div>
+      <div class="sbi"><i class="ph ph-seal-question"></i>Verification disputes<span style="margin-left:auto;font-size:10.5px" class="mut">1</span></div>
+      <div class="sbi"><i class="ph ph-warning-diamond"></i>Escalated to council<span style="margin-left:auto;font-size:10.5px" class="mut">1</span></div>
+    </div>
+    <div style="margin-top:auto;padding:11px;border-radius:var(--radius-md);border:1px solid var(--color-divider)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div style="width:26px;height:26px;border-radius:var(--radius-sm);background:var(--color-neutral-800);display:grid;place-items:center;font-size:10.5px;flex:none">SJ</div>
+        <div><div style="font-size:12px">Sarah Jenkins</div><div style="font-size:10px" class="mut">Moderator · Mumbai</div></div>
+      </div>
+      <div class="bar" style="height:4px"><span style="width:84%;background:var(--color-accent)"></span></div>
+      <div style="font-size:10.5px;margin-top:5px;color:var(--color-accent-300)">84% of fair-load cap — hand off before you burn out</div>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:14px">
+        <span style="font-size:14px;font-weight:500">Reported content</span>
+        <div class="seg" style="font-size:12px">
+          <span class="seg-opt" style="background:color-mix(in srgb,var(--color-accent) 16%,transparent);padding:5px 11px;font-size:12px">Open · 7</span>
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px">Actioned · 84</span>
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px">Overturned · 3</span>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span style="font-size:11.5px" class="mut">First-response SLA · 24 h</span>
+        <button class="btn btn-secondary" style="font-size:12px"><i class="ph ph-hand-arrow-down" style="font-size:14px"></i>Hand off queue</button>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:302px 1fr;flex:1;min-height:0">
+      <div style="border-right:1px solid var(--color-divider);padding:12px;display:flex;flex-direction:column;gap:7px">
+        <div style="display:flex;justify-content:space-between;padding:0 3px 5px"><span class="k">By age</span><span style="font-size:11px;color:var(--color-accent-300)">1 near SLA</span></div>
+        <div class="tile" style="padding:11px 12px;border-color:var(--color-accent);background:color-mix(in srgb,var(--color-accent) 9%,var(--color-surface))">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:12.5px;font-weight:500">Dismissive conduct</span><span class="tag tag-accent">21 h</span></div>
+          <p style="margin:5px 0 0;font-size:11.5px" class="mut">Networking thread · 2 reports · first-time asker involved</p>
+        </div>
+        <div class="tile" style="padding:11px 12px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:12.5px;font-weight:500">Suspected answer farming</span><span class="tag tag-neutral">14 h</span></div>
+          <p style="margin:5px 0 0;font-size:11.5px" class="mut">6 low-value answers in 20 min · points integrity</p>
+        </div>
+        <div class="tile" style="padding:11px 12px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:12.5px;font-weight:500">Commercial promotion</span><span class="tag tag-neutral">9 h</span></div>
+          <p style="margin:5px 0 0;font-size:11.5px" class="mut">Paid bootcamp link in a resource comment</p>
+        </div>
+        <div class="tile" style="padding:11px 12px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:12.5px;font-weight:500">Shared lab solution</span><span class="tag tag-neutral">6 h</span></div>
+          <p style="margin:5px 0 0;font-size:11.5px" class="mut">Independence criterion at risk · verification impact</p>
+        </div>
+        <div class="tile" style="padding:11px 12px;border-style:dashed;background:transparent">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:12.5px;font-weight:500">Verification dispute</span><span class="tag tag-outline">Council</span></div>
+          <p style="margin:5px 0 0;font-size:11.5px" class="mut">Outside moderator authority — routed to Verification Council</p>
+        </div>
+      </div>
+
+      <div style="padding:18px 22px 24px">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:18px">
+          <div>
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:6px">
+              <h2 style="font-size:20px;margin:0">Dismissive conduct toward a first-time asker</h2>
+              <span class="tag tag-accent">Open</span>
+            </div>
+            <p style="margin:0;font-size:12.5px" class="mut">Case MOD-2026-0912 · reported by 2 members · Networking thread · <span style="color:var(--color-accent-300)">3 h left on first-response SLA</span></p>
+          </div>
+          <div style="text-align:right;flex:none">
+            <div class="k">Policy clause</div>
+            <div style="font-size:13px;margin-top:3px">§4.2 Constructive tone</div>
+            <a href="#2e" style="font-size:11px">Open policy manual →</a>
+          </div>
+        </div>
+
+        <div class="rule" style="margin:18px 0"></div>
+
+        <div style="display:grid;grid-template-columns:1fr 286px;gap:22px;align-items:start">
+          <div>
+            <div class="k" style="margin-bottom:9px">Reported content, in context</div>
+            <div class="tile" style="padding:15px 17px;margin-bottom:12px">
+              <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px">
+                <div style="width:24px;height:24px;border-radius:var(--radius-sm);background:var(--color-neutral-800);display:grid;place-items:center;font-size:10px;flex:none">AP</div>
+                <span style="font-size:12px">Aarav Patel</span><span class="tag tag-neutral" style="font-size:9.5px;padding:1px 6px">Emerging · first post</span>
+                <span style="font-size:11px;margin-left:auto" class="mut">original question</span>
+              </div>
+              <p style="margin:0;font-size:12.5px;line-height:1.55" class="mut">“Prefix is in the table but never advertised to the peer — where do I even start?”</p>
+            </div>
+            <div class="tile" style="padding:15px 17px;border-color:color-mix(in srgb,var(--color-accent) 40%,transparent)">
+              <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px">
+                <div style="width:24px;height:24px;border-radius:var(--radius-sm);background:var(--color-neutral-800);display:grid;place-items:center;font-size:10px;flex:none">—</div>
+                <span style="font-size:12px">Member #PP-7734</span><span class="tag tag-neutral" style="font-size:9.5px;padding:1px 6px">Proficient · Networking</span>
+                <span style="font-size:11px;margin-left:auto;color:var(--color-accent-300)">reported reply</span>
+              </div>
+              <p style="margin:0 0 11px;font-size:12.5px;line-height:1.55">“If you can't read a BGP table you shouldn't be attempting CCNP labs. Search before posting.”</p>
+              <div style="display:flex;gap:7px;flex-wrap:wrap">
+                <span class="tag tag-outline">2 reports</span><span class="tag tag-outline">No prior warnings</span><span class="tag tag-outline">Mentor track applicant</span>
+              </div>
+            </div>
+
+            <div class="k" style="margin:20px 0 9px">Action — proportionate ladder</div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <div class="tile" style="padding:12px 15px;display:flex;align-items:center;gap:12px;border-color:color-mix(in srgb,var(--color-accent) 45%,transparent)">
+                <i class="ph-fill ph-check-circle" style="font-size:16px;color:var(--color-accent);flex:none"></i>
+                <div style="flex:1"><div style="font-size:13px">Remove reply + private guidance note</div><div style="font-size:11.5px;margin-top:2px" class="mut">Standard first action for tone under §4.2. No reputation penalty.</div></div>
+                <span class="tag tag-accent">Selected</span>
+              </div>
+              <div class="tile" style="padding:12px 15px;display:flex;align-items:center;gap:12px">
+                <i class="ph ph-circle" style="font-size:16px;color:color-mix(in srgb,var(--color-text) 35%,transparent);flex:none"></i>
+                <div style="flex:1"><div style="font-size:13px">Formal warning</div><div style="font-size:11.5px;margin-top:2px" class="mut">Logged to conduct record · visible to Mentor Track review</div></div>
+              </div>
+              <div class="tile" style="padding:12px 15px;display:flex;align-items:center;gap:12px">
+                <i class="ph ph-circle" style="font-size:16px;color:color-mix(in srgb,var(--color-text) 35%,transparent);flex:none"></i>
+                <div style="flex:1"><div style="font-size:13px">Temporary posting restriction</div><div style="font-size:11.5px;margin-top:2px" class="mut">Requires a second moderator to co-sign</div></div>
+              </div>
+              <div class="tile" style="padding:12px 15px;display:flex;align-items:center;gap:12px;border-style:dashed;background:transparent">
+                <i class="ph ph-circle-dashed" style="font-size:16px;color:color-mix(in srgb,var(--color-text) 35%,transparent);flex:none"></i>
+                <div style="flex:1"><div style="font-size:13px" class="mut">Suspension or removal</div><div style="font-size:11.5px;margin-top:2px" class="mut">Not available to moderators — Governance Committee only</div></div>
+              </div>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;gap:9px;margin-top:16px;align-items:center">
+              <button class="btn btn-primary" style="font-size:12.5px;flex:none;white-space:nowrap"><i class="ph ph-check" style="font-size:14px"></i>Apply action</button>
+              <button class="btn btn-secondary" style="font-size:12.5px;flex:none;white-space:nowrap">Ask a second moderator</button>
+              <button class="btn btn-ghost" style="font-size:12.5px;flex:none;white-space:nowrap">Escalate to Governance</button>
+            </div>
+            <p style="margin:9px 0 0;font-size:11px" class="mut">Reporters are notified of the outcome, not the action detail.</p>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div class="tile" style="padding:15px">
+              <div class="k" style="margin-bottom:10px">Accountability</div>
+              <div style="display:flex;flex-direction:column;gap:8px;font-size:12px">
+                <div style="display:flex;justify-content:space-between"><span class="mut">Responsible</span><span>Moderator</span></div>
+                <div style="display:flex;justify-content:space-between"><span class="mut">Accountable</span><span>Community Admin</span></div>
+                <div style="display:flex;justify-content:space-between"><span class="mut">Consulted</span><span>Mentor Council</span></div>
+                <div style="display:flex;justify-content:space-between"><span class="mut">Informed</span><span>Reporters</span></div>
+              </div>
+              <p style="margin:11px 0 0;font-size:10.5px;line-height:1.5" class="mut">From the RACI matrix — the board never leaves a case without a named owner.</p>
+            </div>
+            <div class="tile" style="padding:15px">
+              <div class="k" style="margin-bottom:10px">Appeal path</div>
+              <div style="display:flex;flex-direction:column;gap:0;font-size:12px">
+                <div style="display:flex;gap:9px;align-items:center;padding-bottom:9px;border-bottom:1px solid var(--color-divider)"><i class="ph-fill ph-number-circle-one" style="font-size:15px;color:var(--color-accent)"></i>Moderator decision</div>
+                <div style="display:flex;gap:9px;align-items:center;padding:9px 0;border-bottom:1px solid var(--color-divider)"><i class="ph ph-number-circle-two mut" style="font-size:15px"></i>Community Admin review</div>
+                <div style="display:flex;gap:9px;align-items:center;padding-top:9px"><i class="ph ph-number-circle-three mut" style="font-size:15px"></i>Governance Committee — final</div>
+              </div>
+              <p style="margin:11px 0 0;font-size:10.5px;line-height:1.5" class="mut">Every member may appeal once at each level. 3 of 87 actions were overturned this quarter — published deliberately.</p>
+            </div>
+            <div class="tile" style="padding:15px">
+              <div class="k" style="margin-bottom:10px">Moderator load this week</div>
+              <div style="display:flex;flex-direction:column;gap:9px">
+                <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span>You</span><span>21 cases</span></div><div class="bar"><span style="width:84%"></span></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span class="mut">D. Miller</span><span class="mut">9</span></div><div class="bar"><span style="width:36%"></span></div></div>
+                <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span class="mut">K. Tanaka</span><span class="mut">6</span></div><div class="bar"><span style="width:24%"></span></div></div>
+              </div>
+              <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12px">Rebalance the queue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<p style="margin:30px 0 0;font-size:12px;line-height:1.6;color:color-mix(in srgb,var(--color-text) 52%,transparent)">Try next: “now do the mobile versions of <a href="#2a">2a</a>, <a href="#1a">1a</a> and <a href="#1c">1c</a>” · “<a href="#2a">2a</a> hero is too safe — try three bolder directions” · “add the mentor-track application and chapter-charter screens” · “show <a href="#2c">2c</a> as a single thread page”</p>
+</section>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><span class="dv-tid">1</span><span class="dv-tname">First screen set — the four surfaces the ecosystem's thesis rests on</span></div>
+<p style="margin:0;font-size:13px;line-height:1.6;max-width:88ch;color:color-mix(in srgb,var(--color-text) 62%,transparent)">Every label, state, tier and rule below traces to a document in the attached suite — verification states and rubric criteria from <code style="font-size:12px">10</code>, points/levels/leaderboards from <code style="font-size:12px">11</code>, portal trees and the bias-mitigation rule from <code style="font-size:12px">24</code>, personas from <code style="font-size:12px">19</code>, talent pools from <code style="font-size:12px">06</code>. Wordmark and mark are your real <strong>Packet Pulse</strong> logo.</p>
+
+<div class="dv-opts">
+
+<!-- ══════════════ 1a — VERIFIED PORTFOLIO ══════════════ -->
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><span class="dv-oid">1a</span><span><strong style="color:var(--color-text);font-weight:500">Verified portfolio</strong> — the résumé replacement. Trust Score shown as its composition, never as a bare number; every skill carries its evidence trail and its revocability.</span></div>
+<div class="scr" data-screen-label="1a Portfolio">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Member portal</div>
+      <div class="sbi"><i class="ph ph-squares-four"></i>Dashboard</div>
+      <div class="sbi"><i class="ph ph-graduation-cap"></i>Learning center</div>
+      <div class="sbi"><i class="ph ph-terminal-window"></i>Lab sandbox</div>
+      <div class="sbi on"><i class="ph-fill ph-seal-check"></i>My portfolio</div>
+      <div class="sbi"><i class="ph ph-scroll"></i>Reputation ledger</div>
+    </div>
+    <div>
+      <div class="sbh">Community</div>
+      <div class="sbi"><i class="ph ph-users-three"></i>My mentors</div>
+      <div class="sbi"><i class="ph ph-calendar-dots"></i>Events</div>
+      <div class="sbi"><i class="ph ph-chats-circle"></i>Study groups</div>
+    </div>
+    <div style="margin-top:auto;padding:10px;border-radius:var(--radius-md);border:1px solid var(--color-divider)">
+      <div class="k" style="padding:0;margin-bottom:5px">Chapter</div>
+      <div style="font-size:12px">Singapore · SEA</div>
+      <div style="font-size:11px;margin-top:3px" class="mut">Rank 12 of 486 this season</div>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="font-size:14px;font-weight:500">Portfolio</span>
+        <span class="tag tag-outline">Public share link active</span>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="btn btn-secondary" style="font-size:12px"><i class="ph ph-link-simple" style="font-size:14px"></i>Copy share link</button>
+        <button class="btn btn-primary" style="font-size:12px"><i class="ph ph-upload-simple" style="font-size:14px"></i>Submit skill for verification</button>
+      </div>
+    </div>
+
+    <div style="padding:22px 22px 26px;display:grid;grid-template-columns:1fr 336px;gap:26px;align-items:start">
+      <div>
+        <!-- identity -->
+        <div style="display:flex;gap:16px;align-items:flex-start">
+          <div style="width:62px;height:62px;flex:none;border-radius:var(--radius-md);background:var(--color-accent-800);color:var(--color-accent-100);display:grid;place-items:center;font-size:21px;font-weight:500;letter-spacing:.02em">ZC</div>
+          <div style="flex:1">
+            <div style="display:flex;align-items:center;gap:9px">
+              <h2 style="font-size:25px;margin:0">Zara Chen</h2>
+              <span class="tag tag-accent"><i class="ph-fill ph-seal-check" style="font-size:11px;margin-right:4px"></i>Practitioner</span>
+            </div>
+            <p style="margin:5px 0 0;font-size:13px" class="mut">Junior DevOps Engineer · Singapore · Member since Mar 2024 · 4 verified skills</p>
+            <div style="display:flex;gap:6px;margin-top:9px;flex-wrap:wrap">
+              <span class="tag tag-neutral">DevOps</span><span class="tag tag-neutral">Kubernetes</span><span class="tag tag-neutral">Terraform</span><span class="tag tag-neutral">Linux</span><span class="tag tag-neutral">CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule" style="margin:22px 0 18px"></div>
+
+        <!-- verified skills -->
+        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:12px">
+          <h3 style="font-size:15px;margin:0">Verified skills</h3>
+          <span style="font-size:11.5px" class="mut">Verification is revocable — each skill re-enters periodic review</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px">
+
+          <div class="tile" style="padding:13px 15px">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:14px">
+              <div style="flex:1">
+                <div style="display:flex;align-items:center;gap:8px">
+                  <i class="ph-fill ph-seal-check" style="font-size:15px;color:var(--color-accent)"></i>
+                  <span style="font-size:14px;font-weight:500">Container Orchestration — Kubernetes Operations</span>
+                  <span class="tag tag-accent">Practitioner</span>
+                </div>
+                <p style="margin:7px 0 0;font-size:12px" class="mut">Verified by <span style="color:var(--color-accent-300)">Elena Rostova · Principal Mentor</span> on 14 Feb 2026 · Peer confidence 4 of 4</p>
+              </div>
+              <span class="tag tag-outline" style="flex:none">Verified</span>
+            </div>
+            <div style="display:flex;gap:7px;margin-top:11px;padding-top:11px;border-top:1px solid var(--color-divider);flex-wrap:wrap">
+              <span class="k">Evidence</span>
+              <span style="font-size:11.5px;display:flex;align-items:center;gap:5px"><i class="ph ph-flask" style="font-size:13px;color:var(--color-accent)"></i>2 guided exercises</span>
+              <span style="font-size:11.5px;display:flex;align-items:center;gap:5px"><i class="ph ph-trophy" style="font-size:13px;color:var(--color-accent)"></i>Quarterly challenge · top 15%</span>
+              <span style="font-size:11.5px;display:flex;align-items:center;gap:5px"><i class="ph ph-users" style="font-size:13px;color:var(--color-accent)"></i>3 peer endorsements</span>
+              <a href="#1a" style="font-size:11.5px;margin-left:auto">View evidence trail →</a>
+            </div>
+          </div>
+
+          <div class="tile" style="padding:13px 15px">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:14px">
+              <div style="flex:1">
+                <div style="display:flex;align-items:center;gap:8px">
+                  <i class="ph-fill ph-seal-check" style="font-size:15px;color:var(--color-accent)"></i>
+                  <span style="font-size:14px;font-weight:500">Linux System Administration</span>
+                  <span class="tag tag-accent">Practitioner</span>
+                </div>
+                <p style="margin:7px 0 0;font-size:12px" class="mut">Verified by <span style="color:var(--color-accent-300)">Marcus Vance · Senior Mentor</span> on 02 Nov 2025 · Peer confidence 3 of 4</p>
+              </div>
+              <span class="tag tag-neutral" style="flex:none"><i class="ph ph-arrows-clockwise" style="font-size:11px;margin-right:4px"></i>Periodic review</span>
+            </div>
+            <div style="display:flex;gap:7px;margin-top:11px;padding-top:11px;border-top:1px solid var(--color-divider);flex-wrap:wrap">
+              <span class="k">Evidence</span>
+              <span style="font-size:11.5px;display:flex;align-items:center;gap:5px"><i class="ph ph-flask" style="font-size:13px;color:var(--color-accent)"></i>3 guided exercises</span>
+              <span style="font-size:11.5px;display:flex;align-items:center;gap:5px"><i class="ph ph-chalkboard-teacher" style="font-size:13px;color:var(--color-accent)"></i>Taught 1 study-group session</span>
+              <a href="#1a" style="font-size:11.5px;margin-left:auto">View evidence trail →</a>
+            </div>
+          </div>
+
+          <div class="tile" style="padding:13px 15px;border-style:dashed;background:transparent">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:14px">
+              <div style="flex:1">
+                <div style="display:flex;align-items:center;gap:8px">
+                  <i class="ph ph-hourglass-medium" style="font-size:15px;color:color-mix(in srgb,var(--color-text) 50%,transparent)"></i>
+                  <span style="font-size:14px;font-weight:500">Infrastructure as Code — Terraform</span>
+                </div>
+                <p style="margin:7px 0 0;font-size:12px" class="mut">In mentor review since 26 Jul · peer stage passed 4 of 4 · target SLA 5 working days</p>
+              </div>
+              <span class="tag tag-outline" style="flex:none">In review</span>
+            </div>
+          </div>
+
+          <div class="tile" style="padding:13px 15px;border-style:dashed;background:transparent">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:14px">
+              <div style="flex:1">
+                <div style="display:flex;align-items:center;gap:8px">
+                  <i class="ph ph-arrow-u-up-left" style="font-size:15px;color:color-mix(in srgb,var(--color-text) 50%,transparent)"></i>
+                  <span style="font-size:14px;font-weight:500">Observability &amp; SLO Design</span>
+                </div>
+                <p style="margin:7px 0 0;font-size:12px" class="mut">Returned for revision — “Consistency: demonstrate the skill on a second, unguided task.” Resubmission allowed.</p>
+              </div>
+              <button class="btn btn-secondary" style="font-size:11.5px;flex:none">Open feedback</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="rule" style="margin:22px 0 18px"></div>
+
+        <!-- contribution ledger -->
+        <h3 style="font-size:15px;margin:0 0 12px">Contribution record</h3>
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin-bottom:16px">
+          <div class="tile" style="padding:11px 12px"><div class="k" style="margin-bottom:6px">Learning</div><div style="font-size:19px">3</div><div style="font-size:11px" class="mut">paths complete</div></div>
+          <div class="tile" style="padding:11px 12px"><div class="k" style="margin-bottom:6px">Knowledge</div><div style="font-size:19px">61</div><div style="font-size:11px" class="mut">answers accepted</div></div>
+          <div class="tile" style="padding:11px 12px"><div class="k" style="margin-bottom:6px">Community</div><div style="font-size:19px">7</div><div style="font-size:11px" class="mut">events supported</div></div>
+          <div class="tile" style="padding:11px 12px"><div class="k" style="margin-bottom:6px">Mentorship</div><div style="font-size:19px">2</div><div style="font-size:11px" class="mut">mentees guided</div></div>
+          <div class="tile" style="padding:11px 12px"><div class="k" style="margin-bottom:6px">Leadership</div><div style="font-size:19px">—</div><div style="font-size:11px" class="mut">not yet</div></div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0">
+          <div style="display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--color-divider)"><span style="font-size:11.5px;width:74px;flex:none" class="mut">28 Jul</span><span style="font-size:12.5px;flex:1">Answered “etcd quorum loss during node drain” — marked accepted by author</span><span class="tag tag-accent">Knowledge · medium-high</span></div>
+          <div style="display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--color-divider)"><span style="font-size:11.5px;width:74px;flex:none" class="mut">21 Jul</span><span style="font-size:12.5px;flex:1">Ran study-group session · Linux boot &amp; systemd targets · 14 attendees</span><span class="tag tag-accent">Mentorship · high</span></div>
+          <div style="display:flex;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--color-divider)"><span style="font-size:11.5px;width:74px;flex:none" class="mut">09 Jul</span><span style="font-size:12.5px;flex:1">Volunteered at Singapore chapter meetup · registration desk</span><span class="tag tag-neutral">Community · low-medium</span></div>
+          <div style="display:flex;gap:12px;align-items:baseline;padding:9px 0"><span style="font-size:11.5px;width:74px;flex:none" class="mut">14 Feb</span><span style="font-size:12.5px;flex:1">Skill verified · Kubernetes Operations</span><span class="tag tag-accent">Verified · high</span></div>
+        </div>
+      </div>
+
+      <!-- right rail: trust score -->
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div class="tile" style="padding:16px">
+          <div style="display:flex;align-items:baseline;justify-content:space-between">
+            <span class="k">Trust score</span>
+            <span style="font-size:10.5px" class="mut">Composition visible to you only</span>
+          </div>
+          <div style="display:flex;align-items:flex-end;gap:8px;margin:10px 0 2px">
+            <span style="font-size:44px;line-height:.9;letter-spacing:-.02em">78</span>
+            <span style="font-size:12px;padding-bottom:5px" class="mut">/ 100 · Practitioner band</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:5px;font-size:11.5px;color:var(--color-accent-300);margin-bottom:14px"><i class="ph ph-trend-up" style="font-size:13px"></i>+6 this quarter</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span>Verified skills</span><span class="mut">High weight</span></div><div class="bar"><span style="width:82%"></span></div></div>
+            <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span>Contribution history</span><span class="mut">Medium</span></div><div class="bar"><span style="width:74%"></span></div></div>
+            <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span>Peer feedback</span><span class="mut">Medium</span></div><div class="bar"><span style="width:88%"></span></div></div>
+            <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span>Mentor endorsements</span><span class="mut">High weight</span></div><div class="bar"><span style="width:61%"></span></div></div>
+          </div>
+          <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--color-divider);display:flex;gap:8px;align-items:flex-start">
+            <i class="ph ph-prohibit" style="font-size:14px;color:var(--color-accent);margin-top:1px"></i>
+            <p style="margin:0;font-size:11px;line-height:1.5" class="mut">No purchase path. Trust score cannot be bought, sponsored, or fast-tracked — and decays with sustained inactivity.</p>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:16px">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:12px"><span class="k">Badges</span><span style="font-size:11px" class="mut">9 earned</span></div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:9px">
+            <div style="text-align:center"><div style="height:42px;border-radius:var(--radius-md);background:var(--color-accent-800);display:grid;place-items:center;margin-bottom:5px"><i class="ph-fill ph-seal-check" style="font-size:19px;color:var(--color-accent-100)"></i></div><div style="font-size:9.5px;line-height:1.3" class="mut">Skill ×4</div></div>
+            <div style="text-align:center"><div style="height:42px;border-radius:var(--radius-md);background:var(--color-neutral-800);display:grid;place-items:center;margin-bottom:5px"><i class="ph-fill ph-hand-heart" style="font-size:19px"></i></div><div style="font-size:9.5px;line-height:1.3" class="mut">Contribution ×3</div></div>
+            <div style="text-align:center"><div style="height:42px;border-radius:var(--radius-md);background:var(--color-neutral-800);display:grid;place-items:center;margin-bottom:5px"><i class="ph-fill ph-medal" style="font-size:19px"></i></div><div style="font-size:9.5px;line-height:1.3" class="mut">Milestone ×2</div></div>
+            <div style="text-align:center"><div style="height:42px;border-radius:var(--radius-md);border:1px dashed var(--color-divider);display:grid;place-items:center;margin-bottom:5px"><i class="ph ph-crown-simple" style="font-size:19px;color:color-mix(in srgb,var(--color-text) 35%,transparent)"></i></div><div style="font-size:9.5px;line-height:1.3" class="mut">Leadership —</div></div>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:16px">
+          <div class="k" style="margin-bottom:10px">Next level · Proficient</div>
+          <div class="bar" style="height:6px;margin-bottom:12px"><span style="width:55%"></span></div>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:12px">
+            <div style="display:flex;gap:8px;align-items:center"><i class="ph-fill ph-check-circle" style="font-size:14px;color:var(--color-accent)"></i>Multiple verified skills</div>
+            <div style="display:flex;gap:8px;align-items:center"><i class="ph-fill ph-check-circle" style="font-size:14px;color:var(--color-accent)"></i>Sustained contribution history</div>
+            <div style="display:flex;gap:8px;align-items:center" class="mut"><i class="ph ph-circle-dashed" style="font-size:14px"></i>One advanced-tier verified skill</div>
+            <div style="display:flex;gap:8px;align-items:center" class="mut"><i class="ph ph-circle-dashed" style="font-size:14px"></i>Diversity across two domains</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════ 1b — MENTOR VERIFICATION QUEUE ══════════════ -->
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><span class="dv-oid">1b</span><span><strong style="color:var(--color-text);font-weight:500">Mentor verification queue</strong> — where trust is actually manufactured. Rubric is the three practical-validation criteria verbatim; the only three exits are Verify, Return for revision, Escalate to Council.</span></div>
+<div class="scr" data-screen-label="1b Verification queue">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Mentor portal</div>
+      <div class="sbi on"><i class="ph-fill ph-list-checks"></i>Verification queue<span style="margin-left:auto;font-size:10.5px;background:var(--color-accent-800);color:var(--color-accent-100);padding:1px 6px;border-radius:8px">14</span></div>
+      <div class="sbi"><i class="ph ph-users-three"></i>My mentees</div>
+      <div class="sbi"><i class="ph ph-ruler"></i>Rubric hub</div>
+      <div class="sbi"><i class="ph ph-scales"></i>Council escalations<span style="margin-left:auto;font-size:10.5px" class="mut">2</span></div>
+    </div>
+    <div>
+      <div class="sbh">Also yours</div>
+      <div class="sbi"><i class="ph ph-graduation-cap"></i>Learning paths I own</div>
+      <div class="sbi"><i class="ph ph-seal-check"></i>My portfolio</div>
+    </div>
+    <div style="margin-top:auto;padding:10px;border-radius:var(--radius-md);border:1px solid var(--color-divider)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:7px">
+        <div style="width:26px;height:26px;border-radius:var(--radius-sm);background:var(--color-accent-800);color:var(--color-accent-100);display:grid;place-items:center;font-size:10.5px;flex:none">ER</div>
+        <div><div style="font-size:12px">Elena Rostova</div><div style="font-size:10px" class="mut">Principal Mentor</div></div>
+      </div>
+      <div class="bar" style="height:4px"><span style="width:68%"></span></div>
+      <div style="font-size:10.5px;margin-top:5px" class="mut">Review load 68% of weekly cap</div>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:14px">
+        <span style="font-size:14px;font-weight:500">Verification queue</span>
+        <div class="seg" style="font-size:12px">
+          <span class="seg-opt" style="background:color-mix(in srgb,var(--color-accent) 16%,transparent);padding:5px 11px;font-size:12px">Assigned to me · 14</span>
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px">Peer-passed pool · 31</span>
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px">Escalated · 2</span>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span style="font-size:11.5px" class="mut">Domain</span>
+        <span class="tag tag-outline">Kubernetes</span><span class="tag tag-outline">Terraform</span>
+        <button class="btn btn-secondary" style="font-size:12px"><i class="ph ph-funnel" style="font-size:14px"></i>Filters</button>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:334px 1fr;flex:1;min-height:0">
+      <!-- queue list -->
+      <div style="border-right:1px solid var(--color-divider);padding:12px;display:flex;flex-direction:column;gap:7px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;padding:0 3px 5px"><span class="k">Oldest first</span><span style="font-size:11px" class="mut">2 breaching SLA</span></div>
+
+        <div class="tile" style="padding:11px 12px;border-color:var(--color-accent);background:color-mix(in srgb,var(--color-accent) 9%,var(--color-surface))">
+          <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline">
+            <span style="font-size:13px;font-weight:500">Terraform · module composition</span>
+            <span class="tag tag-accent">6d</span>
+          </div>
+          <p style="margin:5px 0 8px;font-size:11.5px" class="mut">Zara Chen · Practitioner · Singapore</p>
+          <div style="display:flex;gap:2px;align-items:center">
+            <span class="k" style="margin-right:6px">Peer 4/4</span>
+            <span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span>
+            <span style="font-size:11px;margin-left:auto;color:var(--color-accent-300)">SLA today</span>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:11px 12px">
+          <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline">
+            <span style="font-size:13px;font-weight:500">Kubernetes · failure recovery</span>
+            <span class="tag tag-neutral">5d</span>
+          </div>
+          <p style="margin:5px 0 8px;font-size:11.5px" class="mut">Candidate #PP-2291 · Emerging · Pune</p>
+          <div style="display:flex;gap:2px;align-items:center">
+            <span class="k" style="margin-right:6px">Peer 3/4</span>
+            <span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-neutral-700)"></span>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:11px 12px">
+          <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline">
+            <span style="font-size:13px;font-weight:500">Linux · systemd &amp; boot repair</span>
+            <span class="tag tag-neutral">4d</span>
+          </div>
+          <p style="margin:5px 0 8px;font-size:11.5px" class="mut">Aarav Patel · Emerging · Mumbai</p>
+          <div style="display:flex;gap:2px;align-items:center">
+            <span class="k" style="margin-right:6px">Peer 4/4</span>
+            <span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span>
+            <span style="font-size:11px;margin-left:auto" class="mut">2nd submission</span>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:11px 12px">
+          <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline">
+            <span style="font-size:13px;font-weight:500">BGP · route policy design</span>
+            <span class="tag tag-neutral">3d</span>
+          </div>
+          <p style="margin:5px 0 8px;font-size:11.5px" class="mut">Candidate #PP-3874 · Practitioner · Lagos</p>
+          <div style="display:flex;gap:2px;align-items:center">
+            <span class="k" style="margin-right:6px">Peer 4/4</span>
+            <span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span><span style="width:14px;height:4px;border-radius:2px;background:var(--color-accent)"></span>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:11px 12px;opacity:.62">
+          <div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline">
+            <span style="font-size:13px;font-weight:500">Observability · SLO design</span>
+            <span class="tag tag-neutral">2d</span>
+          </div>
+          <p style="margin:5px 0 0;font-size:11.5px" class="mut">Candidate #PP-1180 · held — eligibility check failed</p>
+        </div>
+      </div>
+
+      <!-- review pane -->
+      <div style="padding:18px 22px 24px;display:flex;flex-direction:column;gap:0">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px">
+          <div>
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:5px">
+              <h2 style="font-size:21px;margin:0">Infrastructure as Code — Terraform</h2>
+              <span class="tag tag-outline">Practitioner tier</span>
+            </div>
+            <p style="margin:0;font-size:12.5px" class="mut">Zara Chen · submitted 26 Jul · peer stage passed unanimously · <span style="color:var(--color-accent-300)">final verification authority: you</span></p>
+          </div>
+          <div style="text-align:right;flex:none">
+            <div class="k">Target SLA</div>
+            <div style="font-size:15px;margin-top:3px">5 working days</div>
+            <div style="font-size:11px;color:var(--color-accent-300)">Day 5 — due today</div>
+          </div>
+        </div>
+
+        <div class="rule" style="margin:18px 0"></div>
+
+        <div style="display:grid;grid-template-columns:1fr 288px;gap:22px;align-items:start">
+          <div>
+            <h3 style="font-size:13px;margin:0 0 4px">Practical validation rubric</h3>
+            <p style="margin:0 0 12px;font-size:11.5px" class="mut">All three criteria are mandatory. Course completion alone is never sufficient basis.</p>
+
+            <div style="display:flex;flex-direction:column;gap:9px">
+              <div class="tile" style="padding:13px 15px">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px">
+                  <span style="font-size:13.5px;font-weight:500">Correctness</span>
+                  <span style="font-size:11.5px" class="mut">Meets the defined standard for the skill</span>
+                </div>
+                <div style="display:flex;gap:7px;margin-top:9px">
+                  <span class="tag tag-neutral">Below</span><span class="tag tag-neutral">Meets</span><span class="tag tag-accent"><i class="ph-fill ph-check" style="font-size:10px;margin-right:4px"></i>Exceeds</span>
+                </div>
+              </div>
+              <div class="tile" style="padding:13px 15px">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px">
+                  <span style="font-size:13.5px;font-weight:500">Independence</span>
+                  <span style="font-size:11.5px" class="mut">Own understanding, not guided assistance</span>
+                </div>
+                <div style="display:flex;gap:7px;margin-top:9px">
+                  <span class="tag tag-neutral">Below</span><span class="tag tag-accent"><i class="ph-fill ph-check" style="font-size:10px;margin-right:4px"></i>Meets</span><span class="tag tag-neutral">Exceeds</span>
+                </div>
+              </div>
+              <div class="tile" style="padding:13px 15px;border-color:color-mix(in srgb,var(--color-accent) 45%,transparent)">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px">
+                  <span style="font-size:13.5px;font-weight:500">Consistency</span>
+                  <span style="font-size:11.5px" class="mut">Demonstrated more than once, not a fluke</span>
+                </div>
+                <div style="display:flex;gap:7px;margin:9px 0 10px">
+                  <span class="tag tag-neutral">Below</span><span class="tag tag-accent"><i class="ph-fill ph-check" style="font-size:10px;margin-right:4px"></i>Meets</span><span class="tag tag-neutral">Exceeds</span>
+                </div>
+                <div style="padding:9px 11px;border-radius:var(--radius-sm);background:color-mix(in srgb,var(--color-accent) 10%,transparent);font-size:11.5px;line-height:1.5">
+                  <span class="k" style="display:block;margin-bottom:4px">Your note to the member</span>
+                  Second unguided task (state-drift recovery) satisfies consistency. Module boundaries are cleaner than tier expectation.
+                </div>
+              </div>
+            </div>
+
+            <h3 style="font-size:13px;margin:20px 0 10px">Evidence weighed</h3>
+            <table class="table" style="font-size:12.5px">
+              <thead><tr><th>Evidence</th><th style="width:118px">Type</th><th style="width:112px">Weight</th></tr></thead>
+              <tbody>
+                <tr><td>Guided exercise · remote state &amp; locking</td><td class="mut">Practical outcome</td><td><span class="tag tag-accent">High</span></td></tr>
+                <tr><td>Unguided task · state-drift recovery</td><td class="mut">Practical outcome</td><td><span class="tag tag-accent">High</span></td></tr>
+                <tr><td>Quarterly challenge · placed top 15%</td><td class="mut">Challenge</td><td><span class="tag tag-accent">High</span></td></tr>
+                <tr><td>3 peer endorsements · DevOps domain</td><td class="mut">Endorsement</td><td><span class="tag tag-neutral">Medium</span></td></tr>
+                <tr><td>Study-group session taught · 14 attendees</td><td class="mut">Teaching history</td><td><span class="tag tag-neutral">Medium</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div class="tile" style="padding:15px">
+              <div class="k" style="margin-bottom:10px">Peer review stage</div>
+              <div style="display:flex;flex-direction:column;gap:9px;font-size:12px">
+                <div style="display:flex;gap:8px;align-items:flex-start"><i class="ph-fill ph-check-circle" style="font-size:14px;color:var(--color-accent);margin-top:1px"></i><div>Reviewer A · <span class="mut">“Module inputs well-scoped.”</span></div></div>
+                <div style="display:flex;gap:8px;align-items:flex-start"><i class="ph-fill ph-check-circle" style="font-size:14px;color:var(--color-accent);margin-top:1px"></i><div>Reviewer B · <span class="mut">“Would tighten variable validation.”</span></div></div>
+                <div style="display:flex;gap:8px;align-items:flex-start"><i class="ph-fill ph-check-circle" style="font-size:14px;color:var(--color-accent);margin-top:1px"></i><div>Reviewer C · <span class="mut">“Drift recovery is genuinely unguided.”</span></div></div>
+                <div style="display:flex;gap:8px;align-items:flex-start"><i class="ph-fill ph-check-circle" style="font-size:14px;color:var(--color-accent);margin-top:1px"></i><div>Reviewer D · <span class="mut">“No concerns.”</span></div></div>
+              </div>
+            </div>
+            <div class="tile" style="padding:15px">
+              <div class="k" style="margin-bottom:9px">Effect if verified</div>
+              <div style="display:flex;flex-direction:column;gap:7px;font-size:12px">
+                <div style="display:flex;justify-content:space-between"><span class="mut">Skill badge</span><span>Awarded</span></div>
+                <div style="display:flex;justify-content:space-between"><span class="mut">Portfolio</span><span>Skill added</span></div>
+                <div style="display:flex;justify-content:space-between"><span class="mut">Points</span><span>High weight</span></div>
+                <div style="display:flex;justify-content:space-between"><span class="mut">Talent pools</span><span>DevOps · Cloud</span></div>
+                <div style="display:flex;justify-content:space-between"><span class="mut">Level</span><span>Proficient 3/4</span></div>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-block" style="justify-content:center;font-size:13px"><i class="ph-fill ph-seal-check" style="font-size:15px"></i>Verify skill</button>
+            <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:13px;margin-top:0"><i class="ph ph-arrow-u-up-left" style="font-size:15px"></i>Return for revision</button>
+            <button class="btn btn-ghost btn-block" style="justify-content:center;font-size:12.5px;margin-top:0"><i class="ph ph-scales" style="font-size:15px"></i>Escalate to Verification Council</button>
+            <p style="margin:2px 0 0;font-size:10.5px;line-height:1.5" class="mut">Your decision and rubric scores enter the member's permanent verification audit trail.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════ 1c — MEMBER DASHBOARD ══════════════ -->
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><span class="dv-oid">1c</span><span><strong style="color:var(--color-text);font-weight:500">Member dashboard</strong> — Aarav, the student persona. Learning before hiring: the whole page is practice and readiness, with no job listing anywhere on it.</span></div>
+<div class="scr" data-screen-label="1c Member dashboard">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Member portal</div>
+      <div class="sbi on"><i class="ph-fill ph-squares-four"></i>Dashboard</div>
+      <div class="sbi"><i class="ph ph-graduation-cap"></i>Learning center</div>
+      <div class="sbi"><i class="ph ph-terminal-window"></i>Lab sandbox<span style="margin-left:auto;font-size:10.5px;color:var(--color-accent-300)">1 live</span></div>
+      <div class="sbi"><i class="ph ph-seal-check"></i>My portfolio</div>
+      <div class="sbi"><i class="ph ph-scroll"></i>Reputation ledger</div>
+    </div>
+    <div>
+      <div class="sbh">Community</div>
+      <div class="sbi"><i class="ph ph-users-three"></i>My mentors</div>
+      <div class="sbi"><i class="ph ph-calendar-dots"></i>Events</div>
+      <div class="sbi"><i class="ph ph-chats-circle"></i>Study groups</div>
+      <div class="sbi"><i class="ph ph-trophy"></i>Leaderboards</div>
+    </div>
+    <div style="margin-top:auto;padding:10px;border-radius:var(--radius-md);border:1px solid var(--color-divider);display:flex;align-items:center;gap:8px">
+      <div style="width:26px;height:26px;border-radius:var(--radius-sm);background:var(--color-neutral-800);display:grid;place-items:center;font-size:10.5px;flex:none">AP</div>
+      <div><div style="font-size:12px">Aarav Patel</div><div style="font-size:10px" class="mut">Emerging · Mumbai</div></div>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div><span style="font-size:14px;font-weight:500">Good evening, Aarav</span> <span style="font-size:12.5px;margin-left:6px" class="mut">Week 19 in the community</span></div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span class="tag tag-outline"><i class="ph ph-flame" style="font-size:11px;margin-right:4px"></i>11-week streak</span>
+        <button class="btn btn-primary" style="font-size:12px"><i class="ph ph-play" style="font-size:14px"></i>Resume lab</button>
+      </div>
+    </div>
+
+    <div style="padding:20px 22px 26px;display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:start">
+      <div>
+        <!-- verification readiness -->
+        <div class="tile" style="padding:18px;background:linear-gradient(135deg,color-mix(in srgb,var(--color-section) 55%,var(--color-surface)),var(--color-surface) 68%)">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px">
+            <div style="flex:1">
+              <div class="k" style="margin-bottom:7px">Practice roadmap · Cloud Fundamentals</div>
+              <h2 style="font-size:22px;margin:0 0 6px">One unguided task from verification-ready</h2>
+              <p style="margin:0;font-size:12.5px;line-height:1.55;max-width:52ch" class="mut">Consistency is the last rubric criterion you haven't evidenced. Finish an unguided task in this domain and your submission becomes eligible.</p>
+            </div>
+            <div style="text-align:right;flex:none">
+              <div style="font-size:36px;line-height:1;letter-spacing:-.02em">4<span style="font-size:18px" class="mut">/5</span></div>
+              <div style="font-size:11px;margin-top:4px" class="mut">roadmap steps</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:5px;margin-top:16px">
+            <div style="flex:1"><div class="bar"><span style="width:100%"></span></div><div style="font-size:10.5px;margin-top:5px">Path modules</div></div>
+            <div style="flex:1"><div class="bar"><span style="width:100%"></span></div><div style="font-size:10.5px;margin-top:5px">Guided exercises</div></div>
+            <div style="flex:1"><div class="bar"><span style="width:100%"></span></div><div style="font-size:10.5px;margin-top:5px">Peer review passed</div></div>
+            <div style="flex:1"><div class="bar"><span style="width:100%"></span></div><div style="font-size:10.5px;margin-top:5px">Challenge entered</div></div>
+            <div style="flex:1"><div class="bar"><span style="width:22%"></span></div><div style="font-size:10.5px;margin-top:5px;color:var(--color-accent-300)">Unguided task</div></div>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px">
+          <div class="tile" style="padding:15px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:11px"><span class="k">Active lab sandbox</span><span class="tag tag-accent">Live · 42m left</span></div>
+            <div style="font-size:14px;font-weight:500;margin-bottom:3px">Linux boot failure — recover a broken systemd target</div>
+            <p style="margin:0 0 12px;font-size:11.5px" class="mut">Unguided · attempt 1 · no rubric hints shown</p>
+            <div style="display:flex;justify-content:space-between;font-size:11px;margin-bottom:5px"><span class="mut">Monthly lab-hour quota</span><span>13.5 / 20 h</span></div>
+            <div class="bar"><span style="width:67%"></span></div>
+            <p style="margin:9px 0 0;font-size:10.5px" class="mut">BR-LR-001 · quota checked at provisioning</p>
+          </div>
+          <div class="tile" style="padding:15px">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:11px"><span class="k">Next mentor session</span><span style="font-size:11px" class="mut">in 2 days</span></div>
+            <div style="display:flex;gap:10px;align-items:center;margin-bottom:11px">
+              <div style="width:34px;height:34px;border-radius:var(--radius-sm);background:var(--color-accent-800);color:var(--color-accent-100);display:grid;place-items:center;font-size:12px;flex:none">MV</div>
+              <div><div style="font-size:13px">Marcus Vance</div><div style="font-size:11px" class="mut">Senior Mentor · SRE · Chicago</div></div>
+            </div>
+            <p style="margin:0 0 12px;font-size:11.5px;line-height:1.5" class="mut">Agenda you set: “Is my systemd recovery approach the one an on-call engineer would take?”</p>
+            <button class="btn btn-secondary" style="font-size:11.5px"><i class="ph ph-note-pencil" style="font-size:13px"></i>Edit agenda</button>
+          </div>
+        </div>
+
+        <h3 style="font-size:14px;margin:22px 0 11px">Continue learning</h3>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div class="tile" style="padding:12px 15px;display:flex;align-items:center;gap:14px">
+            <i class="ph ph-cloud" style="font-size:19px;color:var(--color-accent);flex:none"></i>
+            <div style="flex:1"><div style="font-size:13.5px">Cloud Fundamentals</div><div style="font-size:11px;margin-top:2px" class="mut">Module 7 of 8 · Storage classes &amp; lifecycle</div></div>
+            <div style="width:150px"><div class="bar"><span style="width:88%"></span></div></div>
+            <span style="font-size:12px;width:34px;text-align:right">88%</span>
+          </div>
+          <div class="tile" style="padding:12px 15px;display:flex;align-items:center;gap:14px">
+            <i class="ph ph-terminal" style="font-size:19px;color:var(--color-accent);flex:none"></i>
+            <div style="flex:1"><div style="font-size:13.5px">Linux System Administration</div><div style="font-size:11px;margin-top:2px" class="mut">Module 4 of 9 · Process &amp; service management</div></div>
+            <div style="width:150px"><div class="bar"><span style="width:44%"></span></div></div>
+            <span style="font-size:12px;width:34px;text-align:right">44%</span>
+          </div>
+          <div class="tile" style="padding:12px 15px;display:flex;align-items:center;gap:14px;opacity:.72">
+            <i class="ph ph-network mut" style="font-size:19px;flex:none"></i>
+            <div style="flex:1"><div style="font-size:13.5px">Networking Essentials — TCP/IP &amp; DNS</div><div style="font-size:11px;margin-top:2px" class="mut">Recommended by Marcus · not started</div></div>
+            <button class="btn btn-secondary" style="font-size:11.5px">Start path</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- right rail -->
+      <div style="display:flex;flex-direction:column;gap:13px">
+        <div class="tile" style="padding:15px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px"><span class="k">Reputation ledger</span><a href="#1c" style="font-size:11px">Full log</a></div>
+          <div style="display:flex;align-items:flex-end;gap:7px;margin-bottom:3px"><span style="font-size:30px;line-height:1">1,240</span><span style="font-size:11.5px;padding-bottom:4px" class="mut">points</span></div>
+          <div style="font-size:11.5px;color:var(--color-accent-300);margin-bottom:14px">+85 this week</div>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:11.5px">
+            <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:1px solid var(--color-divider)"><span>Peer review completed ×2</span><span class="mut">+30</span></div>
+            <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:1px solid var(--color-divider)"><span>Answer accepted</span><span class="mut">+25</span></div>
+            <div style="display:flex;justify-content:space-between;padding-bottom:8px;border-bottom:1px solid var(--color-divider)"><span>Chapter meetup attended</span><span class="mut">+15</span></div>
+            <div style="display:flex;justify-content:space-between"><span>Guided exercise passed</span><span class="mut">+15</span></div>
+          </div>
+          <p style="margin:12px 0 0;font-size:10.5px;line-height:1.5" class="mut">Points signal volume and consistency. They never substitute for verified skill in hiring.</p>
+        </div>
+
+        <div class="tile" style="padding:15px">
+          <div class="k" style="margin-bottom:11px">Domain leaderboard · Cloud · this season</div>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:12px">
+            <div style="display:flex;gap:10px;align-items:center"><span style="width:16px" class="mut">1</span><span style="flex:1">Candidate #PP-0912</span><span class="mut">3,410</span></div>
+            <div style="display:flex;gap:10px;align-items:center"><span style="width:16px" class="mut">2</span><span style="flex:1">Zara Chen</span><span class="mut">2,980</span></div>
+            <div style="display:flex;gap:10px;align-items:center;padding:6px 8px;margin:0 -8px;border-radius:var(--radius-sm);background:color-mix(in srgb,var(--color-accent) 13%,transparent)"><span style="width:16px">7</span><span style="flex:1">You</span><span>1,240</span></div>
+            <div style="display:flex;gap:10px;align-items:center"><span style="width:16px" class="mut">8</span><span style="flex:1">Candidate #PP-4417</span><span class="mut">1,190</span></div>
+          </div>
+          <p style="margin:11px 0 0;font-size:10.5px;line-height:1.5" class="mut">Rebalances seasonally so long-standing members don't permanently hold visibility.</p>
+        </div>
+
+        <div class="tile" style="padding:15px">
+          <div class="k" style="margin-bottom:11px">Ways to contribute now</div>
+          <div style="display:flex;flex-direction:column;gap:9px;font-size:12px">
+            <div style="display:flex;gap:9px;align-items:flex-start"><i class="ph ph-question" style="font-size:15px;color:var(--color-accent);margin-top:1px"></i><div>3 unanswered questions tagged <span class="mut">Linux</span></div></div>
+            <div style="display:flex;gap:9px;align-items:flex-start"><i class="ph ph-clipboard-text" style="font-size:15px;color:var(--color-accent);margin-top:1px"></i><div>2 peer reviews open in your domain standing</div></div>
+            <div style="display:flex;gap:9px;align-items:flex-start"><i class="ph ph-hand-heart" style="font-size:15px;color:var(--color-accent);margin-top:1px"></i><div>Mumbai chapter needs 2 volunteers · 14 Aug</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══════════════ 1d — SOURCING ENGINE ══════════════ -->
+<div class="dv-opt" id="1d">
+<div class="dv-olabel"><span class="dv-oid">1d</span><span><strong style="color:var(--color-text);font-weight:500">Anonymised sourcing engine</strong> — the enterprise view that has to make the ecosystem's two hardest rules visible: bias mitigation on first-pass search, and no pay-to-rank.</span></div>
+<div class="scr" data-screen-label="1d Sourcing engine">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Enterprise portal</div>
+      <div class="sbi on"><i class="ph-fill ph-magnifying-glass"></i>Sourcing engine</div>
+      <div class="sbi"><i class="ph ph-briefcase"></i>Requisitions<span style="margin-left:auto;font-size:10.5px" class="mut">4</span></div>
+      <div class="sbi"><i class="ph ph-megaphone"></i>Campaigns</div>
+      <div class="sbi"><i class="ph ph-chart-line"></i>Hiring reports</div>
+    </div>
+    <div>
+      <div class="sbh">Talent pools</div>
+      <div class="sbi"><i class="ph ph-cloud"></i>Cloud<span style="margin-left:auto;font-size:10.5px" class="mut">1,204</span></div>
+      <div class="sbi on"><i class="ph-fill ph-infinity"></i>DevOps<span style="margin-left:auto;font-size:10.5px">862</span></div>
+      <div class="sbi"><i class="ph ph-shield-check"></i>Security<span style="margin-left:auto;font-size:10.5px" class="mut">574</span></div>
+      <div class="sbi"><i class="ph ph-pulse"></i>SRE<span style="margin-left:auto;font-size:10.5px" class="mut">433</span></div>
+      <div class="sbi"><i class="ph ph-network"></i>Networking<span style="margin-left:auto;font-size:10.5px" class="mut">691</span></div>
+      <div class="sbi"><i class="ph ph-stack"></i>Platform Eng<span style="margin-left:auto;font-size:10.5px" class="mut">318</span></div>
+    </div>
+    <div style="margin-top:auto;padding:10px;border-radius:var(--radius-md);border:1px solid var(--color-divider)">
+      <div class="k" style="padding:0;margin-bottom:5px">Partner tier</div>
+      <div style="font-size:12px">Established Partner</div>
+      <div style="font-size:10.5px;margin-top:3px" class="mut">Standard pool access · 2 scholarships funded</div>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:14px;font-weight:500">DevOps talent pool</span>
+        <span style="font-size:12px" class="mut">862 verified members · 41 match your filter</span>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button class="btn btn-secondary" style="font-size:12px"><i class="ph ph-bookmark-simple" style="font-size:14px"></i>Save search</button>
+        <button class="btn btn-primary" style="font-size:12px"><i class="ph ph-plus" style="font-size:14px"></i>Open requisition</button>
+      </div>
+    </div>
+
+    <!-- bias banner -->
+    <div style="margin:16px 22px 0;padding:12px 15px;border-radius:var(--radius-md);border:1px solid color-mix(in srgb,var(--color-accent) 42%,transparent);background:color-mix(in srgb,var(--color-accent) 9%,transparent);display:flex;gap:11px;align-items:flex-start">
+      <i class="ph-fill ph-eye-slash" style="font-size:16px;color:var(--color-accent);margin-top:1px;flex:none"></i>
+      <div style="flex:1">
+        <div style="font-size:12.5px;font-weight:500;margin-bottom:3px">Identifying fields are hidden in preliminary search</div>
+        <p style="margin:0;font-size:11.5px;line-height:1.5" class="mut">Names, photos, age, institution and current employer unlock only when a candidate accepts your shortlist invitation. Pools are populated exclusively from verified skills — unverified members are never surfaced, and no partner tier or sponsorship changes ranking.</p>
+      </div>
+      <span class="tag tag-outline" style="flex:none">Bias mitigation · IA §3.4</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:236px 1fr 268px;gap:0;flex:1;min-height:0;margin-top:16px">
+      <!-- filters -->
+      <div style="border-right:1px solid var(--color-divider);padding:0 16px 20px;display:flex;flex-direction:column;gap:18px">
+        <div>
+          <div class="k" style="margin-bottom:9px">Verified skill required</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            <span class="tag tag-accent">Kubernetes ×</span><span class="tag tag-accent">Terraform ×</span><span class="tag tag-outline">+ add</span>
+          </div>
+        </div>
+        <div>
+          <div class="k" style="margin-bottom:9px">Professional level</div>
+          <div style="display:flex;flex-direction:column;gap:7px;font-size:12px">
+            <div style="display:flex;gap:8px;align-items:center" class="mut"><span style="width:12px;height:12px;border-radius:3px;border:1px solid var(--color-divider)"></span>Emerging</div>
+            <div style="display:flex;gap:8px;align-items:center"><span style="width:12px;height:12px;border-radius:3px;background:var(--color-accent)"></span>Practitioner</div>
+            <div style="display:flex;gap:8px;align-items:center"><span style="width:12px;height:12px;border-radius:3px;background:var(--color-accent)"></span>Proficient</div>
+            <div style="display:flex;gap:8px;align-items:center" class="mut"><span style="width:12px;height:12px;border-radius:3px;border:1px solid var(--color-divider)"></span>Expert</div>
+            <div style="display:flex;gap:8px;align-items:center" class="mut"><span style="width:12px;height:12px;border-radius:3px;border:1px solid var(--color-divider)"></span>Distinguished</div>
+          </div>
+        </div>
+        <div>
+          <div class="k" style="margin-bottom:9px">Trust score band</div>
+          <div class="bar" style="height:4px;margin-bottom:6px"><span style="width:70%;margin-left:24%"></span></div>
+          <div style="font-size:11.5px" class="mut">65 – 95</div>
+        </div>
+        <div>
+          <div class="k" style="margin-bottom:9px">Chapter region</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px"><span class="tag tag-neutral">SEA</span><span class="tag tag-neutral">South Asia</span><span class="tag tag-outline">+ add</span></div>
+        </div>
+        <div>
+          <div class="k" style="margin-bottom:9px">Evidence depth</div>
+          <div style="display:flex;flex-direction:column;gap:7px;font-size:12px">
+            <div style="display:flex;gap:8px;align-items:center"><span style="width:12px;height:12px;border-radius:3px;background:var(--color-accent)"></span>Challenge participation</div>
+            <div style="display:flex;gap:8px;align-items:center" class="mut"><span style="width:12px;height:12px;border-radius:3px;border:1px solid var(--color-divider)"></span>Teaching history</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- candidate cards -->
+      <div style="padding:0 18px 22px;display:flex;flex-direction:column;gap:9px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:3px">
+          <span class="k">41 results · ordered by verified-evidence match</span>
+          <span style="font-size:11px" class="mut">Ranking factors: recency · diversity · verified weight</span>
+        </div>
+
+        <div class="tile" style="padding:14px 16px">
+          <div style="display:flex;gap:14px;align-items:flex-start">
+            <div style="width:40px;height:40px;flex:none;border-radius:var(--radius-md);border:1px dashed var(--color-divider);display:grid;place-items:center"><i class="ph ph-user" style="font-size:17px;color:color-mix(in srgb,var(--color-text) 32%,transparent)"></i></div>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
+                <span style="font-size:14px;font-weight:500;font-family:ui-monospace,Menlo,monospace">Candidate #PP-4417</span>
+                <span class="tag tag-accent">Proficient</span>
+                <span class="tag tag-neutral">SEA chapter</span>
+                <span style="font-size:11.5px" class="mut">4 y experience band</span>
+              </div>
+              <div style="display:flex;gap:6px;margin-top:9px;flex-wrap:wrap">
+                <span class="tag tag-outline"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Kubernetes Operations</span>
+                <span class="tag tag-outline"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Terraform</span>
+                <span class="tag tag-outline"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Linux SysAdmin</span>
+                <span class="tag tag-outline"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>CI/CD Pipelines</span>
+              </div>
+              <p style="margin:9px 0 0;font-size:11.5px" class="mut">11 practical evidence items · 2 challenge placements · verified by 3 distinct mentors · active this week</p>
+            </div>
+            <div style="flex:none;text-align:right;display:flex;flex-direction:column;gap:9px;align-items:flex-end">
+              <div><div style="font-size:22px;line-height:1">86</div><div class="k">Trust</div></div>
+              <button class="btn btn-primary" style="font-size:11.5px">Invite to shortlist</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:14px 16px">
+          <div style="display:flex;gap:14px;align-items:flex-start">
+            <div style="width:40px;height:40px;flex:none;border-radius:var(--radius-md);border:1px dashed var(--color-divider);display:grid;place-items:center"><i class="ph ph-user" style="font-size:17px;color:color-mix(in srgb,var(--color-text) 32%,transparent)"></i></div>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
+                <span style="font-size:14px;font-weight:500;font-family:ui-monospace,Menlo,monospace">Candidate #PP-2938</span>
+                <span class="tag tag-accent">Practitioner</span>
+                <span class="tag tag-neutral">SEA chapter</span>
+                <span style="font-size:11.5px" class="mut">2 y experience band</span>
+              </div>
+              <div style="display:flex;gap:6px;margin-top:9px;flex-wrap:wrap">
+                <span class="tag tag-outline"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Kubernetes Operations</span>
+                <span class="tag tag-outline"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Linux SysAdmin</span>
+                <span class="tag tag-neutral" style="opacity:.7">Terraform · in review</span>
+              </div>
+              <p style="margin:9px 0 0;font-size:11.5px" class="mut">7 practical evidence items · 1 challenge placement · taught 1 study-group session · active this week</p>
+            </div>
+            <div style="flex:none;text-align:right;display:flex;flex-direction:column;gap:9px;align-items:flex-end">
+              <div><div style="font-size:22px;line-height:1">78</div><div class="k">Trust</div></div>
+              <button class="btn btn-secondary" style="font-size:11.5px">Invite to shortlist</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:14px 16px">
+          <div style="display:flex;gap:14px;align-items:flex-start">
+            <div style="width:40px;height:40px;flex:none;border-radius:var(--radius-md);border:1px dashed var(--color-divider);display:grid;place-items:center"><i class="ph ph-user" style="font-size:17px;color:color-mix(in srgb,var(--color-text) 32%,transparent)"></i></div>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
+                <span style="font-size:14px;font-weight:500;font-family:ui-monospace,Menlo,monospace">Candidate #PP-3061</span>
+                <span class="tag tag-accent">Proficient</span>
+                <span class="tag tag-neutral">South Asia chapter</span>
+                <span style="font-size:11.5px" class="mut">5 y experience band</span>
+              </div>
+              <div style="display:flex;gap:6px;margin-top:9px;flex-wrap:wrap">
+                <span class="tag tag-outline"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Terraform</span>
+                <span class="tag tag-outline"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Observability &amp; SLO</span>
+                <span class="tag tag-outline"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Kubernetes Operations</span>
+              </div>
+              <p style="margin:9px 0 0;font-size:11.5px" class="mut">9 practical evidence items · mentors 2 members · <span style="color:var(--color-accent-300)">1 skill under periodic review</span></p>
+            </div>
+            <div style="flex:none;text-align:right;display:flex;flex-direction:column;gap:9px;align-items:flex-end">
+              <div><div style="font-size:22px;line-height:1">81</div><div class="k">Trust</div></div>
+              <button class="btn btn-secondary" style="font-size:11.5px">Invite to shortlist</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:14px 16px;opacity:.55">
+          <div style="display:flex;gap:14px;align-items:center">
+            <div style="width:40px;height:40px;flex:none;border-radius:var(--radius-md);border:1px dashed var(--color-divider);display:grid;place-items:center"><i class="ph ph-user" style="font-size:17px;color:color-mix(in srgb,var(--color-text) 32%,transparent)"></i></div>
+            <div style="flex:1"><span style="font-size:14px;font-family:ui-monospace,Menlo,monospace">Candidate #PP-5502</span><p style="margin:5px 0 0;font-size:11.5px" class="mut">Visibility reduced — no verified activity in 9 months (trust decay under periodic review)</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- requisition rail -->
+      <div style="border-left:1px solid var(--color-divider);padding:0 16px 20px;display:flex;flex-direction:column;gap:13px">
+        <div>
+          <div class="k" style="margin-bottom:9px">Sourcing against</div>
+          <div class="tile" style="padding:13px 14px">
+            <div style="font-size:13.5px;font-weight:500">Platform Engineer II</div>
+            <p style="margin:4px 0 10px;font-size:11.5px" class="mut">REQ-2026-118 · Singapore · opened 12 Jul</p>
+            <div style="display:flex;flex-direction:column;gap:6px;font-size:11.5px">
+              <div style="display:flex;justify-content:space-between"><span class="mut">Required badges</span><span>2 of 2 set</span></div>
+              <div style="display:flex;justify-content:space-between"><span class="mut">Salary boundaries</span><span>Set · hidden</span></div>
+              <div style="display:flex;justify-content:space-between"><span class="mut">Community HR owner</span><span>Assigned</span></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="k" style="margin-bottom:9px">Shortlist progress</div>
+          <div style="display:flex;flex-direction:column;gap:0;font-size:12px">
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--color-divider)"><span>Invited</span><span>6</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--color-divider)"><span>Accepted · identity revealed</span><span>4</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--color-divider)"><span>Community HR endorsed</span><span>3</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0"><span>In interview</span><span>2</span></div>
+          </div>
+        </div>
+        <div class="tile" style="padding:13px 14px">
+          <div class="k" style="margin-bottom:8px">Community HR note</div>
+          <p style="margin:0;font-size:11.5px;line-height:1.55" class="mut">Recommendations originate from the verified pool only. HR endorses; it does not rank. Two of your four accepted candidates were surfaced by HR rather than by your filter.</p>
+        </div>
+        <div style="margin-top:auto;padding:12px 14px;border-radius:var(--radius-md);border:1px dashed var(--color-divider)">
+          <div style="display:flex;gap:8px;align-items:flex-start"><i class="ph ph-prohibit" style="font-size:14px;color:var(--color-accent);margin-top:1px;flex:none"></i><p style="margin:0;font-size:11px;line-height:1.5" class="mut">No pay-to-rank. Sponsorship and partner tier never affect verification, reputation, or hiring priority.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+<p style="margin:30px 0 0;font-size:12px;line-height:1.6;color:color-mix(in srgb,var(--color-text) 52%,transparent)">Try next: “make <a href="#1a">1a</a> the public share view a stranger sees” · “add the moderation board and chapter-health screens from portal 5” · “show <a href="#1b">1b</a> in its returned-for-revision state” · “take <a href="#1d">1d</a> through the shortlist-accepted moment where identity unlocks”</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ppnav:injected -->
+<script>window.PP_DEPTH=1;
+(function(){try{var t=localStorage.getItem('pp-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Terraform at scale · PacketPulse</title>
+<link rel="icon" href="../assets/packet-pulse-logo.png">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/chrome.css">
+<link rel="stylesheet" href="../assets/nav.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+</head>
+<body>
+<div class="scr" style="display:block">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 34px;border-bottom:1px solid var(--color-divider)">
+    <div style="display:flex;align-items:center;gap:34px">
+      <img src="../assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:28px;width:auto">
+      <div style="display:flex;gap:20px;font-size:12.5px"><a class="mut" href="landing.html">How it works</a><a style="color:var(--color-text)" href="events.html">Events</a><span class="mut">Chapters</span><span class="mut">For recruiters</span></div>
+    </div>
+    <div style="display:flex;gap:8px"><a class="btn btn-ghost" style="font-size:12.5px" href="login.html">Log in</a><a class="btn btn-primary" style="font-size:12.5px" href="signup.html">Sign up</a></div>
+  </div>
+
+  <div class="lighten" style="height:190px;border-bottom:1px solid var(--color-divider);display:grid;place-items:center;background:linear-gradient(135deg,color-mix(in srgb,var(--color-section) 74%,var(--color-surface)),var(--color-surface) 88%)">
+    <p style="margin:0;font-size:11.5px;text-align:center;max-width:52ch" class="mut"><i class="ph ph-image" style="font-size:22px;margin:0 auto 7px"></i>Event header placeholder — a photograph from a previous meetup, shot dark so it blends. Send me real event photos and I'll drop them in.</p>
+  </div>
+
+  <div style="padding:26px 34px 36px;display:grid;grid-template-columns:1fr 328px;gap:32px;align-items:start">
+    <div>
+      <div style="display:flex;gap:8px;margin-bottom:13px">
+        <span class="tag tag-neutral">Meetup</span><span class="tag tag-outline">Cloud</span><span class="tag tag-outline">Singapore chapter</span>
+      </div>
+      <h1 style="font-size:32px;line-height:1.1;margin:0 0 13px;max-width:22ch">Terraform at scale — what breaks after 200 modules</h1>
+      <div style="display:flex;gap:26px;flex-wrap:wrap;margin-bottom:22px">
+        <div style="display:flex;align-items:center;gap:9px"><i class="ph ph-calendar-blank" style="font-size:17px;color:var(--color-accent)"></i><div><div style="font-size:13px">Friday 6 September</div><div style="font-size:11.5px" class="mut">18:30 – 21:00 SGT</div></div></div>
+        <div style="display:flex;align-items:center;gap:9px"><i class="ph ph-map-pin" style="font-size:17px;color:var(--color-accent)"></i><div><div style="font-size:13px">Kirana Cloud offices</div><div style="font-size:11.5px" class="mut">71 Ayer Rajah Crescent, Singapore</div></div></div>
+        <div style="display:flex;align-items:center;gap:9px"><i class="ph ph-users" style="font-size:17px;color:var(--color-accent)"></i><div><div style="font-size:13px">61 going</div><div style="font-size:11.5px" class="mut">80 capacity</div></div></div>
+      </div>
+
+      <div class="rule" style="margin-bottom:20px"></div>
+
+      <h2 style="font-size:16px;margin:0 0 11px">About this event</h2>
+      <div style="max-width:66ch;display:flex;flex-direction:column;gap:12px">
+        <p style="margin:0;font-size:13.5px;line-height:1.6">Everyone's Terraform is fine at twenty modules. At two hundred, the problems stop being about syntax and start being about people: who owns what, what a plan means when four teams touch the same state, and why the module you wrote to help everyone became the thing nobody can change.</p>
+        <p style="margin:0;font-size:13.5px;line-height:1.6">Three engineers talk about the specific point at which their setup stopped working, and what they'd do differently. Then an open floor — bring the state file that's bothering you.</p>
+        <p style="margin:0;font-size:13.5px;line-height:1.6" class="mut">No prior Terraform experience assumed for the talks, though the open floor gets technical. Food from 18:30, talks from 19:00.</p>
+      </div>
+
+      <h2 style="font-size:16px;margin:26px 0 12px">Speakers</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div class="tile" style="padding:15px">
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div class="av" style="width:40px;height:40px;font-size:14px">MV</div>
+            <div style="flex:1;min-width:0">
+              <div style="font-size:14px;font-weight:500">Marcus Vance</div>
+              <div style="font-size:11.5px;margin-top:2px" class="mut">Senior SRE · Chicago chapter</div>
+              <div style="display:flex;gap:5px;margin-top:9px;flex-wrap:wrap">
+                <span class="tag tag-accent" style="font-size:9px;padding:1px 5px"><i class="ph-fill ph-seal-check" style="font-size:8.5px;margin-right:3px"></i>Terraform</span>
+                <span class="tag tag-accent" style="font-size:9px;padding:1px 5px"><i class="ph-fill ph-seal-check" style="font-size:8.5px;margin-right:3px"></i>Kubernetes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tile" style="padding:15px">
+          <div style="display:flex;gap:12px;align-items:flex-start">
+            <div class="av avA" style="width:40px;height:40px;font-size:14px">ER</div>
+            <div style="flex:1;min-width:0">
+              <div style="font-size:14px;font-weight:500">Elena Rostova</div>
+              <div style="font-size:11.5px;margin-top:2px" class="mut">Principal Architect · Munich chapter</div>
+              <div style="display:flex;gap:5px;margin-top:9px;flex-wrap:wrap">
+                <span class="tag tag-accent" style="font-size:9px;padding:1px 5px"><i class="ph-fill ph-seal-check" style="font-size:8.5px;margin-right:3px"></i>Terraform</span>
+                <span class="tag tag-accent" style="font-size:9px;padding:1px 5px"><i class="ph-fill ph-seal-check" style="font-size:8.5px;margin-right:3px"></i>Linux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="font-size:16px;margin:26px 0 12px">Schedule</h2>
+      <div style="display:flex;flex-direction:column;gap:0;max-width:60ch">
+        <div style="display:flex;gap:18px;padding:10px 0;border-bottom:1px solid var(--color-divider)"><span style="font-size:12.5px;width:60px;flex:none" class="mut">18:30</span><span style="font-size:13px">Doors, food, name tags</span></div>
+        <div style="display:flex;gap:18px;padding:10px 0;border-bottom:1px solid var(--color-divider)"><span style="font-size:12.5px;width:60px;flex:none" class="mut">19:00</span><span style="font-size:13px">Three talks, 20 minutes each</span></div>
+        <div style="display:flex;gap:18px;padding:10px 0;border-bottom:1px solid var(--color-divider)"><span style="font-size:12.5px;width:60px;flex:none" class="mut">20:15</span><span style="font-size:13px">Open floor — bring your state file</span></div>
+        <div style="display:flex;gap:18px;padding:10px 0"><span style="font-size:12.5px;width:60px;flex:none" class="mut">21:00</span><span style="font-size:13px">Close</span></div>
+      </div>
+    </div>
+
+    <!-- sticky rail -->
+    <div style="display:flex;flex-direction:column;gap:13px">
+      <div class="tile" style="padding:18px;border-color:color-mix(in srgb,var(--color-accent) 45%,transparent)">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:12px">
+          <span style="font-size:15px;font-weight:500">Free</span>
+          <span style="font-size:11.5px" class="mut">19 places left</span>
+        </div>
+        <div class="bar" style="height:5px;margin-bottom:16px"><span style="width:76%"></span></div>
+        <button class="btn btn-primary btn-block" style="justify-content:center;font-size:13.5px;margin-top:0">RSVP</button>
+        <p style="margin:9px 0 14px;font-size:11px;text-align:center" class="mut">You'll be asked to log in or create an account</p>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-secondary" style="font-size:11.5px;flex:1;justify-content:center"><i class="ph ph-calendar-plus" style="font-size:13px"></i>Calendar</button>
+          <button class="btn btn-secondary" style="font-size:11.5px;flex:1;justify-content:center"><i class="ph ph-share-network" style="font-size:13px"></i>Share</button>
+        </div>
+      </div>
+      <div class="tile" style="padding:16px">
+        <div class="k" style="margin-bottom:11px">Who's going</div>
+        <div style="display:flex;align-items:center;margin-bottom:11px">
+          <div class="av avA" style="width:30px;height:30px;font-size:11px;border:2px solid var(--color-surface)">ZC</div>
+          <div class="av" style="width:30px;height:30px;font-size:11px;border:2px solid var(--color-surface);margin-left:-8px">KT</div>
+          <div class="av" style="width:30px;height:30px;font-size:11px;border:2px solid var(--color-surface);margin-left:-8px">DM</div>
+          <div class="av" style="width:30px;height:30px;font-size:11px;border:2px solid var(--color-surface);margin-left:-8px">MV</div>
+          <div class="av" style="width:30px;height:30px;font-size:10px;border:2px solid var(--color-surface);margin-left:-8px">+57</div>
+        </div>
+        <p style="margin:0;font-size:11.5px;line-height:1.5" class="mut">Attendee names are visible to members. Log in to see who's coming and message them beforehand.</p>
+      </div>
+      <div class="tile" style="padding:16px">
+        <div class="k" style="margin-bottom:11px">Organised by</div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:11px">
+          <div class="av" style="width:32px;height:32px;font-size:12px">DM</div>
+          <div><div style="font-size:12.5px">David Miller</div><div style="font-size:11px" class="mut">Singapore chapter admin</div></div>
+        </div>
+        <p style="margin:0;font-size:11.5px;line-height:1.5" class="mut">Venue donated by Kirana Cloud. Sponsors provide space and food only — they get no attendee data and no say in the programme.</p>
+      </div>
+      <div class="tile" style="padding:16px">
+        <div class="k" style="margin-bottom:10px">Getting there</div>
+        <div class="tile" style="height:110px;display:grid;place-items:center;background:transparent;border-style:dashed;margin-bottom:10px">
+          <p style="margin:0;font-size:11px;text-align:center;padding:0 14px" class="mut"><i class="ph ph-map-trifold" style="font-size:18px;margin:0 auto 5px"></i>Map placeholder</p>
+        </div>
+        <p style="margin:0;font-size:11.5px;line-height:1.5" class="mut">5 min walk from one-north MRT. Building access needs the QR in your RSVP email.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/theme.js"></script>
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/interactions.js" defer></script>
+</body>
+</html>

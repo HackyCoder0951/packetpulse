@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-cb0be265-3938-49cf-b2e4-f74e505ea987/styles.css">
+<script src="_ds/nocturne-cb0be265-3938-49cf-b2e4-f74e505ea987/_ds_bundle.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>body{margin:0;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body)}a{color:var(--color-accent)}a:hover{color:var(--color-accent-300)}</style>
+</helmet>
+
+<div style="max-width:1080px;margin:0 auto;padding:56px 40px 96px">
+
+  <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:6px">
+    <span class="tag tag-accent">Context read</span>
+    <span style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 50%,transparent)">packetpulse · 46 docs · 1 visual template</span>
+  </div>
+  <h1 style="font-size:44px;max-width:15ch;margin:0 0 14px">Community Talent Ecosystem Platform</h1>
+  <p style="font-size:17px;line-height:1.55;max-width:62ch;opacity:.8;text-wrap:pretty;margin:0">What I read, what I think it means for design, and what I'd need from you before drawing screens. Nothing below is invented — each claim points at a file in the folder you attached.</p>
+
+  <div style="height:1px;margin:36px 0 34px;background:linear-gradient(to right,transparent,var(--color-divider) 48px,var(--color-divider) calc(100% - 48px),transparent)"></div>
+
+  <h2 style="font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 60%,transparent);margin:0 0 18px">1 · What the product is</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-bottom:14px">
+    <div class="card elev-sm"><span class="card-kicker">Positioning</span><p class="card-body" style="margin:0;font-size:13.5px;line-height:1.55">Explicitly <em>not</em> a job board, LMS, or professional network. A community ecosystem for Networking / Cloud / DevOps / Linux / Security / SRE / Platform / Automation professionals.</p></div>
+    <div class="card elev-sm"><span class="card-kicker">Core loop</span><p class="card-body" style="margin:0;font-size:13.5px;line-height:1.55">Join → learn &amp; practise → contribute → skill verified by peer/mentor → reputation &amp; portfolio grow → mentorship, speaking, or a Community&nbsp;HR referral → mentor again.</p></div>
+    <div class="card elev-sm"><span class="card-kicker">The one artifact</span><p class="card-body" style="margin:0;font-size:13.5px;line-height:1.55">A continuously evolving <strong>verified portfolio</strong> replaces the résumé. Trust Score, badges and professional levels are its currency.</p></div>
+  </div>
+  <div style="border-left:2px solid var(--color-accent);padding:2px 0 2px 16px;margin:22px 0 8px">
+    <p style="margin:0;font-size:16px;line-height:1.5;opacity:.92">“A resume tells you what someone claims. A community tells you what someone has proven.”</p>
+    <p style="margin:6px 0 0;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;opacity:.5">01_PROJECT_VISION.md — Core Belief</p>
+  </div>
+  <p style="font-size:13.5px;line-height:1.6;opacity:.72;max-width:70ch">Five ordered pillars govern every downstream decision: Community First · Learning Before Hiring · Trust Before Resume · Contribution Before Reputation · Community Driven, Industry Connected. The order is load-bearing — reversing it is a governance escalation. Design consequence: <strong>learning and contribution surfaces outrank hiring surfaces in every hierarchy.</strong></p>
+
+  <div style="height:1px;margin:36px 0 34px;background:linear-gradient(to right,transparent,var(--color-divider) 48px,var(--color-divider) calc(100% - 48px),transparent)"></div>
+
+  <h2 style="font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 60%,transparent);margin:0 0 8px">2 · The portals the IA already commits to</h2>
+  <p style="font-size:13.5px;opacity:.65;margin:0 0 18px">From <code style="font-size:12.5px">24_INFORMATION_ARCHITECTURE.md</code> §5. Five audiences, each with its own navigation tree — this is the screen inventory, already decided.</p>
+  <table class="table" style="font-size:13.5px">
+    <thead><tr><th style="width:22%">Portal</th><th>Primary views</th><th style="width:26%">Design tension</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Public</strong></td><td>Landing / philosophy · events directory · learning catalog · shared public portfolios</td><td>Must sell trust, not jobs</td></tr>
+      <tr><td><strong>Member</strong></td><td>Dashboard · learning center · lab sandbox · reputation ledger</td><td>Progress legible at a glance</td></tr>
+      <tr><td><strong>Mentor</strong></td><td>Verification queue · mentee dashboard · rubric resource hub</td><td>Queue throughput vs. review care</td></tr>
+      <tr><td><strong>Enterprise</strong></td><td>Sourcing engine · requisition center · sponsor center</td><td>Candidate fields hidden in first-pass search</td></tr>
+      <tr><td><strong>Admin / Governance</strong></td><td>Moderation board · chapter management · resolution center</td><td>Audit trails, role-gated data</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:13px;line-height:1.6;opacity:.72;max-width:70ch;margin-top:16px">Three IA rules read as hard design constraints: anything findable in ≤3 steps; sensitive fields (private details, salary targets, audit trails) role-gated; and <strong>bias mitigation — sourcing search must hide identifying candidate fields</strong>, which means the sourcing engine's default card is badges-and-evidence, not name-and-photo.</p>
+
+  <div style="height:1px;margin:36px 0 34px;background:linear-gradient(to right,transparent,var(--color-divider) 48px,var(--color-divider) calc(100% - 48px),transparent)"></div>
+
+  <h2 style="font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 60%,transparent);margin:0 0 18px">3 · The only existing UI in the folder</h2>
+  <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:22px;align-items:start">
+    <div>
+      <p style="font-size:13.5px;line-height:1.6;opacity:.8;margin:0 0 12px"><code style="font-size:12.5px">visual_template/</code> is a four-tab business walkthrough — Personas, Service Blueprints, Capability Map, GTM&nbsp;&amp;&nbsp;Pricing — driven by <code style="font-size:12.5px">app.js</code>. It is a <em>documentation explorer</em>, not the product. It contains no member, mentor, or company screen.</p>
+      <p style="font-size:13.5px;line-height:1.6;opacity:.8;margin:0">Its visual language: dark <code style="font-size:12.5px">#0B0813</code> ground, translucent glass panels, Outfit headings over Inter body, gradient-clipped headline text, ambient purple/pink radial glow, cyan accent.</p>
+      <p style="font-size:13px;line-height:1.6;opacity:.62;margin:14px 0 0">Nocturne — the bound design system — is the same instinct, disciplined: one dark ground, one blurple accent used as line and glow rather than flood, Inter throughout at weight 500, 0.7× density, outlined primary buttons, rules that fade at their ends. I'm treating Nocturne as the source of truth and the template as evidence of intended <em>mood</em> only.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:14px 16px">
+        <p style="margin:0 0 10px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.5">Template → Nocturne</p>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:8px 12px;font-size:12.5px;line-height:1.5">
+          <span style="opacity:.55">Ground</span><span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#0B0813;vertical-align:middle;margin-right:6px"></span>#0B0813 → <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--color-bg);vertical-align:middle;margin:0 6px"></span>#161826</span>
+          <span style="opacity:.55">Accent</span><span><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:#00E5FF;vertical-align:middle;margin-right:6px"></span>cyan → <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--color-accent);vertical-align:middle;margin:0 6px"></span>blurple</span>
+          <span style="opacity:.55">Type</span><span>Outfit + Inter → Inter only</span>
+          <span style="opacity:.55">Surfaces</span><span>glass + blur → flat <span style="color:var(--color-accent-300)">--color-surface</span></span>
+          <span style="opacity:.55">Buttons</span><span>filled → accent outline</span>
+        </div>
+      </div>
+      <div style="border:1px solid var(--color-divider);border-radius:var(--radius-md);padding:14px 16px">
+        <p style="margin:0 0 8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.5">Gaps — nothing in the folder covers these</p>
+        <ul style="margin:0;padding-left:16px;font-size:12.5px;line-height:1.7;opacity:.8">
+          <li>No product screens of any kind</li>
+          <li>No logo/brand lockup beyond the template's SVG mark</li>
+          <li>No imagery or photography</li>
+          <li>No naming decision — docs say “the Platform”; folder says <em>packetpulse</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:1px;margin:36px 0 34px;background:linear-gradient(to right,transparent,var(--color-divider) 48px,var(--color-divider) calc(100% - 48px),transparent)"></div>
+
+  <h2 style="font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:color-mix(in srgb,var(--color-text) 60%,transparent);margin:0 0 8px">4 · Where I'd start, if you agree</h2>
+  <p style="font-size:13.5px;opacity:.65;margin:0 0 18px">Ranked by how much of the ecosystem's thesis each screen has to carry.</p>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:14px">
+    <div class="card"><span class="card-kicker">01</span><h3 class="card-title" style="font-size:16px;margin:0">Verified portfolio</h3><p class="card-body" style="margin:0;font-size:13px;line-height:1.55">The résumé replacement. Trust Score, badge tiers, evidence trail, contribution history. If one screen proves the idea, it's this.</p></div>
+    <div class="card"><span class="card-kicker">02</span><h3 class="card-title" style="font-size:16px;margin:0">Mentor verification queue</h3><p class="card-body" style="margin:0;font-size:13px;line-height:1.55">Where trust is actually manufactured — lab submission, rubric, peer reviews, the decision.</p></div>
+    <div class="card"><span class="card-kicker">03</span><h3 class="card-title" style="font-size:16px;margin:0">Member dashboard</h3><p class="card-body" style="margin:0;font-size:13px;line-height:1.55">Learning path progress, active labs, reputation ledger, next mentor touchpoint.</p></div>
+    <div class="card"><span class="card-kicker">04</span><h3 class="card-title" style="font-size:16px;margin:0">Anonymised sourcing engine</h3><p class="card-body" style="margin:0;font-size:13px;line-height:1.55">The enterprise view that has to honour the no-pay-to-rank and bias-mitigation rules visibly.</p></div>
+  </div>
+
+  <p style="font-size:13px;line-height:1.6;opacity:.6;max-width:70ch;margin:28px 0 0">Everything above is read off the attached folder. I've stopped short of drawing anything because the docs deliberately exclude UI design, so the interaction model for these four screens is genuinely open — a few answers from you will save a round of wrong guesses. Questions are in chat.</p>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}"></script>
+</body>
+</html>

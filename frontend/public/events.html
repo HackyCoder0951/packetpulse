@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ppnav:injected -->
+<script>window.PP_DEPTH=1;
+(function(){try{var t=localStorage.getItem('pp-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Events · PacketPulse</title>
+<link rel="icon" href="../assets/packet-pulse-logo.png">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/chrome.css">
+<link rel="stylesheet" href="../assets/nav.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+</head>
+<body>
+<div class="scr" style="display:block">
+  <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 34px;border-bottom:1px solid var(--color-divider)">
+    <div style="display:flex;align-items:center;gap:34px">
+      <img src="../assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:28px;width:auto">
+      <div style="display:flex;gap:20px;font-size:12.5px"><a class="mut" href="landing.html">How it works</a><a style="color:var(--color-text)" href="events.html">Events</a><span class="mut">Chapters</span><span class="mut">For recruiters</span></div>
+    </div>
+    <div style="display:flex;gap:8px"><a class="btn btn-ghost" style="font-size:12.5px" href="login.html">Log in</a><a class="btn btn-primary" style="font-size:12.5px" href="signup.html">Sign up</a></div>
+  </div>
+
+  <div style="padding:28px 34px 34px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:20px">
+      <div>
+        <h1 style="font-size:30px;margin:0 0 7px">Events</h1>
+        <p style="margin:0;font-size:13.5px" class="mut">Meetups and webinars run by chapters. Open to anyone — you don't need to be a member to attend.</p>
+      </div>
+      <div class="seg" style="font-size:12px;flex:none">
+        <span class="seg-opt" style="padding:6px 13px;font-size:12px;background:color-mix(in srgb,var(--color-accent) 16%,transparent)">Upcoming · 14</span>
+        <span class="seg-opt" style="padding:6px 13px;font-size:12px">Past</span>
+      </div>
+    </div>
+
+    <!-- filter bar -->
+    <div class="tile" style="padding:13px 16px;margin-bottom:18px;display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:9px"><span class="k">Chapter</span><span class="tag tag-accent">Singapore ×</span><span class="tag tag-outline">Mumbai</span><span class="tag tag-outline">Online</span><span class="tag tag-outline">+ 11 more</span></div>
+      <div style="width:1px;height:20px;background:var(--color-divider)"></div>
+      <div style="display:flex;align-items:center;gap:9px"><span class="k">Topic</span><span class="tag tag-outline">Networking</span><span class="tag tag-accent">Cloud ×</span><span class="tag tag-outline">DevOps</span><span class="tag tag-outline">Linux</span><span class="tag tag-outline">Security</span></div>
+      <div style="width:1px;height:20px;background:var(--color-divider)"></div>
+      <div style="display:flex;align-items:center;gap:9px"><span class="k">Format</span><span class="tag tag-outline">Meetup</span><span class="tag tag-outline">Webinar</span></div>
+      <button class="btn btn-ghost" style="font-size:11.5px;margin-left:auto;white-space:nowrap">Clear</button>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+
+      <div class="tile" style="padding:0;overflow:hidden;grid-column:span 2;display:flex">
+        <div class="lighten" style="width:250px;flex:none;border-right:1px solid var(--color-divider);display:grid;place-items:center;background:linear-gradient(140deg,color-mix(in srgb,var(--color-section) 70%,var(--color-surface)),var(--color-surface))">
+          <p style="margin:0;font-size:11px;text-align:center;padding:0 18px" class="mut"><i class="ph ph-image" style="font-size:19px;margin:0 auto 6px"></i>Event image placeholder</p>
+        </div>
+        <div style="padding:18px;flex:1">
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px"><span class="tag tag-accent">Featured</span><span class="tag tag-neutral">Meetup</span><span class="tag tag-outline">Cloud</span></div>
+          <h2 style="font-size:19px;margin:0 0 7px">Terraform at scale — what breaks after 200 modules</h2>
+          <p style="margin:0 0 14px;font-size:12.5px;line-height:1.55;max-width:52ch" class="mut">Three engineers on what actually went wrong in their monorepos, followed by an open floor. Bring your worst state file.</p>
+          <div style="display:flex;align-items:center;gap:22px;flex-wrap:wrap">
+            <div style="display:flex;align-items:center;gap:7px;font-size:12px"><i class="ph ph-calendar-blank mut" style="font-size:14px"></i>Fri 6 Sep · 18:30 SGT</div>
+            <div style="display:flex;align-items:center;gap:7px;font-size:12px"><i class="ph ph-map-pin mut" style="font-size:14px"></i>Singapore chapter</div>
+            <div style="display:flex;align-items:center;gap:7px;font-size:12px"><i class="ph ph-users mut" style="font-size:14px"></i>61 of 80 going</div>
+            <button class="btn btn-primary" style="font-size:12px;margin-left:auto;white-space:nowrap">RSVP</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile" style="padding:17px">
+        <div style="display:flex;gap:8px;margin-bottom:11px"><span class="tag tag-neutral">Webinar</span><span class="tag tag-outline">All topics</span></div>
+        <h3 style="font-size:15px;margin:0 0 7px">What admins actually look for in a review</h3>
+        <p style="margin:0 0 14px;font-size:12px;line-height:1.55" class="mut">Two chapter admins walk through three real submissions — one approved, two sent back.</p>
+        <div style="display:flex;flex-direction:column;gap:7px;font-size:11.5px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-calendar-blank mut" style="font-size:13px"></i>Fri 22 Aug · 17:00 UTC</div>
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-globe mut" style="font-size:13px"></i>Online · all chapters</div>
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-users mut" style="font-size:13px"></i>118 going</div>
+        </div>
+        <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12px;margin-top:0">RSVP</button>
+      </div>
+
+      <div class="tile" style="padding:17px">
+        <div style="display:flex;gap:8px;margin-bottom:11px"><span class="tag tag-neutral">Meetup</span><span class="tag tag-outline">Networking</span></div>
+        <h3 style="font-size:15px;margin:0 0 7px">BGP in the real world — three outages</h3>
+        <p style="margin:0 0 14px;font-size:12px;line-height:1.55" class="mut">Two speakers walk through route leaks they caused, told honestly.</p>
+        <div style="display:flex;flex-direction:column;gap:7px;font-size:11.5px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-calendar-blank mut" style="font-size:13px"></i>Thu 14 Aug · 18:30 IST</div>
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-map-pin mut" style="font-size:13px"></i>Mumbai chapter</div>
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-users mut" style="font-size:13px"></i>42 of 60 going</div>
+        </div>
+        <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12px;margin-top:0">RSVP</button>
+      </div>
+
+      <div class="tile" style="padding:17px">
+        <div style="display:flex;gap:8px;margin-bottom:11px"><span class="tag tag-neutral">Meetup</span><span class="tag tag-outline">Linux</span></div>
+        <h3 style="font-size:15px;margin:0 0 7px">Boot failures and how to stay calm</h3>
+        <p style="margin:0 0 14px;font-size:12px;line-height:1.55" class="mut">Live debugging of a deliberately broken systemd target, with audience direction.</p>
+        <div style="display:flex;flex-direction:column;gap:7px;font-size:11.5px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-calendar-blank mut" style="font-size:13px"></i>Wed 27 Aug · 19:00 SGT</div>
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-map-pin mut" style="font-size:13px"></i>Singapore chapter</div>
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-users mut" style="font-size:13px"></i>28 of 40 going</div>
+        </div>
+        <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12px;margin-top:0">RSVP</button>
+      </div>
+
+      <div class="tile" style="padding:17px">
+        <div style="display:flex;gap:8px;margin-bottom:11px"><span class="tag tag-neutral">Webinar</span><span class="tag tag-outline">Security</span></div>
+        <h3 style="font-size:15px;margin:0 0 7px">Threat modelling for people who ship infra</h3>
+        <p style="margin:0 0 14px;font-size:12px;line-height:1.55" class="mut">A practical hour, no framework worship.</p>
+        <div style="display:flex;flex-direction:column;gap:7px;font-size:11.5px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-calendar-blank mut" style="font-size:13px"></i>Tue 2 Sep · 16:00 UTC</div>
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-globe mut" style="font-size:13px"></i>Online</div>
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-users mut" style="font-size:13px"></i>74 going</div>
+        </div>
+        <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12px;margin-top:0">RSVP</button>
+      </div>
+
+      <div class="tile" style="padding:17px;opacity:.62">
+        <div style="display:flex;gap:8px;margin-bottom:11px"><span class="tag tag-outline">Full</span><span class="tag tag-neutral">Meetup</span></div>
+        <h3 style="font-size:15px;margin:0 0 7px">Kubernetes failure night</h3>
+        <p style="margin:0 0 14px;font-size:12px;line-height:1.55" class="mut">Capacity reached. Join the waitlist and you'll be notified if a place opens.</p>
+        <div style="display:flex;flex-direction:column;gap:7px;font-size:11.5px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-calendar-blank mut" style="font-size:13px"></i>Sat 30 Aug · 14:00 SGT</div>
+          <div style="display:flex;align-items:center;gap:7px"><i class="ph ph-users mut" style="font-size:13px"></i>50 of 50 going</div>
+        </div>
+        <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12px;margin-top:0">Join waitlist</button>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:center;margin-top:22px"><button class="btn btn-secondary" style="font-size:12.5px">Show 8 more</button></div>
+  </div>
+</div>
+<script src="../assets/theme.js"></script>
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/interactions.js" defer></script>
+</body>
+</html>

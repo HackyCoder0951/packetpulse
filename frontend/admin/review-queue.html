@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ppnav:injected -->
+<script>window.PP_DEPTH=1;
+(function(){try{var t=localStorage.getItem('pp-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Verification Review Queue · PacketPulse</title>
+<link rel="icon" href="../assets/packet-pulse-logo.png">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/chrome.css">
+<link rel="stylesheet" href="../assets/nav.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+</head>
+<body>
+<div class="scr">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="../assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Chapter admin</div>
+      <a class="sbi" href="dashboard.html"><i class="ph ph-squares-four"></i>Chapter dashboard</a>
+      <a class="sbi on" href="review-queue.html"><i class="ph-fill ph-seal-check"></i>Verification queue<span style="margin-left:auto;font-size:10.5px;background:var(--color-accent-800);color:var(--color-accent-100);padding:1px 6px;border-radius:8px">11</span></a>
+      <a class="sbi" href="events.html"><i class="ph ph-calendar-plus"></i>Event management</a>
+      <a class="sbi" href="roster.html"><i class="ph ph-users-four"></i>Member roster</a>
+      <a class="sbi" href="mentors.html"><i class="ph ph-user-gear"></i>Reviewers</a>
+      <a class="sbi" href="moderation.html"><i class="ph ph-flag"></i>Moderation queue<span style="margin-left:auto;font-size:10.5px" class="mut">4</span></a>
+    </div>
+    <div style="margin-top:auto;padding:11px;border-radius:var(--radius-md);border:1px solid var(--color-divider)">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <div class="av" style="width:28px;height:28px;font-size:11px">DM</div>
+        <div><div style="font-size:12px">David Miller</div><div style="font-size:10px" class="mut">Admin · Singapore</div></div>
+      </div>
+      <div class="bar" style="height:4px"><span style="width:58%"></span></div>
+      <div style="font-size:10.5px;margin-top:5px" class="mut">11 open · 6 decided this week</div>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:14px">
+        <span style="font-size:14px;font-weight:500">Verification review queue</span>
+        <div class="seg" style="font-size:12px">
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px;background:color-mix(in srgb,var(--color-accent) 16%,transparent)">Longest waiting</span>
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px">Newest</span>
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px">Resubmissions</span>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span style="font-size:11.5px" class="mut">Target · decide within 5 days</span>
+        <button class="btn btn-secondary" style="font-size:12px"><i class="ph ph-funnel" style="font-size:14px"></i>Skill filter</button>
+      </div>
+    </div>
+
+    <div style="padding:18px 22px 26px;display:grid;grid-template-columns:1fr 292px;gap:24px;align-items:start">
+      <div>
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px">
+          <div class="tile" style="padding:13px 15px"><div class="k" style="margin-bottom:6px">Waiting</div><div style="font-size:21px">11</div></div>
+          <div class="tile" style="padding:13px 15px"><div class="k" style="margin-bottom:6px">Over 5 days</div><div style="font-size:21px;color:var(--color-accent)">2</div></div>
+          <div class="tile" style="padding:13px 15px"><div class="k" style="margin-bottom:6px">Resubmissions</div><div style="font-size:21px">3</div></div>
+          <div class="tile" style="padding:13px 15px"><div class="k" style="margin-bottom:6px">Approval rate</div><div style="font-size:21px">74%</div></div>
+        </div>
+
+        <table class="table" style="font-size:12.5px">
+          <thead><tr><th style="width:24%">Member</th><th style="width:17%">Skill claimed</th><th style="width:16%">Endorsements</th><th style="width:22%">Evidence on file</th><th style="width:11%">Waiting</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td><div style="display:flex;align-items:center;gap:9px"><div class="av" style="width:26px;height:26px;font-size:10px">AP</div><div><div>Aarav Patel</div><div style="font-size:11px" class="mut">Student · Mumbai</div></div></div></td>
+              <td>Linux<div style="font-size:11px;margin-top:2px" class="mut">Resubmission ×2</div></td>
+              <td><div style="display:flex;align-items:center;gap:7px"><span style="font-size:13px">6</span><span class="tag tag-outline" style="font-size:9.5px">3 same event</span></div></td>
+              <td class="mut">2 projects · 0 roles</td>
+              <td><span class="tag tag-accent">8 days</span></td>
+              <td><button class="btn btn-secondary" style="font-size:11.5px;white-space:nowrap">Open</button></td>
+            </tr>
+            <tr>
+              <td><div style="display:flex;align-items:center;gap:9px"><div class="av avA" style="width:26px;height:26px;font-size:10px">ZC</div><div><div>Zara Chen</div><div style="font-size:11px" class="mut">Fresher · Singapore</div></div></div></td>
+              <td>Terraform</td>
+              <td><div style="display:flex;align-items:center;gap:7px"><span style="font-size:13px">5</span><span class="tag tag-accent" style="font-size:9.5px">4 verified endorsers</span></div></td>
+              <td class="mut">2 projects · 1 role</td>
+              <td><span class="tag tag-neutral">3 days</span></td>
+              <td><button class="btn btn-primary" style="font-size:11.5px;white-space:nowrap">Open</button></td>
+            </tr>
+            <tr>
+              <td><div style="display:flex;align-items:center;gap:9px"><div class="av" style="width:26px;height:26px;font-size:10px">—</div><div><div>Member #6620</div><div style="font-size:11px" class="mut">Fresher · Singapore</div></div></div></td>
+              <td>Kubernetes</td>
+              <td><div style="display:flex;align-items:center;gap:7px"><span style="font-size:13px">5</span><span class="tag tag-outline" style="font-size:9.5px">Reciprocal ×4</span></div></td>
+              <td class="mut">0 projects · 1 role</td>
+              <td><span class="tag tag-neutral">3 days</span></td>
+              <td><button class="btn btn-secondary" style="font-size:11.5px;white-space:nowrap">Open</button></td>
+            </tr>
+            <tr>
+              <td><div style="display:flex;align-items:center;gap:9px"><div class="av" style="width:26px;height:26px;font-size:10px">KT</div><div><div>Kenji Tanaka</div><div style="font-size:11px" class="mut">Engineer · Singapore</div></div></div></td>
+              <td>Networking</td>
+              <td><div style="display:flex;align-items:center;gap:7px"><span style="font-size:13px">7</span></div></td>
+              <td class="mut">1 project · 2 roles</td>
+              <td><span class="tag tag-neutral">2 days</span></td>
+              <td><button class="btn btn-secondary" style="font-size:11.5px;white-space:nowrap">Open</button></td>
+            </tr>
+            <tr>
+              <td><div style="display:flex;align-items:center;gap:9px"><div class="av" style="width:26px;height:26px;font-size:10px">—</div><div><div>Member #4471</div><div style="font-size:11px" class="mut">Engineer · Singapore</div></div></div></td>
+              <td>Security</td>
+              <td><div style="display:flex;align-items:center;gap:7px"><span style="font-size:13px">5</span></div></td>
+              <td class="mut">3 projects · 1 role</td>
+              <td><span class="tag tag-neutral">1 day</span></td>
+              <td><button class="btn btn-secondary" style="font-size:11.5px;white-space:nowrap">Open</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin:14px 0 0;font-size:11.5px" class="mut">Showing 5 of 11. Approving from the list is deliberately not possible — a decision requires the detail view, and a rejection requires a written reason.</p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:13px">
+        <div class="tile" style="padding:16px">
+          <div class="k" style="margin-bottom:11px">Triage signals</div>
+          <div style="display:flex;flex-direction:column;gap:11px;font-size:12px;line-height:1.5">
+            <div><span class="tag tag-accent" style="font-size:9.5px">4 verified endorsers</span><p style="margin:6px 0 0" class="mut">Endorsers who are themselves Community Verified in that skill. Strongest signal you have in Phase 1.</p></div>
+            <div><span class="tag tag-outline" style="font-size:9.5px">3 same event</span><p style="margin:6px 0 0" class="mut">Multiple endorsements traced to one meetup — not disqualifying, but read the notes.</p></div>
+            <div><span class="tag tag-outline" style="font-size:9.5px">Reciprocal ×4</span><p style="margin:6px 0 0" class="mut">Endorsement was returned within 48 hours in both directions. Look closely.</p></div>
+          </div>
+        </div>
+        <div class="tile" style="padding:16px">
+          <div class="k" style="margin-bottom:11px">Reviewer load</div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span>You</span><span>11</span></div><div class="bar"><span style="width:73%"></span></div></div>
+            <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span class="mut">E. Rostova</span><span class="mut">3</span></div><div class="bar"><span style="width:20%"></span></div></div>
+            <div><div style="display:flex;justify-content:space-between;font-size:11.5px;margin-bottom:4px"><span class="mut">M. Vance</span><span class="mut">1</span></div><div class="bar"><span style="width:7%"></span></div></div>
+          </div>
+          <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12px">Reassign some</button>
+        </div>
+        <div class="tile" style="padding:16px;border-style:dashed;background:transparent">
+          <p style="margin:0;font-size:11px;line-height:1.55" class="mut">Reviewers cannot review their own endorsements. If you endorsed the skill, the request routes to another reviewer automatically.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/theme.js"></script>
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/interactions.js" defer></script>
+</body>
+</html>

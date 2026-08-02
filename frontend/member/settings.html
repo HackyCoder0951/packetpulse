@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ppnav:injected -->
+<script>window.PP_DEPTH=1;
+(function(){try{var t=localStorage.getItem('pp-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Settings · PacketPulse</title>
+<link rel="icon" href="../assets/packet-pulse-logo.png">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/chrome.css">
+<link rel="stylesheet" href="../assets/nav.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+</head>
+<body>
+<div class="scr">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="../assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Member</div>
+      <a class="sbi" href="home.html"><i class="ph ph-house"></i>Home</a>
+      <a class="sbi" href="profile-editor.html"><i class="ph ph-user-circle"></i>Profile</a>
+      <a class="sbi" href="skills.html"><i class="ph ph-star"></i>Skills &amp; endorsements</a>
+      <a class="sbi" href="verification.html"><i class="ph ph-seal-check"></i>Verification</a>
+      <a class="sbi" href="inbox.html"><i class="ph ph-tray"></i>Endorsement inbox<span style="margin-left:auto;font-size:10.5px;background:var(--color-accent-800);color:var(--color-accent-100);padding:1px 6px;border-radius:8px">3</span></a>
+      <a class="sbi" href="connections.html"><i class="ph ph-users-three"></i>Connections</a>
+      <a class="sbi" href="events.html"><i class="ph ph-calendar-dots"></i>Events</a>
+    </div>
+    <div>
+      <div class="sbh">Account</div>
+      <a class="sbi" href="notifications.html"><i class="ph ph-bell"></i>Notifications</a>
+      <a class="sbi on" href="settings.html"><i class="ph-fill ph-gear-six"></i>Settings</a>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:12px"><span style="font-size:14px;font-weight:500">Settings</span><span style="font-size:11.5px" class="mut">Changes save immediately</span></div>
+    </div>
+
+    <div style="padding:20px 22px 26px;display:grid;grid-template-columns:170px 1fr 264px;gap:24px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:3px">
+        <div class="sbi on" style="font-size:12.5px"><i class="ph-fill ph-eye"></i>Visibility</div>
+        <div class="sbi" style="font-size:12.5px"><i class="ph ph-bell"></i>Notifications</div>
+        <div class="sbi" style="font-size:12.5px"><i class="ph ph-user"></i>Account</div>
+        <div class="sbi" style="font-size:12.5px"><i class="ph ph-plugs"></i>Connected accounts</div>
+        <div class="sbi" style="font-size:12.5px"><i class="ph ph-warning-octagon"></i>Danger zone</div>
+      </div>
+
+      <div>
+        <h2 style="font-size:17px;margin:0 0 4px">Visibility</h2>
+        <p style="margin:0 0 16px;font-size:12.5px" class="mut">Who can see your profile, and what they see when they do.</p>
+
+        <div class="tile" style="padding:17px 19px;margin-bottom:11px">
+          <div class="k" style="margin-bottom:12px">Profile visibility</div>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div class="tile" style="padding:13px 15px;border-color:var(--color-accent);background:color-mix(in srgb,var(--color-accent) 9%,transparent)">
+              <div style="display:flex;align-items:flex-start;gap:11px">
+                <i class="ph-fill ph-check-circle" style="font-size:16px;color:var(--color-accent);flex:none;margin-top:1px"></i>
+                <div><div style="font-size:13px;font-weight:500">Public</div><p style="margin:5px 0 0;font-size:11.5px;line-height:1.5" class="mut">Anyone with the link sees your name, skills and projects. Recruiters can find you in search and request an introduction.</p></div>
+              </div>
+            </div>
+            <div class="tile" style="padding:13px 15px;background:transparent">
+              <div style="display:flex;align-items:flex-start;gap:11px">
+                <i class="ph ph-circle mut" style="font-size:16px;flex:none;margin-top:1px"></i>
+                <div><div style="font-size:13px;font-weight:500">Connections only</div><p style="margin:5px 0 0;font-size:11.5px;line-height:1.5" class="mut">You still appear in recruiter search as an anonymised entry with your verified skills — your name and history unlock only if you accept an introduction.</p></div>
+              </div>
+            </div>
+            <div class="tile" style="padding:13px 15px;background:transparent">
+              <div style="display:flex;align-items:flex-start;gap:11px">
+                <i class="ph ph-circle mut" style="font-size:16px;flex:none;margin-top:1px"></i>
+                <div><div style="font-size:13px;font-weight:500">Hidden from recruiters</div><p style="margin:5px 0 0;font-size:11.5px;line-height:1.5" class="mut">Out of search entirely. Your profile still works as a link you can share yourself.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:17px 19px;margin-bottom:11px">
+          <div class="k" style="margin-bottom:13px">On your public profile</div>
+          <div style="display:flex;flex-direction:column;gap:0">
+            <div style="display:flex;align-items:center;gap:14px;padding-bottom:13px;border-bottom:1px solid var(--color-divider)">
+              <div style="flex:1"><div style="font-size:13px">Availability status</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">Shows “open to opportunities”. Recruiters filter on it heavily.</p></div>
+              <div style="width:34px;height:19px;border-radius:10px;background:var(--color-accent);position:relative;flex:none"><span style="position:absolute;right:3px;top:3px;width:13px;height:13px;border-radius:50%;background:var(--color-neutral-100)"></span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--color-divider)">
+              <div style="flex:1"><div style="font-size:13px">Current employer</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">Hide this if you're looking quietly. Your role title and dates still show.</p></div>
+              <div style="width:34px;height:19px;border-radius:10px;background:var(--color-accent);position:relative;flex:none"><span style="position:absolute;right:3px;top:3px;width:13px;height:13px;border-radius:50%;background:var(--color-neutral-100)"></span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--color-divider)">
+              <div style="flex:1"><div style="font-size:13px">Endorser names</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">Can't be turned off — a verified label without its endorsers means nothing.</p></div>
+              <div style="width:34px;height:19px;border-radius:10px;background:var(--color-neutral-700);position:relative;flex:none;opacity:.45"><span style="position:absolute;right:3px;top:3px;width:13px;height:13px;border-radius:50%;background:var(--color-neutral-400)"></span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;padding-top:13px">
+              <div style="flex:1"><div style="font-size:13px">Self-declared skills</div><p style="margin:4px 0 0;font-size:11.5px;line-height:1.5" class="mut">Hide un-endorsed skills entirely if you'd rather show only what's been vouched for.</p></div>
+              <div style="width:34px;height:19px;border-radius:10px;background:var(--color-neutral-700);position:relative;flex:none"><span style="position:absolute;left:3px;top:3px;width:13px;height:13px;border-radius:50%;background:var(--color-neutral-400)"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:17px 19px">
+          <div class="k" style="margin-bottom:13px">Notification preferences</div>
+          <div style="display:flex;flex-direction:column;gap:0">
+            <div style="display:flex;align-items:center;gap:14px;padding-bottom:12px;border-bottom:1px solid var(--color-divider)">
+              <div style="flex:1;font-size:13px">Endorsement requests &amp; decisions</div>
+              <span style="font-size:11.5px" class="mut">Email + in-app</span>
+              <div style="width:34px;height:19px;border-radius:10px;background:var(--color-accent);position:relative;flex:none"><span style="position:absolute;right:3px;top:3px;width:13px;height:13px;border-radius:50%;background:var(--color-neutral-100)"></span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--color-divider)">
+              <div style="flex:1;font-size:13px">Recruiter introductions</div>
+              <span style="font-size:11.5px" class="mut">Email + in-app</span>
+              <div style="width:34px;height:19px;border-radius:10px;background:var(--color-accent);position:relative;flex:none"><span style="position:absolute;right:3px;top:3px;width:13px;height:13px;border-radius:50%;background:var(--color-neutral-100)"></span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--color-divider)">
+              <div style="flex:1;font-size:13px">Chapter events</div>
+              <span style="font-size:11.5px" class="mut">In-app only</span>
+              <div style="width:34px;height:19px;border-radius:10px;background:var(--color-accent);position:relative;flex:none"><span style="position:absolute;right:3px;top:3px;width:13px;height:13px;border-radius:50%;background:var(--color-neutral-100)"></span></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;padding-top:12px">
+              <div style="flex:1;font-size:13px">Feed activity and replies</div>
+              <span style="font-size:11.5px" class="mut">Off</span>
+              <div style="width:34px;height:19px;border-radius:10px;background:var(--color-neutral-700);position:relative;flex:none"><span style="position:absolute;left:3px;top:3px;width:13px;height:13px;border-radius:50%;background:var(--color-neutral-400)"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:13px">
+        <div class="tile" style="padding:16px">
+          <div class="k" style="margin-bottom:11px">Account</div>
+          <div style="display:flex;flex-direction:column;gap:11px;font-size:12.5px">
+            <div><div class="mut" style="font-size:11px;margin-bottom:3px">Email</div>zara@example.com</div>
+            <div><div class="mut" style="font-size:11px;margin-bottom:3px">Password</div>Changed 4 months ago</div>
+            <div><div class="mut" style="font-size:11px;margin-bottom:3px">Chapter</div>Singapore · SEA</div>
+          </div>
+          <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12px">Update account</button>
+        </div>
+        <div class="tile" style="padding:16px">
+          <div class="k" style="margin-bottom:11px">Connected accounts</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <div style="display:flex;align-items:center;gap:9px"><i class="ph-fill ph-github-logo" style="font-size:17px;color:var(--color-accent);flex:none"></i><div style="flex:1;min-width:0"><div style="font-size:12.5px">@zarachen</div><div style="font-size:10.5px" class="mut">Repos + activity</div></div><button class="btn btn-ghost" style="font-size:11px;flex:none">Remove</button></div>
+            <div style="display:flex;align-items:center;gap:9px"><i class="ph-fill ph-linkedin-logo mut" style="font-size:17px;flex:none"></i><div style="flex:1;min-width:0"><div style="font-size:12.5px" class="mut">Not connected</div></div><button class="btn btn-ghost" style="font-size:11px;flex:none">Connect</button></div>
+          </div>
+        </div>
+        <div class="tile" style="padding:16px;border-color:color-mix(in srgb,var(--color-accent) 35%,transparent)">
+          <div class="k" style="margin-bottom:10px">Deactivate account</div>
+          <p style="margin:0 0 12px;font-size:11.5px;line-height:1.55" class="mut">Your profile comes down and you leave recruiter search. Endorsements <em>you gave others</em> stay — they belong to those members, and removing them would quietly downgrade people who did nothing wrong.</p>
+          <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12px;margin-top:0">Deactivate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/theme.js"></script>
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/interactions.js" defer></script>
+</body>
+</html>

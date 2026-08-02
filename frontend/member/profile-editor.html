@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ppnav:injected -->
+<script>window.PP_DEPTH=1;
+(function(){try{var t=localStorage.getItem('pp-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Edit Profile · PacketPulse</title>
+<link rel="icon" href="../assets/packet-pulse-logo.png">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/chrome.css">
+<link rel="stylesheet" href="../assets/nav.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+</head>
+<body>
+<div class="scr">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="../assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Member</div>
+      <a class="sbi" href="home.html"><i class="ph ph-house"></i>Home</a>
+      <a class="sbi on" href="profile-editor.html"><i class="ph-fill ph-user-circle"></i>Profile</a>
+      <a class="sbi" href="skills.html"><i class="ph ph-star"></i>Skills &amp; endorsements</a>
+      <a class="sbi" href="verification.html"><i class="ph ph-seal-check"></i>Verification<span style="margin-left:auto;font-size:10.5px;color:var(--color-accent-300)">1 pending</span></a>
+      <a class="sbi" href="inbox.html"><i class="ph ph-tray"></i>Endorsement inbox<span style="margin-left:auto;font-size:10.5px;background:var(--color-accent-800);color:var(--color-accent-100);padding:1px 6px;border-radius:8px">3</span></a>
+      <a class="sbi" href="connections.html"><i class="ph ph-users-three"></i>Connections</a>
+      <a class="sbi" href="events.html"><i class="ph ph-calendar-dots"></i>Events</a>
+    </div>
+    <div>
+      <div class="sbh">Account</div>
+      <a class="sbi" href="notifications.html"><i class="ph ph-bell"></i>Notifications</a>
+      <a class="sbi" href="settings.html"><i class="ph ph-gear-six"></i>Settings</a>
+    </div>
+    <div style="margin-top:auto;padding:11px;border-radius:var(--radius-md);border:1px solid var(--color-divider)">
+      <div style="display:flex;align-items:center;gap:8px">
+        <div class="av avA" style="width:28px;height:28px;font-size:11px">ZC</div>
+        <div><div style="font-size:12px">Zara Chen</div><div style="font-size:10px" class="mut">Fresher · Singapore</div></div>
+      </div>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:14px;font-weight:500">Edit profile</span>
+        <span style="font-size:11.5px" class="mut">Saved 2 minutes ago</span>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <div class="seg" style="font-size:11.5px">
+          <span class="seg-opt" style="padding:5px 10px;font-size:11.5px;background:color-mix(in srgb,var(--color-accent) 16%,transparent)"><i class="ph ph-globe" style="display:inline-block;font-size:12px;margin-right:5px;vertical-align:-1px"></i>Public</span>
+          <span class="seg-opt" style="padding:5px 10px;font-size:11.5px">Connections only</span>
+        </div>
+        <button class="btn btn-secondary" style="font-size:12px"><i class="ph ph-eye" style="font-size:14px"></i>Preview as public</button>
+      </div>
+    </div>
+
+    <div style="padding:20px 22px 26px;display:grid;grid-template-columns:1fr 296px;gap:24px;align-items:start">
+      <div>
+        <!-- identity -->
+        <div class="tile" style="padding:18px;margin-bottom:16px">
+          <div style="display:flex;gap:18px;align-items:flex-start">
+            <div style="flex:none;text-align:center">
+              <div class="av avA" style="width:76px;height:76px;font-size:25px;border-radius:var(--radius-md)">ZC</div>
+              <button class="btn btn-ghost" style="font-size:11px;margin-top:7px;padding-inline:0">Upload photo</button>
+            </div>
+            <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="field"><label style="font-size:11.5px">Full name</label><div class="input" style="display:flex;align-items:center;font-size:13px">Zara Chen</div></div>
+              <div class="field"><label style="font-size:11.5px">Headline</label><div class="input" style="display:flex;align-items:center;font-size:13px">Junior DevOps Engineer</div></div>
+              <div class="field"><label style="font-size:11.5px">Chapter</label><div class="input" style="display:flex;align-items:center;justify-content:space-between;font-size:13px">Singapore · SEA<i class="ph ph-caret-down mut" style="font-size:12px"></i></div></div>
+              <div class="field"><label style="font-size:11.5px">Role</label><div class="input" style="display:flex;align-items:center;justify-content:space-between;font-size:13px">Fresher (0–2 yrs)<i class="ph ph-caret-down mut" style="font-size:12px"></i></div></div>
+              <div class="field" style="grid-column:span 2"><label style="font-size:11.5px">Bio <span class="mut" style="font-weight:400">· 180 characters left</span></label><div class="input" style="min-height:56px;font-size:13px;line-height:1.5;padding:8px 10px">Learning in public. Currently living in other people's Terraform state files and writing up everything that breaks.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start">
+          <!-- Experience & Education -->
+          <div>
+            <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px">
+              <h3 style="font-size:14px;margin:0">Experience &amp; education</h3>
+              <button class="btn btn-ghost" style="font-size:11.5px"><i class="ph ph-plus" style="font-size:13px"></i>Add</button>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:9px">
+              <div class="tile" style="padding:13px 15px">
+                <div style="display:flex;gap:12px">
+                  <div class="av" style="width:34px;height:34px;font-size:13px"><i class="ph ph-buildings mut" style="font-size:16px"></i></div>
+                  <div style="flex:1;min-width:0">
+                    <div style="font-size:13.5px;font-weight:500">Junior DevOps Engineer</div>
+                    <div style="font-size:12px;margin-top:2px" class="mut">Kirana Cloud · Singapore</div>
+                    <div style="font-size:11.5px;margin-top:3px" class="mut">Jul 2024 — present · 2 yr 1 mo</div>
+                    <p style="margin:8px 0 0;font-size:11.5px;line-height:1.5" class="mut">CI/CD for 14 services, on-call rotation, migrated release pipeline off Jenkins.</p>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:5px;flex:none">
+                    <i class="ph ph-pencil-simple mut" style="font-size:14px"></i>
+                    <i class="ph ph-trash mut" style="font-size:14px"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="tile" style="padding:13px 15px">
+                <div style="display:flex;gap:12px">
+                  <div class="av" style="width:34px;height:34px"><i class="ph ph-graduation-cap mut" style="font-size:16px"></i></div>
+                  <div style="flex:1;min-width:0">
+                    <div style="font-size:13.5px;font-weight:500">BSc Computer Science</div>
+                    <div style="font-size:12px;margin-top:2px" class="mut">Nanyang Technological University</div>
+                    <div style="font-size:11.5px;margin-top:3px" class="mut">2020 — 2024</div>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:5px;flex:none">
+                    <i class="ph ph-pencil-simple mut" style="font-size:14px"></i>
+                    <i class="ph ph-trash mut" style="font-size:14px"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="tile" style="padding:13px 15px;border-style:dashed;background:transparent;display:flex;align-items:center;gap:10px">
+                <i class="ph ph-plus-circle" style="font-size:17px;color:var(--color-accent)"></i>
+                <div><div style="font-size:12.5px">Add a role or qualification</div><div style="font-size:11px;margin-top:2px" class="mut">Recruiters filter on experience level — this is what sets yours</div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects & Repos -->
+          <div>
+            <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px">
+              <h3 style="font-size:14px;margin:0">Projects &amp; repos</h3>
+              <button class="btn btn-ghost" style="font-size:11.5px"><i class="ph ph-plus" style="font-size:13px"></i>Add manually</button>
+            </div>
+            <div class="tile" style="padding:13px 15px;margin-bottom:9px;border-color:color-mix(in srgb,var(--color-accent) 40%,transparent);background:color-mix(in srgb,var(--color-accent) 7%,var(--color-surface))">
+              <div style="display:flex;align-items:center;gap:11px">
+                <i class="ph-fill ph-github-logo" style="font-size:20px;color:var(--color-accent);flex:none"></i>
+                <div style="flex:1">
+                  <div style="font-size:12.5px;font-weight:500">GitHub connected · @zarachen</div>
+                  <div style="font-size:11px;margin-top:2px" class="mut">Repos and contribution activity pull automatically. You choose which ones show.</div>
+                </div>
+                <button class="btn btn-secondary" style="font-size:11px;flex:none">Manage</button>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:9px">
+              <div class="tile" style="padding:13px 15px">
+                <div style="display:flex;align-items:flex-start;gap:11px">
+                  <i class="ph ph-git-branch" style="font-size:16px;color:var(--color-accent);margin-top:2px;flex:none"></i>
+                  <div style="flex:1;min-width:0">
+                    <div style="display:flex;align-items:center;gap:7px"><span style="font-size:13.5px;font-weight:500">tf-drift-watch</span><span class="tag tag-neutral" style="font-size:9.5px;padding:1px 6px">Pulled from GitHub</span></div>
+                    <p style="margin:6px 0 0;font-size:11.5px;line-height:1.5" class="mut">Detects and reports Terraform state drift on a schedule. 41 stars.</p>
+                    <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap"><span class="tag tag-outline" style="font-size:9.5px">Terraform</span><span class="tag tag-outline" style="font-size:9.5px">Go</span></div>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:5px;flex:none"><i class="ph ph-eye mut" style="font-size:14px"></i><i class="ph ph-pencil-simple mut" style="font-size:14px"></i></div>
+                </div>
+              </div>
+              <div class="tile" style="padding:13px 15px">
+                <div style="display:flex;align-items:flex-start;gap:11px">
+                  <i class="ph ph-link-simple" style="font-size:16px;color:var(--color-accent);margin-top:2px;flex:none"></i>
+                  <div style="flex:1;min-width:0">
+                    <div style="display:flex;align-items:center;gap:7px"><span style="font-size:13.5px;font-weight:500">Home lab — 3-node k8s on used hardware</span><span class="tag tag-neutral" style="font-size:9.5px;padding:1px 6px">Added manually</span></div>
+                    <p style="margin:6px 0 0;font-size:11.5px;line-height:1.5" class="mut">Write-up of the build, plus everything I got wrong about networking first.</p>
+                    <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap"><span class="tag tag-outline" style="font-size:9.5px">Kubernetes</span><span class="tag tag-outline" style="font-size:9.5px">Linux</span></div>
+                  </div>
+                  <div style="display:flex;flex-direction:column;gap:5px;flex:none"><i class="ph ph-eye mut" style="font-size:14px"></i><i class="ph ph-pencil-simple mut" style="font-size:14px"></i></div>
+                </div>
+              </div>
+              <div class="tile" style="padding:13px 15px;opacity:.6;border-style:dashed;background:transparent">
+                <div style="display:flex;align-items:center;gap:11px">
+                  <i class="ph ph-eye-slash mut" style="font-size:16px;flex:none"></i>
+                  <div style="flex:1"><div style="font-size:12.5px">4 repos hidden</div><div style="font-size:11px;margin-top:2px" class="mut">Coursework and forks — hidden by default</div></div>
+                  <button class="btn btn-ghost" style="font-size:11px;flex:none">Show list</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right rail -->
+      <div style="display:flex;flex-direction:column;gap:13px">
+        <div class="tile" style="padding:16px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px"><span class="k">Profile completeness</span><span style="font-size:13px">72%</span></div>
+          <div class="bar" style="height:6px;margin-bottom:14px"><span style="width:72%"></span></div>
+          <div class="k" style="margin-bottom:9px">What a recruiter can't see yet</div>
+          <div style="display:flex;flex-direction:column;gap:9px;font-size:12px">
+            <div style="display:flex;gap:8px;align-items:flex-start"><i class="ph-fill ph-check-circle" style="font-size:14px;color:var(--color-accent);margin-top:1px"></i><span>Current role and dates</span></div>
+            <div style="display:flex;gap:8px;align-items:flex-start"><i class="ph-fill ph-check-circle" style="font-size:14px;color:var(--color-accent);margin-top:1px"></i><span>2 projects with descriptions</span></div>
+            <div style="display:flex;gap:8px;align-items:flex-start"><i class="ph ph-circle-dashed mut" style="font-size:14px;margin-top:1px"></i><span class="mut">A skill at Community Verified — you're 1 endorsement short</span></div>
+            <div style="display:flex;gap:8px;align-items:flex-start"><i class="ph ph-circle-dashed mut" style="font-size:14px;margin-top:1px"></i><span class="mut">Availability status (open to offers?)</span></div>
+          </div>
+          <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12px">Set availability</button>
+        </div>
+
+        <div class="tile" style="padding:16px">
+          <div class="k" style="margin-bottom:10px">Skills carry over from here</div>
+          <div style="display:flex;flex-direction:column;gap:9px">
+            <div style="display:flex;align-items:center;gap:8px"><span style="font-size:12.5px;flex:1">Kubernetes</span><span class="tag tag-accent" style="font-size:9.5px;padding:1px 6px"><i class="ph-fill ph-seal-check" style="font-size:9px;margin-right:3px"></i>Verified</span></div>
+            <div style="display:flex;align-items:center;gap:8px"><span style="font-size:12.5px;flex:1">Terraform</span><span class="tag tag-outline" style="font-size:9.5px;padding:1px 6px">Endorsed ×4</span></div>
+            <div style="display:flex;align-items:center;gap:8px"><span style="font-size:12.5px;flex:1">Linux</span><span class="tag tag-outline" style="font-size:9.5px;padding:1px 6px">Endorsed ×2</span></div>
+            <div style="display:flex;align-items:center;gap:8px"><span style="font-size:12.5px;flex:1" class="mut">CI/CD</span><span class="tag tag-neutral" style="font-size:9.5px;padding:1px 6px">Self-declared</span></div>
+          </div>
+          <a href="skills.html" style="font-size:11.5px;display:block;margin-top:12px">Manage skills &amp; endorsements →</a>
+        </div>
+
+        <div class="tile" style="padding:16px;border-style:dashed;background:transparent">
+          <div style="display:flex;gap:9px;align-items:flex-start">
+            <i class="ph ph-info" style="font-size:15px;color:var(--color-accent);margin-top:1px;flex:none"></i>
+            <p style="margin:0;font-size:11.5px;line-height:1.55" class="mut">Anything you write here is a claim. It becomes trusted only when peers endorse the skill behind it and an admin reviews the evidence — see <a href="verification.html">1e</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/theme.js"></script>
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/interactions.js" defer></script>
+</body>
+</html>

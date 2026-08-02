@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ppnav:injected -->
+<script>window.PP_DEPTH=1;
+(function(){try{var t=localStorage.getItem('pp-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Event Management · PacketPulse</title>
+<link rel="icon" href="../assets/packet-pulse-logo.png">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/chrome.css">
+<link rel="stylesheet" href="../assets/nav.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+</head>
+<body>
+<div class="scr">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="../assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Chapter admin</div>
+      <a class="sbi" href="dashboard.html"><i class="ph ph-squares-four"></i>Chapter dashboard</a>
+      <a class="sbi" href="review-queue.html"><i class="ph ph-seal-check"></i>Verification queue<span style="margin-left:auto;font-size:10.5px;background:var(--color-accent-800);color:var(--color-accent-100);padding:1px 6px;border-radius:8px">11</span></a>
+      <a class="sbi on" href="events.html"><i class="ph-fill ph-calendar-plus"></i>Event management</a>
+      <a class="sbi" href="roster.html"><i class="ph ph-users-four"></i>Member roster</a>
+      <a class="sbi" href="mentors.html"><i class="ph ph-user-gear"></i>Reviewers</a>
+      <a class="sbi" href="moderation.html"><i class="ph ph-flag"></i>Moderation queue<span style="margin-left:auto;font-size:10.5px" class="mut">4</span></a>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:14px">
+        <span style="font-size:14px;font-weight:500">Events</span>
+        <div class="seg" style="font-size:12px">
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px;background:color-mix(in srgb,var(--color-accent) 16%,transparent)">Published · 2</span>
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px">Drafts · 1</span>
+          <span class="seg-opt" style="padding:5px 11px;font-size:12px">Past · 19</span>
+        </div>
+      </div>
+      <button class="btn btn-primary" style="font-size:12px"><i class="ph ph-plus" style="font-size:14px"></i>Create event</button>
+    </div>
+
+    <div style="padding:18px 22px 26px;display:grid;grid-template-columns:1fr 340px;gap:24px;align-items:start">
+      <div>
+        <table class="table" style="font-size:12.5px">
+          <thead><tr><th style="width:34%">Event</th><th style="width:15%">When</th><th style="width:14%">Status</th><th style="width:16%">RSVPs</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td><div style="font-size:13px">Terraform at scale — what breaks after 200 modules</div><div style="font-size:11px;margin-top:2px" class="mut">Meetup · Kirana Cloud offices · 3 speakers</div></td>
+              <td class="mut">Fri 6 Sep<div style="font-size:11px">18:30 SGT</div></td>
+              <td><span class="tag tag-accent">Published</span></td>
+              <td><div style="display:flex;align-items:center;gap:8px"><div class="bar" style="flex:1"><span style="width:76%"></span></div><span style="font-size:11px">61/80</span></div></td>
+              <td><div style="display:flex;gap:6px;justify-content:flex-end"><button class="btn btn-ghost" style="font-size:11px;white-space:nowrap">RSVPs</button><button class="btn btn-secondary" style="font-size:11px;white-space:nowrap">Edit</button></div></td>
+            </tr>
+            <tr>
+              <td><div style="font-size:13px">Boot failures and how to stay calm</div><div style="font-size:11px;margin-top:2px" class="mut">Meetup · community space · 1 speaker</div></td>
+              <td class="mut">Wed 27 Aug<div style="font-size:11px">19:00 SGT</div></td>
+              <td><span class="tag tag-accent">Published</span></td>
+              <td><div style="display:flex;align-items:center;gap:8px"><div class="bar" style="flex:1"><span style="width:70%"></span></div><span style="font-size:11px">28/40</span></div></td>
+              <td><div style="display:flex;gap:6px;justify-content:flex-end"><button class="btn btn-ghost" style="font-size:11px;white-space:nowrap">RSVPs</button><button class="btn btn-secondary" style="font-size:11px;white-space:nowrap">Edit</button></div></td>
+            </tr>
+            <tr>
+              <td><div style="font-size:13px" class="mut">Kubernetes failure night, part two</div><div style="font-size:11px;margin-top:2px" class="mut">No date · no speaker · not visible to members</div></td>
+              <td class="mut">—</td>
+              <td><span class="tag tag-neutral">Draft</span></td>
+              <td class="mut">—</td>
+              <td><div style="display:flex;gap:6px;justify-content:flex-end"><button class="btn btn-secondary" style="font-size:11px;white-space:nowrap">Continue</button></div></td>
+            </tr>
+            <tr style="opacity:.62">
+              <td><div style="font-size:13px">Kubernetes failure night</div><div style="font-size:11px;margin-top:2px" class="mut">Meetup · write-up published</div></td>
+              <td class="mut">Sat 21 Jun</td>
+              <td><span class="tag tag-neutral">Past</span></td>
+              <td class="mut">50/50 · 44 attended</td>
+              <td><div style="display:flex;gap:6px;justify-content:flex-end"><button class="btn btn-ghost" style="font-size:11px;white-space:nowrap">Export list</button></div></td>
+            </tr>
+            <tr style="opacity:.62">
+              <td><div style="font-size:13px">Intro to state management</div><div style="font-size:11px;margin-top:2px" class="mut">Webinar</div></td>
+              <td class="mut">Thu 15 May</td>
+              <td><span class="tag tag-neutral">Past</span></td>
+              <td class="mut">96 · 71 attended</td>
+              <td><div style="display:flex;gap:6px;justify-content:flex-end"><button class="btn btn-ghost" style="font-size:11px;white-space:nowrap">Export list</button></div></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="tile" style="padding:16px 18px;margin-top:18px">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:13px">
+            <span class="k">RSVP list · Terraform at scale</span>
+            <button class="btn btn-ghost" style="font-size:11.5px"><i class="ph ph-download-simple" style="font-size:13px"></i>Export CSV</button>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0;font-size:12.5px">
+            <div style="display:flex;align-items:center;gap:11px;padding-bottom:10px;border-bottom:1px solid var(--color-divider)"><div class="av avA" style="width:26px;height:26px;font-size:10px">ZC</div><span style="flex:1">Zara Chen</span><span class="tag tag-outline" style="font-size:9.5px">Fresher</span><span class="mut" style="font-size:11px">RSVP'd 2 h ago</span></div>
+            <div style="display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:1px solid var(--color-divider)"><div class="av" style="width:26px;height:26px;font-size:10px">KT</div><span style="flex:1">Kenji Tanaka</span><span class="tag tag-outline" style="font-size:9.5px">Engineer</span><span class="mut" style="font-size:11px">yesterday</span></div>
+            <div style="display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:1px solid var(--color-divider)"><div class="av" style="width:26px;height:26px;font-size:10px">SJ</div><span style="flex:1">Sarah Jenkins</span><span class="tag tag-outline" style="font-size:9.5px">Engineer</span><span class="mut" style="font-size:11px">2 days ago</span></div>
+            <div style="display:flex;align-items:center;gap:11px;padding-top:10px"><span class="mut" style="font-size:11.5px">58 more · export includes email addresses for venue registration only</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- create form -->
+      <div class="tile" style="padding:18px;border-color:color-mix(in srgb,var(--color-accent) 40%,transparent)">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:14px"><span class="k">Create event</span><i class="ph ph-x mut" style="font-size:13px"></i></div>
+        <div class="field" style="margin-bottom:11px"><label style="font-size:11.5px">Title</label><div class="input" style="display:flex;align-items:center;font-size:12.5px;color:var(--color-neutral-500)">What's it called?</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:11px">
+          <div class="field" style="margin:0"><label style="font-size:11.5px">Date</label><div class="input" style="display:flex;align-items:center;justify-content:space-between;font-size:12.5px;color:var(--color-neutral-500)">dd/mm/yy<i class="ph ph-calendar-blank mut" style="font-size:13px"></i></div></div>
+          <div class="field" style="margin:0"><label style="font-size:11.5px">Start</label><div class="input" style="display:flex;align-items:center;font-size:12.5px;color:var(--color-neutral-500)">18:30</div></div>
+        </div>
+        <div class="field" style="margin-bottom:11px">
+          <label style="font-size:11.5px">Format</label>
+          <div class="seg" style="width:100%;font-size:11.5px">
+            <span class="seg-opt" style="flex:1;text-align:center;padding:6px;font-size:11.5px;background:color-mix(in srgb,var(--color-accent) 16%,transparent)">Meetup</span>
+            <span class="seg-opt" style="flex:1;text-align:center;padding:6px;font-size:11.5px">Webinar</span>
+          </div>
+        </div>
+        <div class="field" style="margin-bottom:11px"><label style="font-size:11.5px">Location or link</label><div class="input" style="display:flex;align-items:center;font-size:12.5px;color:var(--color-neutral-500)">Venue address</div></div>
+        <div class="field" style="margin-bottom:11px"><label style="font-size:11.5px">Speaker(s)</label><div class="input" style="display:flex;align-items:center;gap:6px;font-size:12.5px"><span class="tag tag-outline" style="font-size:9.5px">Search members</span></div><p style="margin:6px 0 0;font-size:10.5px;line-height:1.45" class="mut">Linking a member shows their verified skills on the event page.</p></div>
+        <div class="field" style="margin-bottom:11px"><label style="font-size:11.5px">Description</label><div class="input" style="min-height:70px;font-size:12px;line-height:1.5;padding:8px 10px;color:var(--color-neutral-500)">What will people actually get out of it?</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+          <div class="field" style="margin:0"><label style="font-size:11.5px">RSVP cap</label><div class="input" style="display:flex;align-items:center;font-size:12.5px">80</div></div>
+          <div class="field" style="margin:0"><label style="font-size:11.5px">Topic tag</label><div class="input" style="display:flex;align-items:center;justify-content:space-between;font-size:12.5px">Cloud<i class="ph ph-caret-down mut" style="font-size:12px"></i></div></div>
+        </div>
+        <button class="btn btn-primary btn-block" style="justify-content:center;font-size:12.5px;margin-top:0">Publish event</button>
+        <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:12.5px">Save as draft</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/theme.js"></script>
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/interactions.js" defer></script>
+</body>
+</html>

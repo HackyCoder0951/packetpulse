@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ppnav:injected -->
+<script>window.PP_DEPTH=0;
+(function(){try{var t=localStorage.getItem('pp-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>PacketPulse — Phase 1 mockups</title>
+<link rel="icon" href="assets/packet-pulse-logo.png">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/chrome.css">
+<link rel="stylesheet" href="assets/nav.css">
+<link rel="stylesheet" href="assets/theme.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<style>
+  .wrap{max-width:1080px;margin:0 auto;padding:56px 32px 80px}
+  .portal-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+  .page-list{display:flex;flex-direction:column;gap:0;margin-top:12px}
+  .page-list a{display:flex;align-items:center;justify-content:space-between;padding:8px 2px;font-size:13.5px;color:var(--color-text);border-bottom:1px solid var(--color-divider)}
+  .page-list a:last-child{border-bottom:none}
+  .page-list a i{color:var(--color-neutral-500);font-size:14px}
+  .page-list a:hover{color:var(--color-accent)}
+  .page-list a:hover i{color:var(--color-accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div style="display:flex;align-items:center;gap:14px;margin-bottom:6px">
+    <img src="assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:32px;width:auto">
+    <span class="tag tag-outline">Phase 1 mockups, implemented</span>
+  </div>
+  <h1 style="margin:14px 0 8px">PacketPulse</h1>
+  <p class="text-muted" style="max-width:64ch;font-size:14.5px">
+    All 26 Phase 1 screens from the design canvas, rebuilt as a real,
+    linked static site on the Nocturne design system — four portals, plus
+    the mobile member views. Nothing here is wired to a backend; every
+    button and link is real navigation between these pages.
+  </p>
+
+  <div class="portal-grid">
+    <div class="card elev-sm" style="padding:20px">
+      <div class="card-kicker">Portal 1 · No login</div>
+      <div class="card-title">Public</div>
+      <p class="card-body">Landing, events, profiles, sign up and log in.</p>
+      <div class="page-list">
+        <a href="public/landing.html"><span>Landing</span><i class="ph ph-arrow-right"></i></a>
+        <a href="public/events.html"><span>Events directory</span><i class="ph ph-arrow-right"></i></a>
+        <a href="public/event-detail.html"><span>Event detail</span><i class="ph ph-arrow-right"></i></a>
+        <a href="public/profile.html"><span>Public profile view</span><i class="ph ph-arrow-right"></i></a>
+        <a href="public/signup.html"><span>Sign up</span><i class="ph ph-arrow-right"></i></a>
+        <a href="public/login.html"><span>Log in</span><i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="card elev-sm" style="padding:20px">
+      <div class="card-kicker">Portal 2 · Member</div>
+      <div class="card-title">Member</div>
+      <p class="card-body">The trust loop — profile, skills, endorsements, verification.</p>
+      <div class="page-list">
+        <a href="member/home.html"><span>Home / feed</span><i class="ph ph-arrow-right"></i></a>
+        <a href="member/profile-editor.html"><span>Profile editor</span><i class="ph ph-arrow-right"></i></a>
+        <a href="member/skills.html"><span>Skills &amp; endorsements</span><i class="ph ph-arrow-right"></i></a>
+        <a href="member/verification.html"><span>Verification status</span><i class="ph ph-arrow-right"></i></a>
+        <a href="member/connections.html"><span>Connections</span><i class="ph ph-arrow-right"></i></a>
+        <a href="member/inbox.html"><span>Endorsement inbox</span><i class="ph ph-arrow-right"></i></a>
+        <a href="member/events.html"><span>Events (member view)</span><i class="ph ph-arrow-right"></i></a>
+        <a href="member/profile-preview.html"><span>Public profile preview</span><i class="ph ph-arrow-right"></i></a>
+        <a href="member/notifications.html"><span>Notifications</span><i class="ph ph-arrow-right"></i></a>
+        <a href="member/settings.html"><span>Settings</span><i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="card elev-sm" style="padding:20px">
+      <div class="card-kicker">Portal 3 · Chapter admin</div>
+      <div class="card-title">Admin</div>
+      <p class="card-body">Verification review, event management, roster, moderation.</p>
+      <div class="page-list">
+        <a href="admin/dashboard.html"><span>Chapter dashboard</span><i class="ph ph-arrow-right"></i></a>
+        <a href="admin/review-queue.html"><span>Verification review queue</span><i class="ph ph-arrow-right"></i></a>
+        <a href="admin/review-detail.html"><span>Verification detail view</span><i class="ph ph-arrow-right"></i></a>
+        <a href="admin/events.html"><span>Event management</span><i class="ph ph-arrow-right"></i></a>
+        <a href="admin/roster.html"><span>Member roster</span><i class="ph ph-arrow-right"></i></a>
+        <a href="admin/mentors.html"><span>Reviewer management</span><i class="ph ph-arrow-right"></i></a>
+        <a href="admin/moderation.html"><span>Moderation queue</span><i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="card elev-sm" style="padding:20px">
+      <div class="card-kicker">Portal 4 · Recruiting</div>
+      <div class="card-title">Recruiting</div>
+      <p class="card-body">Company &amp; individual recruiters, shared UI with a scope toggle.</p>
+      <div class="page-list">
+        <a href="recruiting/dashboard.html"><span>Recruiter dashboard</span><i class="ph ph-arrow-right"></i></a>
+        <a href="recruiting/search.html"><span>Verified talent search</span><i class="ph ph-arrow-right"></i></a>
+        <a href="recruiting/candidate.html"><span>Candidate detail</span><i class="ph ph-arrow-right"></i></a>
+        <a href="recruiting/shortlist.html"><span>Shortlist / requisition tracker</span><i class="ph ph-arrow-right"></i></a>
+        <a href="recruiting/bulk-sourcing.html"><span>Bulk sourcing request</span><i class="ph ph-arrow-right"></i></a>
+        <a href="recruiting/billing.html"><span>Commission / billing</span><i class="ph ph-arrow-right"></i></a>
+        <a href="recruiting/settings.html"><span>Recruiter account settings</span><i class="ph ph-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card elev-sm" style="padding:20px;margin-top:16px">
+    <div class="card-kicker">Batch 5 · Mobile, member-facing</div>
+    <div class="card-title">Mobile</div>
+    <p class="card-body">390×844 member screens — admin and recruiting stay desktop-only by design.</p>
+    <div class="page-list" style="grid-template-columns:1fr 1fr">
+      <a href="mobile/home.html"><span>Home</span><i class="ph ph-arrow-right"></i></a>
+      <a href="mobile/inbox.html"><span>Endorsement inbox</span><i class="ph ph-arrow-right"></i></a>
+      <a href="mobile/skills.html"><span>Skills</span><i class="ph ph-arrow-right"></i></a>
+      <a href="mobile/verification.html"><span>Verification status</span><i class="ph ph-arrow-right"></i></a>
+      <a href="mobile/profile.html"><span>Public profile</span><i class="ph ph-arrow-right"></i></a>
+      <a href="mobile/landing.html"><span>Landing / onboarding</span><i class="ph ph-arrow-right"></i></a>
+      <a href="mobile/event-detail.html"><span>Event detail</span><i class="ph ph-arrow-right"></i></a>
+    </div>
+  </div>
+</div>
+<script src="assets/theme.js"></script>
+<script src="assets/nav.js" defer></script>
+<script src="assets/interactions.js" defer></script>
+</body>
+</html>

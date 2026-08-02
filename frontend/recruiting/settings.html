@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ppnav:injected -->
+<script>window.PP_DEPTH=1;
+(function(){try{var t=localStorage.getItem('pp-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Recruiter Account Settings · PacketPulse</title>
+<link rel="icon" href="../assets/packet-pulse-logo.png">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/chrome.css">
+<link rel="stylesheet" href="../assets/nav.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+</head>
+<body>
+<!-- Adapted from the recruiting sidebar chrome used in batch 2 (4.7 Recruiter
+     Account Settings has no dedicated mockup in the source; built to match
+     member/settings.html's pattern with the fields the page inventory lists:
+     company info, billing details, team members with access). -->
+<div class="scr">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="../assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Recruiting</div>
+      <a class="sbi" href="dashboard.html"><i class="ph ph-squares-four"></i>Dashboard</a>
+      <a class="sbi" href="search.html"><i class="ph ph-magnifying-glass"></i>Talent search</a>
+      <a class="sbi" href="shortlist.html"><i class="ph ph-list-checks"></i>Requisitions<span style="margin-left:auto;font-size:10.5px">4</span></a>
+      <a class="sbi" href="bulk-sourcing.html"><i class="ph ph-stack-plus"></i>Bulk sourcing<span class="tag tag-outline" style="margin-left:auto;font-size:9px;padding:1px 5px">Co.</span></a>
+      <a class="sbi" href="billing.html"><i class="ph ph-receipt"></i>Commission</a>
+    </div>
+    <div>
+      <div class="sbh">Account</div>
+      <a class="sbi on" href="settings.html"><i class="ph-fill ph-gear-six"></i>Settings</a>
+    </div>
+    <div style="margin-top:auto;padding:11px;border-radius:var(--radius-md);border:1px solid var(--color-divider)">
+      <div style="display:flex;align-items:center;gap:8px">
+        <div class="av" style="width:28px;height:28px;font-size:10px">KC</div>
+        <div><div style="font-size:12px">Kirana Cloud</div><div style="font-size:10px" class="mut">Company · 3 seats</div></div>
+      </div>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb"><span style="font-size:14px;font-weight:500">Recruiter account settings</span></div>
+    <div style="padding:22px 26px 30px;display:grid;grid-template-columns:1fr 340px;gap:20px;align-items:start;max-width:1000px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="tile" style="padding:18px">
+          <div class="card-kicker">Company profile</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px">
+            <div class="field" style="grid-column:span 2"><label>Company name</label><div class="input" style="display:flex;align-items:center">Kirana Cloud</div></div>
+            <div class="field"><label>Industry</label><div class="input" style="display:flex;align-items:center">Cloud infrastructure</div></div>
+            <div class="field"><label>Company size</label><div class="input" style="display:flex;align-items:center">51–200</div></div>
+            <div class="field" style="grid-column:span 2"><label>Website</label><div class="input" style="display:flex;align-items:center">kiranacloud.example</div></div>
+          </div>
+          <button class="btn btn-secondary" style="margin-top:14px">Save changes</button>
+        </div>
+
+        <div class="tile" style="padding:18px">
+          <div class="card-kicker">Team members with access</div>
+          <table class="table" style="margin-top:6px">
+            <thead><tr><th style="width:44%">Person</th><th style="width:26%">Role</th><th style="width:20%">Seats used</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><div style="display:flex;align-items:center;gap:10px"><div class="av avA" style="width:28px;height:28px;font-size:11px">DP</div>Deepa Rao</div></td><td class="mut">Admin</td><td class="mut">—</td><td><i class="ph ph-dots-three mut"></i></td></tr>
+              <tr><td><div style="display:flex;align-items:center;gap:10px"><div class="av" style="width:28px;height:28px;font-size:11px">JL</div>Jonas Lindqvist</div></td><td class="mut">Recruiter</td><td class="mut">1 of 3</td><td><i class="ph ph-dots-three mut"></i></td></tr>
+              <tr><td><div style="display:flex;align-items:center;gap:10px"><div class="av" style="width:28px;height:28px;font-size:11px">—</div>Invite pending</div></td><td class="mut">Recruiter</td><td class="mut">—</td><td><i class="ph ph-dots-three mut"></i></td></tr>
+            </tbody>
+          </table>
+          <button class="btn btn-secondary" style="margin-top:12px"><i class="ph ph-user-plus"></i>Invite team member</button>
+        </div>
+
+        <div class="tile" style="padding:18px;border-color:color-mix(in srgb,#e5484d 45%,transparent)">
+          <div class="card-kicker" style="color:#e5484d">Danger zone</div>
+          <p class="card-body" style="margin-top:8px">Removing the company account cancels all active requisitions and revokes team access immediately.</p>
+          <button class="btn btn-secondary" style="margin-top:6px;border-color:#e5484d;color:#e5484d">Deactivate company account</button>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="tile" style="padding:18px">
+          <div class="card-kicker">Billing details</div>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:10px">
+            <div class="field"><label>Billing contact</label><div class="input" style="display:flex;align-items:center">accounts@kiranacloud.example</div></div>
+            <div class="field"><label>Payment method</label><div class="input" style="display:flex;align-items:center;justify-content:space-between">Visa •••• 4471<i class="ph ph-caret-down mut" style="font-size:12px"></i></div></div>
+          </div>
+          <a class="btn btn-ghost" href="billing.html" style="margin-top:12px">View commission &amp; billing →</a>
+        </div>
+        <div class="tile" style="padding:18px">
+          <div class="card-kicker">Notifications</div>
+          <div style="display:flex;flex-direction:column;gap:9px;margin-top:10px;font-size:12.5px">
+            <label class="radio"><input type="checkbox" checked><span class="dot"></span>New candidates matching a saved search</label>
+            <label class="radio"><input type="checkbox" checked><span class="dot"></span>Shortlist status changes</label>
+            <label class="radio"><input type="checkbox"><span class="dot"></span>Weekly summary email</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/theme.js"></script>
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/interactions.js" defer></script>
+</body>
+</html>

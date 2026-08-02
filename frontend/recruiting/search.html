@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ppnav:injected -->
+<script>window.PP_DEPTH=1;
+(function(){try{var t=localStorage.getItem('pp-theme')||(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Verified Talent Search · PacketPulse</title>
+<link rel="icon" href="../assets/packet-pulse-logo.png">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/chrome.css">
+<link rel="stylesheet" href="../assets/nav.css">
+<link rel="stylesheet" href="../assets/theme.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+</head>
+<body>
+<div class="scr">
+  <aside class="sb">
+    <div style="padding:6px 9px 2px"><img src="../assets/packet-pulse-logo.png" alt="Packet Pulse" style="height:30px;width:auto"></div>
+    <div>
+      <div class="sbh">Recruiting</div>
+      <a class="sbi" href="dashboard.html"><i class="ph ph-squares-four"></i>Dashboard</a>
+      <a class="sbi on" href="search.html"><i class="ph-fill ph-magnifying-glass"></i>Talent search</a>
+      <a class="sbi" href="shortlist.html"><i class="ph ph-list-checks"></i>Requisitions<span style="margin-left:auto;font-size:10.5px">4</span></a>
+      <a class="sbi" href="bulk-sourcing.html"><i class="ph ph-stack-plus"></i>Bulk sourcing<span class="tag tag-outline" style="margin-left:auto;font-size:9px;padding:1px 5px">Co.</span></a>
+      <a class="sbi" href="billing.html"><i class="ph ph-receipt"></i>Commission</a>
+    </div>
+    <div>
+      <div class="sbh">Filters</div>
+      <div style="padding:0 9px;display:flex;flex-direction:column;gap:16px">
+        <div>
+          <div class="k" style="margin-bottom:8px">Skill</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px"><span class="tag tag-accent">Kubernetes ×</span><span class="tag tag-accent">Terraform ×</span><span class="tag tag-outline">+ add</span></div>
+        </div>
+        <div>
+          <div class="k" style="margin-bottom:8px">Verification basis</div>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:12px">
+            <div style="display:flex;gap:8px;align-items:center"><span style="width:12px;height:12px;border-radius:3px;background:var(--color-accent);flex:none"></span><span style="flex:1">Community Verified</span><span class="mut">41</span></div>
+            <div style="display:flex;gap:8px;align-items:center"><span style="width:12px;height:12px;border-radius:3px;background:var(--color-accent);flex:none"></span><span style="flex:1">Peer-endorsed</span><span class="mut">+188</span></div>
+            <div style="display:flex;gap:8px;align-items:center" class="mut"><span style="width:12px;height:12px;border-radius:3px;border:1px solid var(--color-divider);flex:none"></span><span style="flex:1">Self-declared</span><span>+604</span></div>
+          </div>
+          <p style="margin:8px 0 0;font-size:10.5px;line-height:1.45" class="mut">Including self-declared makes this a résumé search again. Your call.</p>
+        </div>
+        <div>
+          <div class="k" style="margin-bottom:8px">Min. endorsements</div>
+          <div class="bar" style="height:4px;margin-bottom:6px"><span style="width:60%"></span></div>
+          <div style="font-size:11.5px" class="mut">3 or more</div>
+        </div>
+        <div>
+          <div class="k" style="margin-bottom:8px">Chapter / region</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px"><span class="tag tag-neutral">Singapore</span><span class="tag tag-neutral">SEA</span><span class="tag tag-outline">+ add</span></div>
+        </div>
+        <div>
+          <div class="k" style="margin-bottom:8px">Experience level</div>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:12px">
+            <div style="display:flex;gap:8px;align-items:center" class="mut"><span style="width:12px;height:12px;border-radius:3px;border:1px solid var(--color-divider);flex:none"></span>Student</div>
+            <div style="display:flex;gap:8px;align-items:center"><span style="width:12px;height:12px;border-radius:3px;background:var(--color-accent);flex:none"></span>Fresher · 0–2 yrs</div>
+            <div style="display:flex;gap:8px;align-items:center"><span style="width:12px;height:12px;border-radius:3px;background:var(--color-accent);flex:none"></span>Engineer · 2+ yrs</div>
+          </div>
+        </div>
+        <div>
+          <div class="k" style="margin-bottom:8px">Availability</div>
+          <div style="display:flex;gap:8px;align-items:center;font-size:12px"><span style="width:12px;height:12px;border-radius:3px;background:var(--color-accent);flex:none"></span>Open to opportunities only</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:auto;padding:0 9px">
+      <button class="btn btn-secondary btn-block" style="justify-content:center;font-size:11.5px">Clear all</button>
+    </div>
+  </aside>
+  <div class="mn">
+    <div class="tb">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="font-size:14px;font-weight:500">Talent search</span>
+        <span style="font-size:12px" class="mut">229 members match · 41 Community Verified in both skills</span>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <div class="seg" style="font-size:11.5px">
+          <span class="seg-opt" style="padding:5px 11px;font-size:11.5px;background:color-mix(in srgb,var(--color-accent) 16%,transparent)">Best match</span>
+          <span class="seg-opt" style="padding:5px 11px;font-size:11.5px">Recently verified</span>
+        </div>
+        <button class="btn btn-secondary" style="font-size:12px"><i class="ph ph-bookmark-simple" style="font-size:14px"></i>Save search</button>
+      </div>
+    </div>
+
+    <div style="padding:16px 22px 26px">
+      <div style="display:flex;align-items:center;gap:11px;padding:11px 15px;border-radius:var(--radius-md);border:1px solid color-mix(in srgb,var(--color-accent) 40%,transparent);background:color-mix(in srgb,var(--color-accent) 8%,transparent);margin-bottom:14px">
+        <i class="ph ph-list-checks" style="font-size:16px;color:var(--color-accent);flex:none"></i>
+        <span style="font-size:12.5px;flex:1">Searching against <strong>Platform Engineer II</strong> — shortlist adds go straight onto that requisition.</span>
+        <button class="btn btn-ghost" style="font-size:11.5px;flex:none;white-space:nowrap">Change requisition</button>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:9px">
+
+        <div class="tile" style="padding:15px 17px">
+          <div style="display:flex;gap:15px;align-items:flex-start">
+            <div class="av avA" style="width:46px;height:46px;font-size:16px;border-radius:var(--radius-md)">ZC</div>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
+                <span style="font-size:15px;font-weight:500">Zara Chen</span>
+                <span style="font-size:12.5px" class="mut">Junior DevOps Engineer, Kirana Cloud</span>
+                <span class="tag tag-neutral">Fresher · 2 yrs</span>
+                <span class="tag tag-outline"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--color-accent);margin-right:5px;vertical-align:1px"></span>Open</span>
+              </div>
+              <p style="margin:6px 0 10px;font-size:11.5px" class="mut">Singapore chapter · member 2 yr 4 mo · 12 endorsements received across 3 skills</p>
+              <div style="display:flex;gap:7px;flex-wrap:wrap">
+                <span class="tag tag-accent"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Kubernetes · verified</span>
+                <span class="tag tag-outline"><i class="ph ph-users-three" style="font-size:10px;margin-right:4px"></i>Terraform · 4 endorsements</span>
+                <span class="tag tag-outline"><i class="ph ph-users-three" style="font-size:10px;margin-right:4px"></i>Linux · 2</span>
+                <span class="tag tag-neutral">CI/CD · self-declared</span>
+              </div>
+            </div>
+            <div style="flex:none;display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+              <button class="btn btn-primary" style="font-size:11.5px;white-space:nowrap"><i class="ph ph-plus" style="font-size:13px"></i>Add to shortlist</button>
+              <a href="candidate.html" style="font-size:11.5px">Open profile →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:15px 17px">
+          <div style="display:flex;gap:15px;align-items:flex-start">
+            <div class="av" style="width:46px;height:46px;font-size:16px;border-radius:var(--radius-md)">KT</div>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
+                <span style="font-size:15px;font-weight:500">Kenji Tanaka</span>
+                <span style="font-size:12.5px" class="mut">Systems Engineer, Meridian Logistics</span>
+                <span class="tag tag-neutral">Engineer · 6 yrs</span>
+                <span class="tag tag-neutral">Not looking</span>
+              </div>
+              <p style="margin:6px 0 10px;font-size:11.5px" class="mut">Singapore chapter · volunteer · 21 endorsements received</p>
+              <div style="display:flex;gap:7px;flex-wrap:wrap">
+                <span class="tag tag-accent"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Kubernetes · verified</span>
+                <span class="tag tag-accent"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Terraform · verified</span>
+                <span class="tag tag-outline"><i class="ph ph-users-three" style="font-size:10px;margin-right:4px"></i>Networking · 7</span>
+              </div>
+            </div>
+            <div style="flex:none;display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+              <button class="btn btn-secondary" style="font-size:11.5px;white-space:nowrap"><i class="ph ph-plus" style="font-size:13px"></i>Add to shortlist</button>
+              <span style="font-size:10.5px;text-align:right;max-width:19ch" class="mut">Marked not looking — intro will say so</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:15px 17px">
+          <div style="display:flex;gap:15px;align-items:flex-start">
+            <div class="av" style="width:46px;height:46px;font-size:15px;border-radius:var(--radius-md)">—</div>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
+                <span style="font-size:15px;font-weight:500">Member #4471</span>
+                <span class="tag tag-outline"><i class="ph ph-eye-slash" style="font-size:10px;margin-right:4px"></i>Connections-only profile</span>
+                <span class="tag tag-neutral">Engineer · 4 yrs</span>
+                <span class="tag tag-outline"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--color-accent);margin-right:5px;vertical-align:1px"></span>Open</span>
+              </div>
+              <p style="margin:6px 0 10px;font-size:11.5px" class="mut">SEA region · name and history unlock only if they accept an introduction request</p>
+              <div style="display:flex;gap:7px;flex-wrap:wrap">
+                <span class="tag tag-accent"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Kubernetes · verified</span>
+                <span class="tag tag-accent"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Security · verified</span>
+                <span class="tag tag-outline"><i class="ph ph-users-three" style="font-size:10px;margin-right:4px"></i>Terraform · 5</span>
+              </div>
+            </div>
+            <div style="flex:none;display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+              <button class="btn btn-secondary" style="font-size:11.5px;white-space:nowrap"><i class="ph ph-paper-plane-tilt" style="font-size:13px"></i>Request introduction</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile" style="padding:15px 17px;background:transparent">
+          <div style="display:flex;gap:15px;align-items:flex-start">
+            <div class="av" style="width:46px;height:46px;font-size:16px;border-radius:var(--radius-md)">AP</div>
+            <div style="flex:1;min-width:0">
+              <div style="display:flex;align-items:center;gap:9px;flex-wrap:wrap">
+                <span style="font-size:15px;font-weight:500" class="mut">Aarav Patel</span>
+                <span style="font-size:12.5px" class="mut">Final-year student</span>
+                <span class="tag tag-neutral">Student</span>
+              </div>
+              <p style="margin:6px 0 10px;font-size:11.5px" class="mut">Mumbai chapter · outside your experience-level filter, shown because Linux is verified</p>
+              <div style="display:flex;gap:7px;flex-wrap:wrap">
+                <span class="tag tag-accent"><i class="ph-fill ph-seal-check" style="font-size:10px;margin-right:4px"></i>Linux · verified</span>
+                <span class="tag tag-neutral">Kubernetes · self-declared</span>
+              </div>
+            </div>
+            <div style="flex:none"><button class="btn btn-ghost" style="font-size:11.5px;white-space:nowrap">Add anyway</button></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:16px">
+        <span style="font-size:11.5px" class="mut">Showing 4 of 41 Community Verified matches</span>
+        <button class="btn btn-secondary" style="font-size:12px">Load more</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../assets/theme.js"></script>
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/interactions.js" defer></script>
+</body>
+</html>
